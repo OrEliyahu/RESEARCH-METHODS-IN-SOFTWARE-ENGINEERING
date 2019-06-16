@@ -1,19 +1,21 @@
 {
+    "number_of_answers_old": 52,
+    "number_of_answers_new": 11,
     "all_concepts": [
-        "mines",
-        "board",
-        "cell",
-        "state",
-        "game",
         "number",
+        "game",
+        "mines",
+        "cell",
+        "adjacent",
         "danger",
-        "adjacent"
+        "board",
+        "state"
     ],
     "joint_concepts": [
-        "mines",
-        "board",
-        "cell",
         "game",
+        "mines",
+        "cell",
+        "board",
         "state"
     ],
     "concepts_only_old": [

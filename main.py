@@ -72,7 +72,9 @@ def statistics(file_name_old, file_name_new, question):
     concepts_only_new = list(set(concepts_new) - set(concepts_old))
 
 
-    results = { "all_concepts" : all_concepts,
+    results = { "number_of_answers_old" : len(data_old) - 1,
+    			"number_of_answers_new" : len(data_new) - 1,
+    			"all_concepts" : all_concepts,
                 "joint_concepts" : joint_concepts,
                 "concepts_only_old" : concepts_only_old,
                 "concepts_only_new" : concepts_only_new,

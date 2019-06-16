@@ -1,0 +1,97 @@
+{
+    "number_of_answers_old": 42,
+    "number_of_answers_new": 6,
+    "all_concepts": [
+        "normal",
+        "week",
+        "hours",
+        "time",
+        "payment",
+        "extra",
+        "rate",
+        "full"
+    ],
+    "joint_concepts": [
+        "normal",
+        "week",
+        "hours",
+        "time",
+        "full"
+    ],
+    "concepts_only_old": [
+        "rate",
+        "payment",
+        "extra"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "week": 13,
+        "hours": 36,
+        "payment": 3,
+        "normal": 8,
+        "rate": 2,
+        "time": 18,
+        "extra": 3,
+        "full": 15
+    },
+    "concepts_counters_new": {
+        "week": 2,
+        "hours": 5,
+        "full": 5,
+        "time": 5,
+        "normal": 4
+    },
+    "concepts_distribution_old": {
+        "week": {
+            "weekly": 12,
+            "week": 1
+        },
+        "hours": {
+            "hours": 27,
+            "hour": 3,
+            "time": 6
+        },
+        "payment": {
+            "pay": 3
+        },
+        "normal": {
+            "standart": 1,
+            "regular": 1,
+            "base": 3,
+            "required": 2,
+            "reg": 1
+        },
+        "rate": {
+            "rate": 2
+        },
+        "time": {
+            "time": 18
+        },
+        "extra": {
+            "overtime": 2,
+            "bonus": 1
+        },
+        "full": {
+            "full": 15
+        }
+    },
+    "concepts_distribution_new": {
+        "week": {
+            "weekly": 2
+        },
+        "hours": {
+            "hours": 5
+        },
+        "full": {
+            "full": 5
+        },
+        "time": {
+            "time": 5
+        },
+        "normal": {
+            "required": 2,
+            "requirement": 1,
+            "num": 1
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "number_of_answers_old": 43,
+    "number_of_answers_new": 12,
+    "all_concepts": [
+        "hour",
+        "pay",
+        "extra",
+        "rate"
+    ],
+    "joint_concepts": [
+        "rate",
+        "hour",
+        "extra",
+        "pay"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "pay": 11,
+        "rate": 28,
+        "extra": 38,
+        "hour": 36
+    },
+    "concepts_counters_new": {
+        "pay": 4,
+        "rate": 8,
+        "extra": 11,
+        "hour": 7
+    },
+    "concepts_distribution_old": {
+        "pay": {
+            "payout": 1,
+            "pay": 5,
+            "payment": 3,
+            "wage": 1,
+            "salary": 1
+        },
+        "rate": {
+            "rate": 22,
+            "per": 5,
+            "for": 1
+        },
+        "extra": {
+            "add": 1,
+            "addition": 6,
+            "overtime": 7,
+            "increased": 1,
+            "overtime_bonus": 2,
+            "extra": 15,
+            "special": 1,
+            "additional": 5
+        },
+        "hour": {
+            "hour": 10,
+            "hours": 10,
+            "time": 16
+        }
+    },
+    "concepts_distribution_new": {
+        "pay": {
+            "salary": 2,
+            "pay": 1,
+            "payment": 1
+        },
+        "rate": {
+            "rate": 7,
+            "per": 1
+        },
+        "extra": {
+            "extra": 5,
+            "overtime": 5,
+            "addition": 1
+        },
+        "hour": {
+            "time": 1,
+            "hours": 3,
+            "hour": 3
+        }
+    }
+}

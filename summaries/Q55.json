@@ -1,0 +1,93 @@
+{
+    "number_of_answers_old": 42,
+    "number_of_answers_new": 5,
+    "all_concepts": [
+        "week",
+        "hours",
+        "overtime",
+        "extra",
+        "rate",
+        "wage",
+        "employee"
+    ],
+    "joint_concepts": [
+        "hours",
+        "overtime",
+        "extra",
+        "rate",
+        "wage"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [
+        "employee",
+        "week"
+    ],
+    "concepts_counters_old": {
+        "overtime": 32,
+        "wage": 27,
+        "rate": 14,
+        "hours": 12,
+        "extra": 7
+    },
+    "concepts_counters_new": {
+        "overtime": 4,
+        "wage": 1,
+        "week": 1,
+        "employee": 1,
+        "hours": 2,
+        "rate": 2,
+        "extra": 1
+    },
+    "concepts_distribution_old": {
+        "overtime": {
+            "overtime": 30,
+            "over": 2
+        },
+        "wage": {
+            "wage": 16,
+            "pay": 6,
+            "money": 1,
+            "salary": 3,
+            "payment": 1
+        },
+        "rate": {
+            "rate": 14
+        },
+        "hours": {
+            "hourly": 9,
+            "hours": 1,
+            "hour": 2
+        },
+        "extra": {
+            "increase": 1,
+            "extra": 3,
+            "bonus": 1,
+            "holiday": 1,
+            "raise": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "overtime": {
+            "overtime": 4
+        },
+        "wage": {
+            "payment": 1
+        },
+        "week": {
+            "weekly": 1
+        },
+        "employee": {
+            "employee": 1
+        },
+        "hours": {
+            "hours": 1,
+            "hourly": 1
+        },
+        "rate": {
+            "rate": 2
+        },
+        "extra": {
+            "extra": 1
+        }
+    }
+}

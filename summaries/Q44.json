@@ -1,29 +1,29 @@
 {
     "all_concepts": [
-        "overtime",
+        "week",
+        "rate",
         "time",
         "normal",
-        "threshold",
+        "overtime",
         "job",
-        "rate",
         "full",
-        "week",
+        "hours",
         "max",
-        "hours"
+        "threshold"
     ],
     "joint_concepts": [
+        "week",
+        "rate",
         "time",
         "normal",
         "job",
         "full",
-        "rate",
-        "week",
-        "max",
-        "hours"
+        "hours",
+        "max"
     ],
     "concepts_only_old": [
-        "overtime",
-        "threshold"
+        "threshold",
+        "overtime"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

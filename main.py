@@ -36,8 +36,8 @@ def statistics2(file_name):
 
 def statistics(file_name_old, file_name_new, question):
     concepts_table_summery = []
-    concepts_file_old = open(file_name_old)
-    concepts_file_new = open(file_name_new)
+    concepts_file_old = open(file_name_old, encoding="utf-8")
+    concepts_file_new = open(file_name_new, encoding="utf-8")
     data_old = ast.literal_eval(concepts_file_old.read())
     data_new = ast.literal_eval(concepts_file_new.read())
 

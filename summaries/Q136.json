@@ -1,0 +1,108 @@
+{
+    "all_concepts": [
+        "number",
+        "month",
+        "accumulation",
+        "max",
+        "used",
+        "customer",
+        "allowed",
+        "benefit",
+        "per"
+    ],
+    "joint_concepts": [
+        "number",
+        "month",
+        "max",
+        "customer",
+        "benefit",
+        "per"
+    ],
+    "concepts_only_old": [
+        "allowed",
+        "used",
+        "accumulation"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "max": 48,
+        "benefit": 53,
+        "per": 15,
+        "month": 21,
+        "number": 12,
+        "used": 1,
+        "allowed": 2,
+        "customer": 1,
+        "accumulation": 4
+    },
+    "concepts_counters_new": {
+        "max": 8,
+        "benefit": 7,
+        "per": 1,
+        "month": 2,
+        "number": 4,
+        "customer": 1
+    },
+    "concepts_distribution_old": {
+        "max": {
+            "max": 44,
+            "limit": 4
+        },
+        "benefit": {
+            "benefit": 51,
+            "limit": 1,
+            "gift": 1
+        },
+        "per": {
+            "per": 15
+        },
+        "month": {
+            "month": 21
+        },
+        "number": {
+            "num": 7,
+            "count": 1,
+            "number": 3,
+            "amount": 1
+        },
+        "used": {
+            "used": 1
+        },
+        "allowed": {
+            "allowed": 1,
+            "possible": 1
+        },
+        "customer": {
+            "user": 1
+        },
+        "accumulation": {
+            "accumulation": 1,
+            "acc": 1,
+            "accumulated": 1,
+            "accu": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "max": {
+            "max": 7,
+            "expiring": 1
+        },
+        "benefit": {
+            "benefit": 7
+        },
+        "per": {
+            "per": 1
+        },
+        "month": {
+            "month": 2
+        },
+        "number": {
+            "val": 1,
+            "value": 1,
+            "num": 2
+        },
+        "customer": {
+            "customer": 1
+        }
+    }
+}

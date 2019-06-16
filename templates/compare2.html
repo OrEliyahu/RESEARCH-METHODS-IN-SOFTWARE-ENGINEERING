@@ -1,0 +1,68 @@
+<head>
+    <title>{{ q }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', (event) => {
+            newWords = {{ words["new_words"]|safe }};
+            odlWords = {{ words["old_words"]|safe }};                
+        
+            data = [
+                {
+                histfunc: "count",        
+                x: newWords,
+                type: "histogram",
+                name: "this year words"
+                },
+                {
+                histfunc: "count",        
+                x: odlWords,
+                type: "histogram",
+                name: "last year words"
+                },
+            ]
+        
+            Plotly.plot('histogramDiagram', data, {}, {showSendToCloud: true})
+        });
+        
+    </script> 
+</head>
+
+<body dir="ltr" style="text-align: center">        
+    <h1>Compare {{ q }} Answers</h1>
+
+{% for data in datas %}
+    
+    <h2>{{ 'new' if loop.index == 1 else 'old' }}</h2>    
+    {% if data %}
+        {% for key in data.keys() %}
+            <h2> {{ key }}</h2>
+            <table>
+                {% for dkey in data[key].keys() %}
+                    <tr>
+                        <td>{{ dkey if not dkey == '' else 'empty' }}</td><td>{{ data[key][dkey] }}</td>
+                    </tr>
+                {% endfor %}
+            <table>
+        {% endfor %}    
+        <br>
+        <br>
+           
+    {% else %}
+        <span style="color: red;">no data</span>
+    {% endif %}
+    
+{% endfor %} 
+<br>
+
+<div id="histogramDiagram"></div>
+
+
+
+
+<a href="/?question={{ q }}&old=1"><button class="controlButtons">back</button></a>
+<br>
+<br>
+</body>
+
+

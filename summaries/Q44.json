@@ -1,0 +1,129 @@
+{
+    "all_concepts": [
+        "overtime",
+        "time",
+        "normal",
+        "threshold",
+        "job",
+        "rate",
+        "full",
+        "week",
+        "max",
+        "hours"
+    ],
+    "joint_concepts": [
+        "time",
+        "normal",
+        "job",
+        "full",
+        "rate",
+        "week",
+        "max",
+        "hours"
+    ],
+    "concepts_only_old": [
+        "overtime",
+        "threshold"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "full": 22,
+        "hours": 33,
+        "job": 14,
+        "rate": 12,
+        "time": 15,
+        "week": 13,
+        "overtime": 6,
+        "normal": 8,
+        "max": 4,
+        "threshold": 4
+    },
+    "concepts_counters_new": {
+        "full": 5,
+        "hours": 9,
+        "job": 3,
+        "rate": 5,
+        "time": 4,
+        "week": 4,
+        "normal": 3,
+        "max": 2
+    },
+    "concepts_distribution_old": {
+        "full": {
+            "full": 22
+        },
+        "hours": {
+            "hours": 30,
+            "hourly": 1,
+            "time": 2
+        },
+        "job": {
+            "job": 8,
+            "work": 6
+        },
+        "rate": {
+            "rate": 5,
+            "per": 6,
+            "qouta": 1
+        },
+        "time": {
+            "time": 14,
+            "monthly": 1
+        },
+        "week": {
+            "week": 9,
+            "weekly": 3,
+            "weak": 1
+        },
+        "overtime": {
+            "overtime": 3,
+            "additional": 1,
+            "threshold": 1,
+            "extra": 1
+        },
+        "normal": {
+            "regular": 2,
+            "base": 3,
+            "normal": 2,
+            "full_position": 1
+        },
+        "max": {
+            "max": 4
+        },
+        "threshold": {
+            "threshold": 4
+        }
+    },
+    "concepts_distribution_new": {
+        "full": {
+            "full": 5
+        },
+        "hours": {
+            "hours": 7,
+            "hour": 2
+        },
+        "job": {
+            "working": 1,
+            "job": 2
+        },
+        "rate": {
+            "rate": 2,
+            "per": 3
+        },
+        "time": {
+            "timer": 1,
+            "time": 3
+        },
+        "week": {
+            "weekly": 1,
+            "week": 3
+        },
+        "normal": {
+            "regular": 1,
+            "base": 2
+        },
+        "max": {
+            "max": 2
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "all_concepts": [
+        "current",
+        "time",
+        "game",
+        "elapsed",
+        "length",
+        "remain"
+    ],
+    "joint_concepts": [
+        "elapsed",
+        "game",
+        "time"
+    ],
+    "concepts_only_old": [
+        "length",
+        "current",
+        "remain"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "time": 48,
+        "game": 20,
+        "length": 6,
+        "elapsed": 10,
+        "current": 3,
+        "remain": 1
+    },
+    "concepts_counters_new": {
+        "game": 6,
+        "time": 11,
+        "elapsed": 3
+    },
+    "concepts_distribution_old": {
+        "time": {
+            "time": 28,
+            "timer": 8,
+            "duration": 4,
+            "seconds": 2,
+            "clock": 1,
+            "time_in_sec": 1,
+            "dur": 1,
+            "t": 1,
+            "timestamp": 2
+        },
+        "game": {
+            "game": 18,
+            "played": 1,
+            "play": 1
+        },
+        "length": {
+            "total": 2,
+            "length": 1,
+            "span": 1,
+            "accumulated": 1,
+            "long": 1
+        },
+        "elapsed": {
+            "since_start": 1,
+            "elapsed": 7,
+            "length": 1,
+            "so_far": 1
+        },
+        "current": {
+            "curr": 2,
+            "cur": 1
+        },
+        "remain": {
+            "remaining": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "game": {
+            "game": 5,
+            "play": 1
+        },
+        "time": {
+            "time": 8,
+            "time_stamp": 1,
+            "duration": 2
+        },
+        "elapsed": {
+            "elapsed": 3
+        }
+    }
+}

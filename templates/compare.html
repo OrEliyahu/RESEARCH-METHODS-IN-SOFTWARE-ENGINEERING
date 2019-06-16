@@ -1,0 +1,133 @@
+<head>
+    <title>{{ q }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', (event) => {
+            concepts_counters_old = {{ r["concepts_counters_old"] | safe }};
+            concepts_counters_new = {{ r["concepts_counters_new"] | safe }};
+            x_1 = Object.keys(concepts_counters_new);
+            y_1 = Object.values(concepts_counters_new);
+			
+			x_2 = Object.keys(concepts_counters_old);
+            y_2 = Object.values(concepts_counters_old);
+
+            
+            
+            data = [
+                {
+                    histfunc: "sum",
+                    x: x_1,
+                    y: y_1,
+                    type: "histogram",
+                    name: "this year words"
+                },
+                {
+                    histfunc: "sum",
+                    x: x_2,
+                    y: y_2,
+                    type: "histogram",
+                    name: "last year words"
+                },
+            ]
+
+            Plotly.plot('ConecptsDiagram', data, {}, { showSendToCloud: true })
+        });
+
+        function plotJoint(thisYear, lastYear, diagramName)
+        {
+            x_1 = Object.keys(thisYear);
+            y_1 = Object.values(thisYear);
+
+            x_2 = Object.keys(lastYear);
+            y_2 = Object.values(lastYear);
+
+            data = [
+                {
+                    histfunc: "sum",
+                    x: x_1,
+                    y: y_1,
+                    type: "histogram",
+                    name: "this year words"
+                },
+                {
+                    histfunc: "sum",
+                    x: x_2,
+                    y: y_2,
+                    type: "histogram",
+                    name: "last year words"
+                },
+            ]
+            Plotly.plot(diagramName, data, {}, { showSendToCloud: true })
+        }
+
+        function plotConceptDistribution(distribution, diagramName) {
+            x = Object.keys(distribution);
+            y = Object.values(distribution);
+
+            data = [
+                {
+                    histfunc: "sum",
+                    x: x,
+                    y: y,
+                    type: "histogram",
+                    name: diagramName
+                }
+            ]
+            Plotly.plot(diagramName, data, {}, { showSendToCloud: true })
+        }
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var concepts = {{ r["joint_concepts"] | safe }};
+            concepts.forEach(concept => plotJoint({{ r["concepts_distribution_new"] | safe }}[concept],
+                {{ r["concepts_distribution_old"] | safe }}[concept], concept));
+        });
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var concepts = {{ r["concepts_only_old"] | safe}};
+            concepts.forEach(concept => plotConceptDistribution({{ r["concepts_distribution_old"] | safe }}[concept], concept));
+        });
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var concepts = {{ r["concepts_only_new"] | safe}};
+            concepts.forEach(concept => plotConceptDistribution({{ r["concepts_distribution_new"] | safe }}[concept], concept));
+        });
+
+    </script> 
+</head>
+
+<body dir="ltr" style="text-align: center">
+    <br>
+    <h1>Compare {{ q }} Answers</h1>
+
+    <h2>Conecpts Difference</h2>
+    <h2>Concepts Summary</h2>
+    <div id="ConecptsDiagram" class="histogramTable"></div>
+
+    <h2>Joint Concpets</h2>
+    {% for key in r["joint_concepts"] %}
+    <h3>"{{key}}" Concept Distribuation</h3>
+    <div id="{{key}}" class="histogramTable"></div>
+    {% endfor %}
+
+    <h2>Last Year Unique Concepts</h2>
+    {% for key in r["concepts_only_old"] %}
+    <h3>"{{key}}" Concept Distribuation</h3>
+    <div id="{{key}}" class="histogramTable"></div>
+    {% endfor %}
+
+    <h2>This Year Unique Concepts</h2>
+    {% for key in r["concepts_only_new"] %}
+    <h3>"{{key}}" Concept Distribuation</h3>
+    <div id="{{key}}" class="histogramTable"></div>
+    {% endfor %}
+
+    <br>
+    <br>
+    <a href="/?question={{ q }}&old=1"><button class="controlButtons">back</button></a>
+    <br>
+	<br>
+	<br>
+</body>
+
+

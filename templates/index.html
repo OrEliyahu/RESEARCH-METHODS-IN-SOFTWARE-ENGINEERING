@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <title>{{ selected }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                var x = document.getElementById("delTable").rows[0].insertCell(0);
+                x.className = "thick";
+                x = document.getElementById("delTable").rows[0].insertCell(0);
+                x.className = "thick";
+                document.getElementById("main").querySelectorAll("tr").forEach(function(el, i)
+                {
+                    
+                    if(i == 0)
+                    {
+                        var x = el.insertCell(0);
+                        x.innerHTML = "LC";
+                        x.className = "thick";
+                        var x = el.insertCell(0);
+                        x.className = "thick";
+                        x.innerHTML = "WC";
+                    }
+                    else
+                    {
+                        var len = el.cells[0].innerHTML.length;
+                        var words = el.cells[0].innerHTML.split("_").length;
+                        var x = el.insertCell(0);
+                        x.innerHTML = len;
+                        x.className = "thick";
+                        x = el.insertCell(0);
+                        x.innerHTML = words;
+                        x.className = "thick";
+                    }
+                    
+                }); 
+                countFilled();
+            });
+
+            function load()
+            {
+                var sel = document.getElementById("questionsList");
+                var selValue = sel.options[sel.selectedIndex].value;
+
+                var sel = document.getElementById("old_select");
+                var oldSelValue = sel.options[sel.selectedIndex].value;
+                window.location.href = "/?question=" + selValue + "&old=" + oldSelValue;
+            }
+            
+            function save()
+            {
+                
+                var result = [];
+                var table = document.getElementById("main");
+
+                for (var i = 0, row; row = table.rows[i]; i++) {
+                    var x = [];
+                    for (var j = 2, col; col = row.cells[j]; j++) {
+                        x.push(col.innerHTML);
+                    }
+                    result.push(x);
+                }
+
+                var sel = document.getElementById("questionsList");
+                var selValue = sel.options[sel.selectedIndex].value;
+
+                var OldSel = document.getElementById("old_select");
+                var OldSelValue = OldSel.options[OldSel.selectedIndex].value;
+
+                $.ajax({
+                    method: "POST",
+                    url: "/save?q=" + selValue + "&old=" + OldSelValue, 
+                    data: JSON.stringify(result), 
+                    contentType: "application/json",
+                    })
+                    .done(function( msg ) {
+                        alert( msg );
+                });
+            }
+
+
+            function match_help(el, e)
+            {
+                if (e.keyCode == 8)
+                {
+                    if (el.innerHTML.length <= 1)
+                        countFilled();
+                }
+                    
+                if(e.keyCode != 13)
+                {
+                    return false;
+                }
+                e.preventDefault();
+                window.getSelection().removeAllRanges();
+                var curr = el;
+                var place = el.cellIndex;
+                var factor = el.innerHTML;
+                if(!curr.parentElement.cells[2].innerHTML.includes(factor) || factor == "")
+                    return false;
+                document.getElementById("main").querySelectorAll("tr:not(:first-child)").forEach(function(el)
+                {
+                    if(el.cells[place] != curr)
+                    {
+                        if(el.cells[2].innerHTML.includes(factor))
+                        {
+                            if(document.getElementById("onlyEmpty").checked)
+                            {
+                                if(el.cells[place].innerHTML == "")
+                                    el.cells[place].innerHTML = curr.innerHTML;
+                            }
+                            else
+                            {
+                                el.cells[place].innerHTML = curr.innerHTML;
+                            }
+                        }                                          
+                    }
+                });
+                countFilled();
+            }
+
+            function add_col()
+            {
+                document.getElementById("main").querySelectorAll("tr").forEach(function(el, i)
+                {
+                    var x = el.insertCell(-1);
+                    x.contentEditable = "true";
+                    
+                    if(i == 0)
+                    {
+                        x.innerHTML = "Concept"
+                    }
+                    else
+                    {
+                        x.addEventListener('keydown', function(e) { match_help(this, e )});
+                    }
+                });
+                document.getElementById("delTable").querySelectorAll("tr").forEach(function(el, i)
+                {
+                    var x = el.insertCell(-1);
+                    if(i == 0)
+                    {
+                        x.innerHTML = "<button onclick='del_col(this)' class='deleteButton'>-</button>";
+                    }
+                });
+                countFilled();
+            }
+
+            function del_col(col)
+            {
+                col = col.parentElement.cellIndex;
+                result = window.confirm("are you sure?");
+                if(result)
+                {
+                    document.getElementById("delTable").querySelectorAll("tr").forEach(function(el, i)
+                    {
+                        el.deleteCell(col);
+                    });
+                    document.getElementById("main").querySelectorAll("tr").forEach(function(el, i)
+                    {
+                        el.deleteCell(col);
+                    });
+                }
+                countFilled();
+            }
+
+            function countFilled()
+            {
+                var cols = document.getElementById("delTable").rows[0].cells.length - 3;
+                var counters = [];                
+
+                for (var i = 0; i < cols; ++i) {
+                    counters.push(0);
+                }
+
+                var table = document.getElementById("main");
+                for (var i = 3; i < 3 + cols; ++i)
+                {                        
+                    for (var j = 1; j < table.rows.length; ++j)
+                    {                               
+                        if (document.getElementById("main").rows[j].cells[i].innerHTML != "")
+                            counters[i - 3]++;
+                    }
+                }
+
+                var table = document.createElement('table');
+                table.id = "summeryTable";
+                var tbdy = document.createElement('tbody');                
+                var tr = document.createElement('tr');
+
+                for (var j = 0; j < counters.length + 3; j++)
+                {
+                    var td = document.createElement('td');
+                    if (j < 3) {
+                        td.appendChild(document.createTextNode(""));
+                        if (j < 2)
+                        {
+                            td.className = "thickHidden";
+                        }
+                        else
+                        {
+                            td.className = "hidden";
+                        }
+                            
+                    }
+                    else
+                    {
+                        td.appendChild(document.createTextNode(counters[j - 3])); 
+                        td.className = "summeryTd";
+                    }
+                    tr.appendChild(td);
+                }
+                tbdy.appendChild(tr);
+                table.appendChild(tbdy);
+                if(document.getElementById("summeryTable"))
+                    document.getElementById("mainTable").removeChild(document.getElementById("mainTable").lastChild);
+                document.getElementById("mainTable").appendChild(table);
+            }
+        </script>
+    </head>
+    <body>
+
+        <div id="topBar">
+
+            <div id="selectors">
+
+                <select onchange="load()" id="questionsList">
+                    {% for option in questions %}
+
+                    {% if option == selected %}
+                    <option value="{{ option }}" selected="selected">{{ option }}</option>
+                    {% else %}
+                    <option value="{{ option }}">{{ option }}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+                <select onchange="load()" id="old_select">
+                    {% if old == "0" %}
+                    <option value="0" selected="selected">new</option>
+                    <option value="1">old</option>
+                    {% else %}
+                    <option value="0">new</option>
+                    <option value="1" selected="selected">old</option>
+                    {% endif %}
+                </select>
+                <input type="checkbox" id="onlyEmpty" checked="checked">only empty</input>
+
+            </div>
+            <a href="/compare?q={{selected}}"><button id="compare" class="controlButtons">compare</button></a>
+            <button onclick="save()" id="saveButton" class="controlButtons">save</button>
+            <button onclick="add_col()" id="addColButton" class="controlButtons">add col</button>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>RESEARCH METHODS IN SOFTWARE ENGINEERING {{ selected }}</h1>
+        <table id="delTable">
+            {% for row in data[:1] %}
+            <tr>
+                {% for cell in row %}
+                {% if cell[0] > 0 %}
+                <td><button onclick="del_col(this)" class="deleteButton">-</button></td>
+                {% else %}
+                <td></td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <div id="mainTable">
+            <table id="main">
+                {% for row in data %}
+                <tr>
+                    {% for cell in row %}
+                    {% if cell[0] > 0 %}
+                    <td contenteditable="true" onkeydown="match_help(this, event)">{{ cell[1] }}</td>
+                    {% else %}
+                    <td>{{ cell[1] }}</td>
+                    {% endif %}
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+    </body>
+</html>
+
+
+
+   

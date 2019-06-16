@@ -1,0 +1,76 @@
+{
+    "all_concepts": [
+        "counter",
+        "current",
+        "time",
+        "elapsed",
+        "game",
+        "remain"
+    ],
+    "joint_concepts": [
+        "elapsed",
+        "game",
+        "time"
+    ],
+    "concepts_only_old": [
+        "remain",
+        "current",
+        "counter"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "game": 24,
+        "time": 47,
+        "remain": 2,
+        "elapsed": 8,
+        "counter": 3,
+        "current": 2
+    },
+    "concepts_counters_new": {
+        "game": 10,
+        "time": 13,
+        "elapsed": 1
+    },
+    "concepts_distribution_old": {
+        "game": {
+            "game": 21,
+            "play": 1,
+            "g": 2
+        },
+        "time": {
+            "time": 34,
+            "timer": 6,
+            "duration": 3,
+            "t": 2,
+            "clock": 2
+        },
+        "remain": {
+            "left": 2
+        },
+        "elapsed": {
+            "passed": 1,
+            "elapsed": 4,
+            "session": 1,
+            "from_beginning": 1,
+            "since_start": 1
+        },
+        "counter": {
+            "counter": 3
+        },
+        "current": {
+            "current": 2
+        }
+    },
+    "concepts_distribution_new": {
+        "game": {
+            "game": 10
+        },
+        "time": {
+            "time": 12,
+            "duration": 1
+        },
+        "elapsed": {
+            "passed": 1
+        }
+    }
+}

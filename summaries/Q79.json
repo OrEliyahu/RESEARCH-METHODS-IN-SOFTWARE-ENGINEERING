@@ -1,0 +1,62 @@
+{
+    "all_concepts": [
+        "current",
+        "location",
+        "target",
+        "find",
+        "cheese"
+    ],
+    "joint_concepts": [
+        "location",
+        "cheese"
+    ],
+    "concepts_only_old": [
+        "current",
+        "target",
+        "find"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "cheese": 37,
+        "current": 15,
+        "location": 42,
+        "target": 1,
+        "find": 1
+    },
+    "concepts_counters_new": {
+        "cheese": 2,
+        "location": 1
+    },
+    "concepts_distribution_old": {
+        "cheese": {
+            "cheese": 37
+        },
+        "current": {
+            "today": 2,
+            "cur": 13
+        },
+        "location": {
+            "loation": 1,
+            "loc": 31,
+            "pos": 3,
+            "coord": 3,
+            "where": 1,
+            "room": 2,
+            "plase": 1
+        },
+        "target": {
+            "target": 1
+        },
+        "find": {
+            "find": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "cheese": {
+            "cheese": 2
+        },
+        "location": {
+            "loc": 1
+        }
+    }
+}

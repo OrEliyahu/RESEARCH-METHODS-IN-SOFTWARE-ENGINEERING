@@ -1,0 +1,187 @@
+*
+{
+    font-family: sans-serif;
+}
+
+body, html
+{
+    margin: 0;
+}
+
+td:read-write:focus
+{
+    outline: none;
+}
+table
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed ;  
+    width: 90%;
+    margin-left: 5%;
+}
+
+table#main tr:nth-child(2n+1) td
+{
+    background: #ddd;
+}
+
+table td
+{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 15pt;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+table td[contenteditable="true"]:focus 
+{
+    cursor: text;
+    z-index: 999;
+    border: 0;
+    box-shadow: 0 0 2px 2px lightblue;
+}
+table#main tr:first-child td
+{
+    border: 1px solid gray;
+    font-weight: bold;
+    background: black;
+    color: white;
+}
+
+#delTable
+{
+    border: 0;
+}
+#delTable td
+{
+    border: 0;
+}
+
+.deleteButton
+{
+    background-color: red;
+    border: 0;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 6px 12px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.deleteButton:hover
+{
+    background-color: darkred;
+}
+
+#compare
+{
+    float: right;
+    margin-right: 20px;
+}
+
+#addColButton
+{
+    float: right;
+    margin-right: 20px;
+}
+
+#saveButton
+{
+    float: right;
+    margin-right: 20px;
+}
+
+.controlButtons
+{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 13pt;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.controlButtons:hover
+{
+    background: darkblue;
+}
+
+select
+{
+    padding: 8px;
+    font-size: 14pt;
+}
+
+#selectors
+{
+    text-align: center;
+    display: inline;
+    width: 100%;
+}
+
+input[type="checkbox"]
+{
+    transform: scale(1.3);
+}
+
+.thick
+{
+    width: 50px;
+}
+
+.controlButtons a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#topBar
+{
+    width: 100%;
+    position: fixed;
+    padding: 5px;
+    box-shadow: 0 0 2px 2px gray;
+    z-index: 999;
+    background: white;
+}
+
+h1
+{
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.hidden 
+{
+    border : 0;
+}
+
+.thickHidden 
+{
+    border: 0;
+    width: 50px;
+}
+
+#summeryTable
+{
+    border: 1px solid transparent;
+}
+
+.summeryTd 
+{
+    border : 2px solid green;
+}
+
+.histogramTable
+{
+	margin: 70px;
+}
+

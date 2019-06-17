@@ -50,7 +50,7 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
         ROUNDS_NUMBER = 60
         if not os.path.isfile("pickle\\" + answer_header + ".pkl"):
             permotations = []
-            for i in range(ROUNDS_NUMBER):                                
+            for i in range(ROUNDS_NUMBER):
                 model_answer = new_names[randint(0, len(new_names) - 1)]
                 original_answer = old_names[randint(0, len(old_names) - 1)]
                 while not all(ord(char) < 128 for char in original_answer[1]) and not all(ord(char) < 128 for char in model_answer[1]) and fix_answer(model_answer[1]) == fix_answer(original_answer[1]):
@@ -66,7 +66,7 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
 
         with open("pickles\\" + answer_header + ".pkl", "rb") as f:
             permotations = pickle.load(f)
-        
+
         for i in range(ROUNDS_NUMBER):
             original_answer = permotations[i][0]
             model_answer = permotations[i][1]

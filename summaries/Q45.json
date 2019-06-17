@@ -4,14 +4,14 @@
     "all_concepts": [
         "hour",
         "pay",
-        "extra",
-        "rate"
+        "rate",
+        "extra"
     ],
     "joint_concepts": [
+        "pay",
         "rate",
-        "hour",
         "extra",
-        "pay"
+        "hour"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],

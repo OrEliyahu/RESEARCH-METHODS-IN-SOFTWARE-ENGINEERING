@@ -1,0 +1,71 @@
+{
+    "number_of_answers_old": 27,
+    "number_of_answers_new": 7,
+    "all_concepts": [
+        "target",
+        "location<br>",
+        "current",
+        "cheese",
+        "location"
+    ],
+    "joint_concepts": [
+        "current",
+        "target",
+        "cheese"
+    ],
+    "concepts_only_old": [
+        "location"
+    ],
+    "concepts_only_new": [
+        "location<br>"
+    ],
+    "concepts_counters_old": {
+        "location": 25,
+        "cheese": 19,
+        "target": 4,
+        "current": 10
+    },
+    "concepts_counters_new": {
+        "cheese": 6,
+        "location<br>": 6,
+        "current": 4,
+        "target": 1
+    },
+    "concepts_distribution_old": {
+        "location": {
+            "loc": 21,
+            "pos": 2,
+            "place": 1,
+            "room": 1
+        },
+        "cheese": {
+            "cheese": 19
+        },
+        "target": {
+            "objective": 1,
+            "target": 3
+        },
+        "current": {
+            "today": 1,
+            "cur": 8,
+            "daily": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "cheese": {
+            "cheese": 5,
+            "chees": 1
+        },
+        "location<br>": {
+            "location": 6
+        },
+        "current": {
+            "cur": 2,
+            "temp": 1,
+            "dayly": 1
+        },
+        "target": {
+            "target": 1
+        }
+    }
+}

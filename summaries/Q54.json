@@ -2,25 +2,25 @@
     "number_of_answers_old": 42,
     "number_of_answers_new": 6,
     "all_concepts": [
-        "normal",
         "week",
-        "hours",
+        "full",
+        "extra",
+        "normal",
+        "rate",
         "time",
         "payment",
-        "extra",
-        "rate",
-        "full"
+        "hours"
     ],
     "joint_concepts": [
-        "normal",
         "week",
+        "full",
+        "normal",
         "hours",
-        "time",
-        "full"
+        "time"
     ],
     "concepts_only_old": [
-        "rate",
         "payment",
+        "rate",
         "extra"
     ],
     "concepts_only_new": [],

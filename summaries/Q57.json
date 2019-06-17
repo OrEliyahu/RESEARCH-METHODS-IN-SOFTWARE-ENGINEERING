@@ -1,0 +1,71 @@
+{
+    "number_of_answers_old": 35,
+    "number_of_answers_new": 9,
+    "all_concepts": [
+        "current",
+        "cheese",
+        "target",
+        "location"
+    ],
+    "joint_concepts": [
+        "current",
+        "location",
+        "cheese"
+    ],
+    "concepts_only_old": [
+        "target"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "cheese": 29,
+        "location": 32,
+        "current": 18,
+        "target": 1
+    },
+    "concepts_counters_new": {
+        "cheese": 8,
+        "location": 9,
+        "current": 3
+    },
+    "concepts_distribution_old": {
+        "cheese": {
+            "cheese": 27,
+            "cizz": 1,
+            "cheesy": 1
+        },
+        "location": {
+            "loc": 22,
+            "place": 3,
+            "position": 2,
+            "pos": 4,
+            "room": 1
+        },
+        "current": {
+            "current": 1,
+            "last_room": 1,
+            "cur": 12,
+            "daily": 2,
+            "dayley": 1,
+            "today": 1
+        },
+        "target": {
+            "target": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "cheese": {
+            "cheese": 8
+        },
+        "location": {
+            "coordinates": 1,
+            "pos": 5,
+            "spot": 1,
+            "place": 1,
+            "location": 1
+        },
+        "current": {
+            "today": 2,
+            "curr": 1
+        }
+    }
+}

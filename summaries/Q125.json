@@ -1,0 +1,74 @@
+{
+    "number_of_answers_old": 41,
+    "number_of_answers_new": 4,
+    "all_concepts": [
+        "difference",
+        "destination",
+        "current",
+        "move",
+        "floor"
+    ],
+    "joint_concepts": [
+        "difference",
+        "destination",
+        "current",
+        "move",
+        "floor"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "floor": 33,
+        "difference": 33,
+        "move": 11,
+        "current": 0,
+        "destination": 2
+    },
+    "concepts_counters_new": {
+        "floor": 3,
+        "difference": 2,
+        "move": 1,
+        "current": 0,
+        "destination": 1
+    },
+    "concepts_distribution_old": {
+        "floor": {
+            "floor": 32,
+            "level": 1
+        },
+        "difference": {
+            "diff": 12,
+            "distance": 4,
+            "number": 3,
+            "amount": 1,
+            "delta": 7,
+            "num": 6
+        },
+        "move": {
+            "move": 8,
+            "climb": 2,
+            "go": 1
+        },
+        "current": {},
+        "destination": {
+            "dest": 2
+        }
+    },
+    "concepts_distribution_new": {
+        "floor": {
+            "floor": 2,
+            "store": 1
+        },
+        "difference": {
+            "difference": 1,
+            "number": 1
+        },
+        "move": {
+            "move": 1
+        },
+        "current": {},
+        "destination": {
+            "next": 1
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "number_of_answers_old": 43,
+    "number_of_answers_new": 2,
+    "all_concepts": [
+        "history",
+        "map",
+        "location",
+        "visit",
+        "mouse"
+    ],
+    "joint_concepts": [
+        "history",
+        "location",
+        "visit"
+    ],
+    "concepts_only_old": [
+        "map",
+        "mouse"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "visit": 39,
+        "location": 25,
+        "map": 4,
+        "history": 5,
+        "mouse": 1
+    },
+    "concepts_counters_new": {
+        "history": 1,
+        "visit": 2,
+        "location": 1
+    },
+    "concepts_distribution_old": {
+        "visit": {
+            "visit": 35,
+            "tried": 1,
+            "checked": 1,
+            "was": 1,
+            "visted": 1
+        },
+        "location": {
+            "room": 9,
+            "pos": 1,
+            "coord": 2,
+            "loc": 10,
+            "area": 1,
+            "here": 1,
+            "place": 1
+        },
+        "map": {
+            "map": 1,
+            "tree": 1,
+            "list": 2
+        },
+        "history": {
+            "already": 2,
+            "past": 1,
+            "allready": 1,
+            "prev": 1
+        },
+        "mouse": {
+            "columbus": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "history": {
+            "already": 1
+        },
+        "visit": {
+            "visit": 2
+        },
+        "location": {
+            "room": 1
+        }
+    }
+}

@@ -1,27 +1,29 @@
 {
+    "number_of_answers_old": 56,
+    "number_of_answers_new": 8,
     "all_concepts": [
-        "number",
         "month",
-        "accumulation",
+        "per",
+        "benefit",
+        "allowed",
+        "customer",
         "max",
         "used",
-        "customer",
-        "allowed",
-        "benefit",
-        "per"
+        "accumulation",
+        "number"
     ],
     "joint_concepts": [
-        "number",
         "month",
-        "max",
-        "customer",
         "benefit",
-        "per"
+        "per",
+        "customer",
+        "max",
+        "number"
     ],
     "concepts_only_old": [
-        "allowed",
         "used",
-        "accumulation"
+        "accumulation",
+        "allowed"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

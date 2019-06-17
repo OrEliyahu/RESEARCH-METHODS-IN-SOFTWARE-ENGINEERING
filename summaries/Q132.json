@@ -1,0 +1,83 @@
+{
+    "number_of_answers_old": 49,
+    "number_of_answers_new": 21,
+    "all_concepts": [
+        "difference",
+        "destination",
+        "current",
+        "move",
+        "floor"
+    ],
+    "joint_concepts": [
+        "difference",
+        "destination",
+        "current",
+        "move",
+        "floor"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "floor": 36,
+        "difference": 34,
+        "move": 19,
+        "current": 0,
+        "destination": 1
+    },
+    "concepts_counters_new": {
+        "floor": 18,
+        "difference": 18,
+        "move": 5,
+        "current": 0,
+        "destination": 0
+    },
+    "concepts_distribution_old": {
+        "floor": {
+            "floor": 33,
+            "level": 2,
+            "store": 1
+        },
+        "difference": {
+            "distance": 1,
+            "num": 10,
+            "delta": 6,
+            "difference": 2,
+            "gap": 3,
+            "diff": 6,
+            "offset": 1,
+            "how_many": 1,
+            "dist": 1,
+            "amount": 1,
+            "steps": 1,
+            "change": 1
+        },
+        "move": {
+            "move": 11,
+            "go": 4,
+            "shift": 1,
+            "travel": 3
+        },
+        "current": {},
+        "destination": {
+            "destination": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "floor": {
+            "floor": 18
+        },
+        "difference": {
+            "num": 6,
+            "distance": 4,
+            "amount": 1,
+            "diff": 6,
+            "delta": 1
+        },
+        "move": {
+            "move": 3,
+            "go": 2
+        },
+        "current": {},
+        "destination": {}
+    }
+}

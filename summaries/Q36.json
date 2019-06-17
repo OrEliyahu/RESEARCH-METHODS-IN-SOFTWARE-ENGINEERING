@@ -2,21 +2,21 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 13,
     "all_concepts": [
-        "number",
-        "game",
-        "adjacent",
         "mines",
-        "cell",
+        "adjacent",
         "data",
-        "board"
+        "game",
+        "number",
+        "board",
+        "cell"
     ],
     "joint_concepts": [
-        "number",
-        "game",
         "mines",
         "adjacent",
         "data",
-        "board"
+        "game",
+        "board",
+        "number"
     ],
     "concepts_only_old": [
         "cell"

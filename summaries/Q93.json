@@ -1,0 +1,69 @@
+{
+    "number_of_answers_old": 26,
+    "number_of_answers_new": 10,
+    "all_concepts": [
+        "grid",
+        "current",
+        "state",
+        "game"
+    ],
+    "joint_concepts": [
+        "current",
+        "state",
+        "grid",
+        "game"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "grid": 17,
+        "game": 12,
+        "state": 12,
+        "current": 4
+    },
+    "concepts_counters_new": {
+        "grid": 8,
+        "game": 3,
+        "state": 7,
+        "current": 3
+    },
+    "concepts_distribution_old": {
+        "grid": {
+            "grid": 7,
+            "board": 8,
+            "screen": 1,
+            "table": 1
+        },
+        "game": {
+            "game": 11,
+            "tic_tac_toe": 1
+        },
+        "state": {
+            "state": 11,
+            "status": 1
+        },
+        "current": {
+            "cur": 2,
+            "current": 2
+        }
+    },
+    "concepts_distribution_new": {
+        "grid": {
+            "grid": 7,
+            "board": 1
+        },
+        "game": {
+            "game": 3
+        },
+        "state": {
+            "status": 1,
+            "state": 4,
+            "info": 1,
+            "tictactoe": 1
+        },
+        "current": {
+            "cur": 1,
+            "current": 2
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "number_of_answers_old": 40,
+    "number_of_answers_new": 5,
+    "all_concepts": [
+        "open",
+        "current",
+        "state",
+        "close",
+        "door",
+        "elevator"
+    ],
+    "joint_concepts": [
+        "open",
+        "current",
+        "state",
+        "close",
+        "door",
+        "elevator"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "state": 21,
+        "door": 28,
+        "elevator": 4,
+        "current": 3,
+        "open": 17,
+        "close": 2
+    },
+    "concepts_counters_new": {
+        "state": 4,
+        "door": 4,
+        "elevator": 2,
+        "current": 1,
+        "open": 0,
+        "close": 0
+    },
+    "concepts_distribution_old": {
+        "state": {
+            "state": 21
+        },
+        "door": {
+            "door": 28
+        },
+        "elevator": {
+            "elevator": 4
+        },
+        "current": {
+            "curr": 2,
+            "current": 1
+        },
+        "open": {
+            "open": 17
+        },
+        "close": {
+            "close": 2
+        }
+    },
+    "concepts_distribution_new": {
+        "state": {
+            "state": 4
+        },
+        "door": {
+            "door": 4
+        },
+        "elevator": {
+            "elevator": 2
+        },
+        "current": {
+            "position": 1
+        },
+        "open": {},
+        "close": {}
+    }
+}

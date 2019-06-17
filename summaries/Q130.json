@@ -1,0 +1,77 @@
+{
+    "number_of_answers_old": 49,
+    "number_of_answers_new": 21,
+    "all_concepts": [
+        "destination",
+        "current",
+        "index",
+        "floor"
+    ],
+    "joint_concepts": [
+        "current",
+        "floor",
+        "destination",
+        "index"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "destination": 33,
+        "floor": 41,
+        "current": 8,
+        "index": 1
+    },
+    "concepts_counters_new": {
+        "destination": 15,
+        "floor": 18,
+        "current": 4,
+        "index": 1
+    },
+    "concepts_distribution_old": {
+        "destination": {
+            "destination": 7,
+            "target": 9,
+            "dest": 6,
+            "desired": 3,
+            "dst": 1,
+            "request": 4,
+            "choosen": 1,
+            "pressed": 1,
+            "wanted": 1
+        },
+        "floor": {
+            "floor": 38,
+            "level": 3
+        },
+        "current": {
+            "cur": 3,
+            "curr": 2,
+            "original": 1,
+            "enterd": 1,
+            "current": 1
+        },
+        "index": {
+            "index": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "destination": {
+            "destination": 8,
+            "desire": 1,
+            "dest": 3,
+            "target": 2,
+            "wanted": 1
+        },
+        "floor": {
+            "floor": 18
+        },
+        "current": {
+            "current": 2,
+            "src": 1,
+            "source": 1
+        },
+        "index": {
+            "num": 1
+        }
+    }
+}

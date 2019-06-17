@@ -1,0 +1,93 @@
+{
+    "number_of_answers_old": 49,
+    "number_of_answers_new": 21,
+    "all_concepts": [
+        "destination",
+        "current",
+        "elevator<br>",
+        "index",
+        "floor",
+        "location",
+        "elevator"
+    ],
+    "joint_concepts": [
+        "destination",
+        "current",
+        "index",
+        "floor",
+        "location"
+    ],
+    "concepts_only_old": [
+        "elevator"
+    ],
+    "concepts_only_new": [
+        "elevator<br>"
+    ],
+    "concepts_counters_old": {
+        "destination": 6,
+        "floor": 41,
+        "current": 39,
+        "index": 1,
+        "location": 2,
+        "elevator": 1
+    },
+    "concepts_counters_new": {
+        "destination": 3,
+        "floor": 18,
+        "current": 14,
+        "index": 1,
+        "location": 0,
+        "elevator<br>": 0
+    },
+    "concepts_distribution_old": {
+        "destination": {
+            "goal": 1,
+            "dest": 2,
+            "destination": 1,
+            "designated": 1,
+            "next": 1
+        },
+        "floor": {
+            "floor": 38,
+            "level": 3
+        },
+        "current": {
+            "current": 26,
+            "from": 2,
+            "curr": 5,
+            "src": 1,
+            "cur": 4,
+            "input": 1
+        },
+        "index": {
+            "index": 1
+        },
+        "location": {
+            "location": 2
+        },
+        "elevator": {
+            "elevator": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "destination": {
+            "next": 1,
+            "dest": 1,
+            "destination": 1
+        },
+        "floor": {
+            "floor": 18
+        },
+        "current": {
+            "current": 10,
+            "curr": 2,
+            "cur": 1,
+            "origin": 1
+        },
+        "index": {
+            "num": 1
+        },
+        "location": {},
+        "elevator<br>": {}
+    }
+}

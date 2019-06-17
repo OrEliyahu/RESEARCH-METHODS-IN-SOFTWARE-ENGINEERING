@@ -1,0 +1,103 @@
+{
+    "number_of_answers_old": 35,
+    "number_of_answers_new": 9,
+    "all_concepts": [
+        "history",
+        "trace",
+        "seen",
+        "cheese",
+        "location",
+        "visit",
+        "mouse"
+    ],
+    "joint_concepts": [
+        "history",
+        "trace",
+        "location",
+        "visit",
+        "mouse"
+    ],
+    "concepts_only_old": [
+        "seen",
+        "cheese"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "location": 23,
+        "history": 13,
+        "visit": 22,
+        "seen": 1,
+        "cheese": 5,
+        "trace": 2,
+        "mouse": 3
+    },
+    "concepts_counters_new": {
+        "mouse": 1,
+        "location": 6,
+        "visit": 7,
+        "trace": 2,
+        "history": 1
+    },
+    "concepts_distribution_old": {
+        "location": {
+            "loc": 10,
+            "map": 2,
+            "pos": 2,
+            "cells": 1,
+            "rooms": 4,
+            "there": 1,
+            "places": 2,
+            "where": 1
+        },
+        "history": {
+            "former": 1,
+            "history": 6,
+            "past": 1,
+            "prev": 1,
+            "already": 2,
+            "passed": 1,
+            "track": 1
+        },
+        "visit": {
+            "visit": 18,
+            "been": 2,
+            "searched": 1,
+            "was": 1
+        },
+        "seen": {
+            "seen": 1
+        },
+        "cheese": {
+            "cheese": 4,
+            "chy": 1
+        },
+        "trace": {
+            "trace": 1,
+            "path": 1
+        },
+        "mouse": {
+            "mouse": 2,
+            "mice": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "mouse": {
+            "mouse": 1
+        },
+        "location": {
+            "rooms": 4,
+            "spots": 1,
+            "places": 1
+        },
+        "visit": {
+            "visit": 7
+        },
+        "trace": {
+            "route": 1,
+            "trace": 1
+        },
+        "history": {
+            "already": 1
+        }
+    }
+}

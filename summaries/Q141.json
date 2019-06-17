@@ -1,0 +1,86 @@
+{
+    "number_of_answers_old": 44,
+    "number_of_answers_new": 13,
+    "all_concepts": [
+        "month",
+        "benefit",
+        "per",
+        "max",
+        "number"
+    ],
+    "joint_concepts": [
+        "month",
+        "benefit",
+        "per",
+        "max",
+        "number"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "max": 38,
+        "benefit": 42,
+        "per": 11,
+        "month": 18,
+        "number": 5
+    },
+    "concepts_counters_new": {
+        "max": 12,
+        "benefit": 12,
+        "per": 5,
+        "month": 9,
+        "number": 1
+    },
+    "concepts_distribution_old": {
+        "max": {
+            "max": 35,
+            "limit": 2,
+            "top": 1
+        },
+        "benefit": {
+            "pinuk": 12,
+            "treat": 9,
+            "perk": 2,
+            "bonus": 2,
+            "gift": 6,
+            "benefit": 5,
+            "point": 1,
+            "reward": 1,
+            "pamper": 1,
+            "prize": 1,
+            "credit": 1,
+            "matanot": 1
+        },
+        "per": {
+            "per": 11
+        },
+        "month": {
+            "month": 18
+        },
+        "number": {
+            "number": 2,
+            "num": 2,
+            "counter": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "max": {
+            "max": 12
+        },
+        "benefit": {
+            "benefit": 3,
+            "treat": 1,
+            "pinuk": 7,
+            "perks": 1
+        },
+        "per": {
+            "per": 5
+        },
+        "month": {
+            "month": 9
+        },
+        "number": {
+            "number": 1
+        }
+    }
+}

@@ -134,6 +134,9 @@ def show_answers_from_file(results_file):
             print("\n")
 
 
+if not os.path.exists("judges_results"):
+    os.makedirs("judges_results")
+
 results_old = pd.read_csv("..\\results\\results_old.csv")
 results = pd.read_csv("..\\results\\results.csv")
 quetsions_header = open("quetions for judges.txt", "r").read().split("\n")

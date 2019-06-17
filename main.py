@@ -5,6 +5,8 @@ import pandas as pd
 from collections import Counter
 import json
 from collections import Counter
+import random
+import re
 
 
 app = Flask(__name__)
@@ -33,13 +35,25 @@ def statistics2(file_name):
             concepts_counter[concept] = dict(Counter(concepts_words[concept]))
         return concepts_counter
 
+def generate_random_answers(data, answers_number):
+    selected = random.sample(range(1, len(data)), answers_number)    
+    selected_data = [data[0]] + [data[i] for i in selected]
+    print(selected_data)
+    return selected_data
 
-def statistics(file_name_old, file_name_new, question):
+def statistics(file_name_old, file_name_new, question, random_state=False):
     concepts_table_summery = []
     concepts_file_old = open(file_name_old, encoding="utf-8")
     concepts_file_new = open(file_name_new, encoding="utf-8")
     data_old = ast.literal_eval(concepts_file_old.read())
     data_new = ast.literal_eval(concepts_file_new.read())
+    
+    if random_state:
+        if len(data_old) > len(data_new):
+            data_old = generate_random_answers(data_old, len(data_new) - 1)
+            print(len(data_old))
+        elif en(data_old) < len(data_new):
+            data_new = generate_random_answers(data_new, len(data_new) - 1)
 
     concepts_old = data_old[0][1:]
     concepts_new = data_new[0][1:]
@@ -101,8 +115,7 @@ def get_all_words(file_name):
         return words
 
 def get_answers(questions_id, remove_dups=False, old = False):
-    def fix_word(word):
-        import re
+    def fix_word(word):        
         return re.sub( '(?<!^)(?=[A-Z][a-z])', '_', word).lower().replace("__", "_")
 
     filePath =  r"results\results.csv" if not old else r"results\results_old.csv"
@@ -192,11 +205,5 @@ def compare():
     return render_template("compare.html", r=results, q=question)
 
 
-
-
-
 if __name__ == "__main__":
     app.run(debug=True)
-
-
- 

@@ -15,7 +15,7 @@ def ans_to_str(ans):
 
 
 def get_answer_concpets_number(answer, old, question):
-    file_name = "tables\\" + question + "_"
+    file_name = "..\\tables\\" + question + "_"
 
     if not os.path.isfile(file_name + "1.txt"):
         return -2
@@ -44,11 +44,11 @@ def get_answer_concpets_number(answer, old, question):
     return -1
 
 
-def start_questionnaire(old_names, new_names, answer_header):
+def start_questionnaire(old_names, new_names, answer_header, judge_name):
     same_answer_counter = 0
-    with open("results_" + answer_header, "a") as results:
-        ROUNDS_NUMBER = 5
-        if not os.path.isfile(answer_header + ".pkl"):
+    with open("judges_results\\" + judge_name + "_results_" + answer_header, "a") as results:
+        ROUNDS_NUMBER = 60
+        if not os.path.isfile("pickle\\" + answer_header + ".pkl"):
             permotations = []
             for i in range(ROUNDS_NUMBER):
                 model_answer = new_names[randint(0, len(new_names) - 1)]
@@ -67,11 +67,12 @@ def start_questionnaire(old_names, new_names, answer_header):
             
                 permotations += [[original_answer, model_answer]]
 
-            with open(answer_header + ".pkl", "wb") as f:
+            with open("pickles\\" + answer_header + ".pkl", "wb") as f:
                 pickle.dump(permotations, f)
-            
-        with open(answer_header + ".pkl", "rb") as f:
+
+        with open("pickles\\" + answer_header + ".pkl", "rb") as f:
             permotations = pickle.load(f)
+
         for i in range(ROUNDS_NUMBER):
             original_answer = permotations[i][0]
             model_answer = permotations[i][1]
@@ -133,17 +134,16 @@ def show_answers_from_file(results_file):
             print("\n")
 
 
-results_old = pd.read_csv('results_old.csv')
-results = pd.read_csv('results.csv')
+results_old = pd.read_csv("..\\results\\results_old.csv")
+results = pd.read_csv("..\\results\\results.csv")
 quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
-question_number = 2  # 0 - 43
+judge_name = "Melnik"
+
+question_number = i  # 0 - 22
 
 old_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
 new_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
 
-
-start_questionnaire(old_names, new_names, quetsions_header[question_number])
-
+start_questionnaire(old_names, new_names, quetsions_header[question_number], judge_name)
 #show_answers_from_file("results_" + quetsions_header[question_number])
-

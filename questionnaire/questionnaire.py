@@ -50,20 +50,14 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
         ROUNDS_NUMBER = 60
         if not os.path.isfile("pickle\\" + answer_header + ".pkl"):
             permotations = []
-            for i in range(ROUNDS_NUMBER):
+            for i in range(ROUNDS_NUMBER):                                
                 model_answer = new_names[randint(0, len(new_names) - 1)]
-                while not all(ord(char) < 128 for char in model_answer[1]):
-                    model_answer = new_names[randint(0, len(new_names) - 1)]
-
                 original_answer = old_names[randint(0, len(old_names) - 1)]
-                while not all(ord(char) < 128 for char in original_answer[1]):
-                    original_answer = old_names[randint(0, len(old_names) - 1)]
-
                 while not all(ord(char) < 128 for char in original_answer[1]) and not all(ord(char) < 128 for char in model_answer[1]) and fix_answer(model_answer[1]) == fix_answer(original_answer[1]):
                     if fix_answer(model_answer[1]) == fix_answer(original_answer[1]):
                         same_answer_counter += 1
-                    model_answer = new_names[randint(0, len(old_names) - 1)]
-                    original_answer = old_names[randint(0, len(new_names) - 1)]
+                    model_answer = new_names[randint(0, len(new_names) - 1)]
+                    original_answer = old_names[randint(0, len(old_names) - 1)]
             
                 permotations += [[original_answer, model_answer]]
 
@@ -72,7 +66,7 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
 
         with open("pickles\\" + answer_header + ".pkl", "rb") as f:
             permotations = pickle.load(f)
-
+        
         for i in range(ROUNDS_NUMBER):
             original_answer = permotations[i][0]
             model_answer = permotations[i][1]
@@ -143,7 +137,7 @@ quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
 judge_name = "Melnik"
 
-question_number = i  # 0 - 22
+question_number = 2  # 0 - 22
 
 old_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
 new_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]

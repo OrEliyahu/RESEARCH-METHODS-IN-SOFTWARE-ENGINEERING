@@ -1,32 +1,32 @@
 {
-    "number_of_answers_old": 11,
+    "number_of_answers_old": 51,
     "number_of_answers_new": 11,
     "all_concepts": [
-        "length",
-        "time",
-        "game",
+        "remain",
         "current",
-        "elapsed",
-        "remain"
+        "game",
+        "time",
+        "length",
+        "elapsed"
     ],
     "joint_concepts": [
-        "elapsed",
         "time",
-        "game"
+        "game",
+        "elapsed"
     ],
     "concepts_only_old": [
-        "current",
         "length",
+        "current",
         "remain"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
-        "time": 11,
-        "game": 6,
-        "length": 0,
-        "elapsed": 2,
-        "current": 0,
-        "remain": 0
+        "time": 48,
+        "game": 20,
+        "length": 6,
+        "elapsed": 10,
+        "current": 3,
+        "remain": 1
     },
     "concepts_counters_new": {
         "game": 6,
@@ -35,23 +35,41 @@
     },
     "concepts_distribution_old": {
         "time": {
+            "time": 28,
+            "timer": 8,
+            "duration": 4,
+            "seconds": 2,
+            "clock": 1,
+            "time_in_sec": 1,
             "dur": 1,
             "t": 1,
-            "timer": 3,
-            "timestamp": 1,
-            "duration": 1,
-            "time": 4
+            "timestamp": 2
         },
         "game": {
-            "game": 6
+            "game": 18,
+            "played": 1,
+            "play": 1
         },
-        "length": {},
+        "length": {
+            "total": 2,
+            "length": 1,
+            "span": 1,
+            "accumulated": 1,
+            "long": 1
+        },
         "elapsed": {
-            "so_far": 1,
-            "elapsed": 1
+            "since_start": 1,
+            "elapsed": 7,
+            "length": 1,
+            "so_far": 1
         },
-        "current": {},
-        "remain": {}
+        "current": {
+            "curr": 2,
+            "cur": 1
+        },
+        "remain": {
+            "remaining": 1
+        }
     },
     "concepts_distribution_new": {
         "game": {

@@ -22,7 +22,6 @@ def get_answer_concpets_number(answer, old, question):
 
     counter = 0
     answer = fix_answer(answer)
-    print(answer, old)
     with open(file_name, "r", encoding="utf-8") as concepts_file:
         concepts = ast.literal_eval(concepts_file.read())
         for i in range(1, len(concepts)):
@@ -31,17 +30,7 @@ def get_answer_concpets_number(answer, old, question):
                 for concept in concepts[i][1:]:
                     if concept:
                         counter += 1
-                print(counter)
                 return counter
-
-    #with open(file_name + "0.txt", "r", encoding="utf-8") as concepts_file:
-    #    concepts = ast.literal_eval(concepts_file.read())
-    #    for i in range(1, len(concepts)):
-    #        if concepts[i][0] == answer:
-    #            for concept in concepts[i][1:]:
-    #                if concept:
-    #                    counter += 1
-    #            return counter
     
     return -1
 
@@ -143,14 +132,14 @@ results_old = pd.read_csv("..\\results\\results_old.csv")
 results = pd.read_csv("..\\results\\results.csv")
 quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
-question_number = 6  # 0 - 22
+judge_name = input("enter your name: ")
+
+question_number = 0  # 0 - 22
 
 
 old_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
 new_names = [(ind, ans) for ind, ans in enumerate(results[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
 
-print(old_names)
-print(new_names)
-judge_name = input("enter your name: ")
+    
 start_questionnaire(old_names, new_names, quetsions_header[question_number], judge_name)
-show_answers_from_file("judges_results\\" + judge_name + "_results_" + quetsions_header[question_number])
+#show_answers_from_file("judges_results\\" + judge_name + "_results_" + quetsions_header[question_number])

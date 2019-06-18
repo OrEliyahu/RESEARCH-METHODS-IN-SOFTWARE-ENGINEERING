@@ -53,7 +53,7 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
             for i in range(ROUNDS_NUMBER):
                 model_answer = new_names[randint(0, len(new_names) - 1)]
                 original_answer = old_names[randint(0, len(old_names) - 1)]
-                while not all(ord(char) < 128 for char in original_answer[1]) and not all(ord(char) < 128 for char in model_answer[1]) and fix_answer(model_answer[1]) == fix_answer(original_answer[1]):
+                while not all(ord(char) < 128 for char in original_answer[1]) or not all(ord(char) < 128 for char in model_answer[1]) or fix_answer(model_answer[1]) == fix_answer(original_answer[1]):
                     if fix_answer(model_answer[1]) == fix_answer(original_answer[1]):
                         same_answer_counter += 1
                     model_answer = new_names[randint(0, len(new_names) - 1)]
@@ -66,7 +66,7 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
 
         with open("pickles\\" + answer_header + ".pkl", "rb") as f:
             permotations = pickle.load(f)
-
+        
         for i in range(ROUNDS_NUMBER):
             original_answer = permotations[i][0]
             model_answer = permotations[i][1]
@@ -135,7 +135,7 @@ results_old = pd.read_csv("..\\results\\results_old.csv")
 results = pd.read_csv("..\\results\\results.csv")
 quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
-judge_name = "Melnik"
+judge_name = input("enter your name")
 
 question_number = 2  # 0 - 22
 

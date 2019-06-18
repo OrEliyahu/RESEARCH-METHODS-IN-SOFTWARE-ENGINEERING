@@ -15,31 +15,33 @@ def ans_to_str(ans):
 
 
 def get_answer_concpets_number(answer, old, question):
-    file_name = "..\\tables\\" + question + "_"
+    file_name = "..\\tables\\" + question + "_" + str(old) + ".txt"
 
-    if not os.path.isfile(file_name + "1.txt"):
+    if not os.path.isfile(file_name):
         return -2
 
     counter = 0
     answer = fix_answer(answer)
-
-    with open(file_name + "1.txt", "r", encoding="utf-8") as concepts_file:
+    print(answer, old)
+    with open(file_name, "r", encoding="utf-8") as concepts_file:
         concepts = ast.literal_eval(concepts_file.read())
         for i in range(1, len(concepts)):
             if concepts[i][0] == answer:
+                print(concepts[i][1:])
                 for concept in concepts[i][1:]:
                     if concept:
                         counter += 1
+                print(counter)
                 return counter
 
-    with open(file_name + "0.txt", "r", encoding="utf-8") as concepts_file:
-        concepts = ast.literal_eval(concepts_file.read())
-        for i in range(1, len(concepts)):
-            if concepts[i][0] == answer:
-                for concept in concepts[i][1:]:
-                    if concept:
-                        counter += 1
-                return counter
+    #with open(file_name + "0.txt", "r", encoding="utf-8") as concepts_file:
+    #    concepts = ast.literal_eval(concepts_file.read())
+    #    for i in range(1, len(concepts)):
+    #        if concepts[i][0] == answer:
+    #            for concept in concepts[i][1:]:
+    #                if concept:
+    #                    counter += 1
+    #            return counter
     
     return -1
 
@@ -47,7 +49,7 @@ def get_answer_concpets_number(answer, old, question):
 def start_questionnaire(old_names, new_names, answer_header, judge_name):
     same_answer_counter = 0
     with open("judges_results\\" + judge_name + "_results_" + answer_header, "a") as results:
-        ROUNDS_NUMBER = 60
+        ROUNDS_NUMBER = 3
         if not os.path.isfile("pickle\\" + answer_header + ".pkl"):
             permotations = []
             for i in range(ROUNDS_NUMBER):
@@ -83,50 +85,56 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
                 
                 if user_answer == 1:
                     results.write(ans_to_str(model_answer) + ", " + ans_to_str(original_answer) + ", " + 
-                                  "2" + ", 1, " + old_concept_number + ", " + new_concept_number + "\n")
+                                  "2" + ", 1, " + new_concept_number + ", " + old_concept_number + "\n")
                 else:
                     results.write(ans_to_str(model_answer) + ", " + ans_to_str(original_answer) + ", " + 
-                                  "1" + ", 2, " + old_concept_number + ", " + new_concept_number + "\n")
+                                  "1" + ", 2, " + new_concept_number + ", " + old_concept_number + "\n")
 
             else:
                 
-                user_answer = input("1. " + original_answer[1] + "\n2. " + model_answer[1] + ".\n")
+                user_answer = input("1. " + original_answer[1] + "\n2. " + model_answer[1] + "\n")
 
                 while(user_answer != "1" and user_answer != "2"):
-                    user_answer = input("1. " + original_answer[1] + "\n2. " + model_answer[1] + ".\n")
+                    user_answer = input("1. " + original_answer[1] + "\n2. " + model_answer[1] + "\n")
                 
                 user_answer = int(user_answer)
 
                 if user_answer == 1:
                     results.write(ans_to_str(model_answer) + ", " + ans_to_str(original_answer) + ", " + 
-                                  "1" + ", 2, " + old_concept_number + ", " + new_concept_number + "\n")
+                                  "2" + ", 2, " + new_concept_number + ", " + old_concept_number + "\n")
                 else:
                     results.write(ans_to_str(model_answer) + ", " + ans_to_str(original_answer) + ", " + 
-                                  "2" + ", 1, " + old_concept_number + ", " + new_concept_number + "\n")
+                                  "1" + ", 1, " + new_concept_number + ", " + old_concept_number + "\n")
             print("-------------------------")
         results.write("number of time answers were equals is: " + str(same_answer_counter))
 
 
 def show_answers_from_file(results_file):
-    with open(results_file, "r") as results:
-        for line in results.readlines():
+    with open(results_file, "r") as judge_results:
+        for line in judge_results.readlines():
             if "number of time answers were equals is: " in line:
                 continue
-            old_name_line, new_name_line, winner, winner_source, old_concepts_number, new_concepts_number  = line.split(",")
+            new_name_line, old_name_line, winner, winner_source, old_concepts_number, new_concepts_number  = line.split(",")
             if winner == 1:
                 winner_name = old_name_line
             else:
                 winner_name = new_name_line
 
             print(results_old[quetsions_header[question_number]][int(old_name_line)])
-            print(results_old[quetsions_header[question_number]][int(new_name_line)])
-            print(results_old[quetsions_header[question_number]][int(winner_name)])
-            if int(winner_source) == 1:
-                print("old")
-            elif int(winner_source) == 2:
-                print("new")
-            print("\n")
+            print(results[quetsions_header[question_number]][int(new_name_line)])
 
+            
+            if int(winner) == 2:
+                print(results_old[quetsions_header[question_number]][int(old_name_line)])
+            else:
+                print(results[quetsions_header[question_number]][int(new_name_line)])
+
+
+            if int(winner_source) == 2:
+                print("old")
+            elif int(winner_source) == 1:
+                print("new")
+            
 
 if not os.path.exists("judges_results"):
     os.makedirs("judges_results")
@@ -135,12 +143,14 @@ results_old = pd.read_csv("..\\results\\results_old.csv")
 results = pd.read_csv("..\\results\\results.csv")
 quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
-judge_name = input("enter your name")
+question_number = 6  # 0 - 22
 
-question_number = 2  # 0 - 22
 
 old_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
-new_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
+new_names = [(ind, ans) for ind, ans in enumerate(results[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
 
+print(old_names)
+print(new_names)
+judge_name = input("enter your name: ")
 start_questionnaire(old_names, new_names, quetsions_header[question_number], judge_name)
-#show_answers_from_file("results_" + quetsions_header[question_number])
+show_answers_from_file("judges_results\\" + judge_name + "_results_" + quetsions_header[question_number])

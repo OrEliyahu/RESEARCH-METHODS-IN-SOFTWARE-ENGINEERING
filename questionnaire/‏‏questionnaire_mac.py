@@ -15,7 +15,7 @@ def ans_to_str(ans):
 
 
 def get_answer_concpets_number(answer, old, question):
-    file_name = "..\\tables\\" + question + "_" + str(old) + ".txt"
+    file_name = "..//tables//" + question + "_" + str(old) + ".txt"
 
     if not os.path.isfile(file_name):
         return -2
@@ -36,9 +36,9 @@ def get_answer_concpets_number(answer, old, question):
 
 def start_questionnaire(old_names, new_names, answer_header, judge_name):
     same_answer_counter = 0
-    with open("judges_results\\" + judge_name + "_results_" + answer_header, "a") as results:
+    with open("judges_results//" + judge_name + "_results_" + answer_header, "a") as results:
         ROUNDS_NUMBER = 60
-        if not os.path.isfile("pickles\\" + answer_header + ".pkl"):
+        if not os.path.isfile("pickles//" + answer_header + ".pkl"):
             permotations = []
             for i in range(ROUNDS_NUMBER):
                 model_answer = new_names[randint(0, len(new_names) - 1)]
@@ -51,10 +51,10 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
             
                 permotations += [[original_answer, model_answer]]
 
-            with open("pickles\\" + answer_header + ".pkl", "wb") as f:
+            with open("pickles//" + answer_header + ".pkl", "wb") as f:
                 pickle.dump(permotations, f)
         else:            
-            with open("pickles\\" + answer_header + ".pkl", "rb") as f:
+            with open("pickles//" + answer_header + ".pkl", "rb") as f:
                 permotations = pickle.load(f)
                 
         for i in range(ROUNDS_NUMBER):
@@ -116,8 +116,8 @@ def show_answers_from_file(results_file):
 if not os.path.exists("judges_results"):
     os.makedirs("judges_results")
 
-results_old = pd.read_csv("..\\results\\results_old.csv")
-results = pd.read_csv("..\\results\\results.csv")
+results_old = pd.read_csv("..//results//results_old.csv")
+results = pd.read_csv("..//results//results.csv")
 quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
 judge_name = input("enter your name: ")
@@ -129,4 +129,4 @@ new_names = [(ind, ans) for ind, ans in enumerate(results[quetsions_header[quest
 
     
 start_questionnaire(old_names, new_names, quetsions_header[question_number], judge_name)    
-# show_answers_from_file("judges_results\\" + judge_name + "_results_" + quetsions_header[question_number])
+# show_answers_from_file("judges_results//" + judge_name + "_results_" + quetsions_header[question_number])

@@ -3,14 +3,14 @@
     "number_of_answers_new": 21,
     "all_concepts": [
         "destination",
+        "floor",
         "current",
-        "index",
-        "floor"
+        "index"
     ],
     "joint_concepts": [
-        "current",
-        "floor",
         "destination",
+        "floor",
+        "current",
         "index"
     ],
     "concepts_only_old": [],
@@ -73,5 +73,9 @@
         "index": {
             "num": 1
         }
-    }
+    },
+    "concpets_mean_old": 1.8043478260869565,
+    "concpets_mean_new": 1.9,
+    "concpets_var_old": 0.2008506616257089,
+    "concpets_var_new": 0.09
 }

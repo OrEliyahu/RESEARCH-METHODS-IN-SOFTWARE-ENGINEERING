@@ -7,6 +7,7 @@ import json
 from collections import Counter
 import random
 import re
+import numpy as np
 
 
 app = Flask(__name__)
@@ -40,6 +41,17 @@ def generate_random_answers(data, answers_number):
     selected_data = [data[0]] + [data[i] for i in selected]
     print(selected_data)
     return selected_data
+
+
+def count_concepts(data):
+    def count_not_empty(lst):
+        counter = 0
+        for i in range(1, len(lst)):
+            if lst[i] != "":
+                counter += 1
+        return counter    
+    return [count_not_empty(lst) for lst in data[1:]]
+
 
 def statistics(file_name_old, file_name_new, question, random_state=False):
     concepts_table_summery = []
@@ -85,6 +97,8 @@ def statistics(file_name_old, file_name_new, question, random_state=False):
     concepts_only_old = list(set(concepts_old) - set(concepts_new))
     concepts_only_new = list(set(concepts_new) - set(concepts_old))
 
+    old_concpets_values = [i for i in count_concepts(data_old) if i != 0]
+    new_concpets_values = [i for i in count_concepts(data_new) if i != 0]
 
     results = { "number_of_answers_old" : len(data_old) - 1,
     			"number_of_answers_new" : len(data_new) - 1,
@@ -95,7 +109,11 @@ def statistics(file_name_old, file_name_new, question, random_state=False):
                 "concepts_counters_old" : concepts_counters_old,
                 "concepts_counters_new" : concepts_counters_new,
                 "concepts_distribution_old" : concepts_distribution_old,
-                "concepts_distribution_new" : concepts_distribution_new
+                "concepts_distribution_new" : concepts_distribution_new,
+                "concpets_mean_old" : np.mean(old_concpets_values),
+                "concpets_mean_new" : np.mean(new_concpets_values),
+                "concpets_var_old" : np.var(old_concpets_values),
+                "concpets_var_new" : np.var(new_concpets_values),
     }
     
     

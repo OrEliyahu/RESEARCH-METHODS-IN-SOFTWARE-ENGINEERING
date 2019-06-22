@@ -3,36 +3,39 @@
     "number_of_answers_new": 6,
     "all_concepts": [
         "week",
+        "rate",
+        "hours",
+        "time",
+        "work",
+        "payment",
         "full",
         "extra",
-        "normal",
-        "rate",
-        "time",
-        "payment",
-        "hours"
+        "normal"
     ],
     "joint_concepts": [
         "week",
-        "full",
-        "normal",
         "hours",
-        "time"
+        "time",
+        "full",
+        "normal"
     ],
     "concepts_only_old": [
         "payment",
+        "work",
         "rate",
         "extra"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
         "week": 13,
-        "hours": 36,
+        "hours": 35,
         "payment": 3,
         "normal": 8,
         "rate": 2,
         "time": 18,
-        "extra": 3,
-        "full": 15
+        "extra": 4,
+        "full": 15,
+        "work": 4
     },
     "concepts_counters_new": {
         "week": 2,
@@ -49,7 +52,7 @@
         "hours": {
             "hours": 27,
             "hour": 3,
-            "time": 6
+            "time": 5
         },
         "payment": {
             "pay": 3
@@ -68,11 +71,15 @@
             "time": 18
         },
         "extra": {
+            "max": 1,
             "overtime": 2,
             "bonus": 1
         },
         "full": {
             "full": 15
+        },
+        "work": {
+            "work": 4
         }
     },
     "concepts_distribution_new": {
@@ -93,5 +100,9 @@
             "requirement": 1,
             "num": 1
         }
-    }
+    },
+    "concpets_mean_old": 2.55,
+    "concpets_mean_new": 3.5,
+    "concpets_var_old": 0.7975000000000001,
+    "concpets_var_new": 0.25
 }

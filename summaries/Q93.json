@@ -2,15 +2,15 @@
     "number_of_answers_old": 26,
     "number_of_answers_new": 10,
     "all_concepts": [
-        "grid",
         "current",
+        "game",
         "state",
-        "game"
+        "grid"
     ],
     "joint_concepts": [
-        "current",
-        "state",
         "grid",
+        "state",
+        "current",
         "game"
     ],
     "concepts_only_old": [],
@@ -65,5 +65,9 @@
             "cur": 1,
             "current": 2
         }
-    }
+    },
+    "concpets_mean_old": 1.7307692307692308,
+    "concpets_mean_new": 2.3333333333333335,
+    "concpets_var_old": 0.3505917159763313,
+    "concpets_var_new": 0.4444444444444444
 }

@@ -2,24 +2,24 @@
     "number_of_answers_old": 35,
     "number_of_answers_new": 9,
     "all_concepts": [
-        "history",
-        "trace",
-        "seen",
-        "cheese",
         "location",
+        "trace",
         "visit",
-        "mouse"
+        "seen",
+        "mouse",
+        "cheese",
+        "history"
     ],
     "joint_concepts": [
-        "history",
-        "trace",
         "location",
+        "trace",
         "visit",
-        "mouse"
+        "mouse",
+        "history"
     ],
     "concepts_only_old": [
-        "seen",
-        "cheese"
+        "cheese",
+        "seen"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -99,5 +99,9 @@
         "history": {
             "already": 1
         }
-    }
+    },
+    "concpets_mean_old": 1.9714285714285715,
+    "concpets_mean_new": 1.8888888888888888,
+    "concpets_var_old": 0.4277551020408164,
+    "concpets_var_new": 0.3209876543209877
 }

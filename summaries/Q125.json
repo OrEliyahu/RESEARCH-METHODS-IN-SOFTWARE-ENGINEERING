@@ -2,18 +2,18 @@
     "number_of_answers_old": 41,
     "number_of_answers_new": 4,
     "all_concepts": [
-        "difference",
-        "destination",
-        "current",
         "move",
-        "floor"
+        "destination",
+        "difference",
+        "floor",
+        "current"
     ],
     "joint_concepts": [
-        "difference",
-        "destination",
-        "current",
         "move",
-        "floor"
+        "destination",
+        "difference",
+        "floor",
+        "current"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -70,5 +70,9 @@
         "destination": {
             "next": 1
         }
-    }
+    },
+    "concpets_mean_old": 1.975,
+    "concpets_mean_new": 1.75,
+    "concpets_var_old": 0.324375,
+    "concpets_var_new": 0.1875
 }

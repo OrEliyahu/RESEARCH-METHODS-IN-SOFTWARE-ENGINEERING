@@ -2,19 +2,19 @@
     "number_of_answers_old": 40,
     "number_of_answers_new": 5,
     "all_concepts": [
-        "open",
         "current",
+        "open",
+        "door",
         "state",
         "close",
-        "door",
         "elevator"
     ],
     "joint_concepts": [
-        "open",
         "current",
+        "open",
+        "door",
         "state",
         "close",
-        "door",
         "elevator"
     ],
     "concepts_only_old": [],
@@ -71,5 +71,9 @@
         },
         "open": {},
         "close": {}
-    }
+    },
+    "concpets_mean_old": 1.875,
+    "concpets_mean_new": 2.2,
+    "concpets_var_old": 0.309375,
+    "concpets_var_new": 0.15999999999999998
 }

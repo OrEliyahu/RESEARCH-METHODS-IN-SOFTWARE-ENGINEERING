@@ -2,15 +2,15 @@
     "number_of_answers_old": 35,
     "number_of_answers_new": 9,
     "all_concepts": [
-        "current",
-        "cheese",
+        "location",
         "target",
-        "location"
+        "current",
+        "cheese"
     ],
     "joint_concepts": [
-        "current",
         "location",
-        "cheese"
+        "cheese",
+        "current"
     ],
     "concepts_only_old": [
         "target"
@@ -67,5 +67,9 @@
             "today": 2,
             "curr": 1
         }
-    }
+    },
+    "concpets_mean_old": 2.3529411764705883,
+    "concpets_mean_new": 2.2222222222222223,
+    "concpets_var_old": 0.40484429065743943,
+    "concpets_var_new": 0.1728395061728395
 }

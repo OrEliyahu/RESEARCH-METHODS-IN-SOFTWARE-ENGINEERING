@@ -2,23 +2,19 @@
     "number_of_answers_old": 27,
     "number_of_answers_new": 7,
     "all_concepts": [
+        "location",
         "target",
-        "location<br>",
         "current",
-        "cheese",
-        "location"
-    ],
-    "joint_concepts": [
-        "current",
-        "target",
         "cheese"
     ],
-    "concepts_only_old": [
-        "location"
+    "joint_concepts": [
+        "location",
+        "cheese",
+        "target",
+        "current"
     ],
-    "concepts_only_new": [
-        "location<br>"
-    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [],
     "concepts_counters_old": {
         "location": 25,
         "cheese": 19,
@@ -27,7 +23,7 @@
     },
     "concepts_counters_new": {
         "cheese": 6,
-        "location<br>": 6,
+        "location": 6,
         "current": 4,
         "target": 1
     },
@@ -56,7 +52,7 @@
             "cheese": 5,
             "chees": 1
         },
-        "location<br>": {
+        "location": {
             "location": 6
         },
         "current": {
@@ -67,5 +63,9 @@
         "target": {
             "target": 1
         }
-    }
+    },
+    "concpets_mean_old": 2.1481481481481484,
+    "concpets_mean_new": 2.4285714285714284,
+    "concpets_var_old": 0.2002743484224966,
+    "concpets_var_new": 0.24489795918367344
 }

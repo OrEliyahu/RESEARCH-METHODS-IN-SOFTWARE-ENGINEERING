@@ -1,0 +1,72 @@
+{
+    "number_of_answers_old": 40,
+    "number_of_answers_new": 7,
+    "all_concepts": [
+        "current",
+        "game",
+        "wining",
+        "state",
+        "board"
+    ],
+    "joint_concepts": [
+        "state",
+        "board",
+        "game"
+    ],
+    "concepts_only_old": [
+        "current"
+    ],
+    "concepts_only_new": [
+        "wining"
+    ],
+    "concepts_counters_old": {
+        "board": 28,
+        "game": 11,
+        "state": 19,
+        "current": 13
+    },
+    "concepts_counters_new": {
+        "board": 5,
+        "state": 4,
+        "wining": 1,
+        "game": 1
+    },
+    "concepts_distribution_old": {
+        "board": {
+            "board": 26,
+            "matrix": 1,
+            "mat": 1
+        },
+        "game": {
+            "game": 10,
+            "tic_tac_toe": 1
+        },
+        "state": {
+            "state": 16,
+            "status": 2,
+            "stat": 1
+        },
+        "current": {
+            "curr": 9,
+            "cur": 4
+        }
+    },
+    "concepts_distribution_new": {
+        "board": {
+            "board": 5
+        },
+        "state": {
+            "state": 4
+        },
+        "wining": {
+            "wining": 1
+        },
+        "game": {
+            "game": 1
+        }
+    },
+    "concpets_mean_old": 1.8205128205128205,
+    "concpets_mean_new": 1.5714285714285714,
+    "concpets_var_old": 0.5062458908612754,
+    "concpets_var_new": 0.24489795918367346
+}

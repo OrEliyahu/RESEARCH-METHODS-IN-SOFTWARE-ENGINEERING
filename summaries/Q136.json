@@ -2,28 +2,28 @@
     "number_of_answers_old": 56,
     "number_of_answers_new": 8,
     "all_concepts": [
-        "month",
         "per",
         "benefit",
-        "allowed",
+        "used",
         "customer",
         "max",
-        "used",
         "accumulation",
-        "number"
+        "number",
+        "month",
+        "allowed"
     ],
     "joint_concepts": [
-        "month",
-        "benefit",
         "per",
+        "benefit",
         "customer",
         "max",
-        "number"
+        "number",
+        "month"
     ],
     "concepts_only_old": [
-        "used",
         "accumulation",
-        "allowed"
+        "allowed",
+        "used"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -106,5 +106,9 @@
         "customer": {
             "customer": 1
         }
-    }
+    },
+    "concpets_mean_old": 2.8545454545454545,
+    "concpets_mean_new": 2.875,
+    "concpets_var_old": 0.7424793388429752,
+    "concpets_var_new": 0.359375
 }

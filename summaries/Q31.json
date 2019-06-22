@@ -10,14 +10,14 @@
         "elapsed"
     ],
     "joint_concepts": [
-        "time",
+        "elapsed",
         "game",
-        "elapsed"
+        "time"
     ],
     "concepts_only_old": [
-        "length",
+        "remain",
         "current",
-        "remain"
+        "length"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -84,5 +84,9 @@
         "elapsed": {
             "elapsed": 3
         }
-    }
+    },
+    "concpets_mean_old": 1.76,
+    "concpets_mean_new": 1.8181818181818181,
+    "concpets_var_old": 0.3424000000000001,
+    "concpets_var_new": 0.1487603305785124
 }

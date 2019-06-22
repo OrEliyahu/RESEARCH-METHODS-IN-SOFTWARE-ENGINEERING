@@ -2,25 +2,25 @@
     "number_of_answers_old": 42,
     "number_of_answers_new": 5,
     "all_concepts": [
-        "wage",
-        "week",
-        "employee",
         "overtime",
+        "week",
         "rate",
         "hours",
+        "employee",
+        "wage",
         "extra"
     ],
     "joint_concepts": [
-        "wage",
         "overtime",
         "rate",
         "hours",
+        "wage",
         "extra"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [
-        "employee",
-        "week"
+        "week",
+        "employee"
     ],
     "concepts_counters_old": {
         "overtime": 32,
@@ -89,5 +89,9 @@
         "extra": {
             "extra": 1
         }
-    }
+    },
+    "concpets_mean_old": 2.2439024390243905,
+    "concpets_mean_new": 2.4,
+    "concpets_var_old": 0.1844140392623439,
+    "concpets_var_new": 0.6400000000000002
 }

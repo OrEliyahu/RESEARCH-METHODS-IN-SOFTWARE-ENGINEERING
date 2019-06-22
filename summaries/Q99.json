@@ -3,9 +3,9 @@
     "number_of_answers_new": 10,
     "all_concepts": [
         "file",
-        "size",
+        "field",
         "byte",
-        "field"
+        "size"
     ],
     "joint_concepts": [
         "file",
@@ -49,5 +49,9 @@
         "file": {
             "file": 5
         }
-    }
+    },
+    "concpets_mean_old": 1.5227272727272727,
+    "concpets_mean_new": 1.5,
+    "concpets_var_old": 0.2949380165289256,
+    "concpets_var_new": 0.25
 }

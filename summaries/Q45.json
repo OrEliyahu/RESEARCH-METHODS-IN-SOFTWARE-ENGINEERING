@@ -2,15 +2,15 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 12,
     "all_concepts": [
-        "hour",
         "pay",
         "rate",
+        "hour",
         "extra"
     ],
     "joint_concepts": [
         "pay",
-        "rate",
         "extra",
+        "rate",
         "hour"
     ],
     "concepts_only_old": [],
@@ -76,5 +76,9 @@
             "hours": 3,
             "hour": 3
         }
-    }
+    },
+    "concpets_mean_old": 2.627906976744186,
+    "concpets_mean_new": 2.5,
+    "concpets_var_old": 0.46619794483504595,
+    "concpets_var_new": 0.5833333333333334
 }

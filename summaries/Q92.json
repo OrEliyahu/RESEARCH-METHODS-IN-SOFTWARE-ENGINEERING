@@ -3,23 +3,23 @@
     "number_of_answers_new": 11,
     "all_concepts": [
         "current",
-        "state",
         "game",
+        "state",
         "board"
     ],
     "joint_concepts": [
-        "current",
         "state",
-        "board"
+        "board",
+        "game",
+        "current"
     ],
     "concepts_only_old": [],
-    "concepts_only_new": [
-        "game"
-    ],
+    "concepts_only_new": [],
     "concepts_counters_old": {
-        "board": 25,
+        "board": 26,
         "state": 8,
-        "current": 6
+        "current": 6,
+        "game": 1
     },
     "concepts_counters_new": {
         "board": 10,
@@ -30,6 +30,7 @@
     "concepts_distribution_old": {
         "board": {
             "board": 24,
+            "dimensional array": 1,
             "list": 1
         },
         "state": {
@@ -39,6 +40,9 @@
         "current": {
             "curr": 2,
             "current": 4
+        },
+        "game": {
+            "xo": 1
         }
     },
     "concepts_distribution_new": {
@@ -57,5 +61,9 @@
             "game": 4,
             "tictactoe": 1
         }
-    }
+    },
+    "concpets_mean_old": 1.4137931034482758,
+    "concpets_mean_new": 1.9090909090909092,
+    "concpets_var_old": 0.38049940546967903,
+    "concpets_var_new": 0.6280991735537189
 }

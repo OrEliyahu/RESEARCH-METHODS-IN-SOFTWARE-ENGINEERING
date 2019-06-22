@@ -3,14 +3,14 @@
     "number_of_answers_new": 4,
     "all_concepts": [
         "destination",
-        "current",
         "floor",
+        "current",
         "elevator"
     ],
     "joint_concepts": [
-        "current",
-        "floor",
         "destination",
+        "floor",
+        "current",
         "elevator"
     ],
     "concepts_only_old": [],
@@ -69,5 +69,9 @@
         "elevator": {
             "elevator": 1
         }
-    }
+    },
+    "concpets_mean_old": 1.894736842105263,
+    "concpets_mean_new": 1.75,
+    "concpets_var_old": 0.09418282548476455,
+    "concpets_var_new": 0.6875
 }

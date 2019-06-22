@@ -1,0 +1,72 @@
+{
+    "number_of_answers_old": 44,
+    "number_of_answers_new": 2,
+    "all_concepts": [
+        "rooms",
+        "available",
+        "maze",
+        "cheese",
+        "map",
+        "data"
+    ],
+    "joint_concepts": [
+        "maze"
+    ],
+    "concepts_only_old": [
+        "available",
+        "rooms",
+        "cheese",
+        "map",
+        "data"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "maze": 38,
+        "map": 3,
+        "data": 6,
+        "available": 4,
+        "rooms": 3,
+        "cheese": 1
+    },
+    "concepts_counters_new": {
+        "maze": 2
+    },
+    "concepts_distribution_old": {
+        "maze": {
+            "lab": 4,
+            "maze": 9,
+            "labyrinth": 25
+        },
+        "map": {
+            "graph": 3
+        },
+        "data": {
+            "lab_data": 1,
+            "2d array": 1,
+            "board": 2,
+            "tree": 2
+        },
+        "available": {
+            "data": 3,
+            "available": 1
+        },
+        "rooms": {
+            "locations": 1,
+            "coordinates": 1,
+            "rooms": 1
+        },
+        "cheese": {
+            "cheese": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "maze": {
+            "lanyrinth": 1,
+            "labyrinth": 1
+        }
+    },
+    "concpets_mean_old": 1.25,
+    "concpets_mean_new": 1.0,
+    "concpets_var_old": 0.2784090909090909,
+    "concpets_var_new": 0.0
+}

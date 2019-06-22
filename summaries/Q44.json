@@ -2,26 +2,26 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 12,
     "all_concepts": [
-        "full",
         "week",
-        "normal",
         "overtime",
         "rate",
-        "max",
         "hours",
-        "job",
         "time",
-        "threshold"
+        "threshold",
+        "max",
+        "normal",
+        "full",
+        "job"
     ],
     "joint_concepts": [
         "week",
-        "full",
-        "normal",
         "rate",
-        "max",
-        "time",
         "job",
-        "hours"
+        "hours",
+        "time",
+        "max",
+        "full",
+        "normal"
     ],
     "concepts_only_old": [
         "overtime",
@@ -127,5 +127,9 @@
         "max": {
             "max": 2
         }
-    }
+    },
+    "concpets_mean_old": 3.046511627906977,
+    "concpets_mean_new": 3.1818181818181817,
+    "concpets_var_old": 0.742022714981071,
+    "concpets_var_new": 0.6942148760330578
 }

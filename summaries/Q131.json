@@ -3,19 +3,19 @@
     "number_of_answers_new": 21,
     "all_concepts": [
         "location",
-        "destination",
-        "floor",
         "current",
         "elevator<br>",
+        "destination",
+        "floor",
         "elevator",
         "index"
     ],
     "joint_concepts": [
-        "location",
+        "current",
+        "index",
         "destination",
         "floor",
-        "current",
-        "index"
+        "location"
     ],
     "concepts_only_old": [
         "elevator"

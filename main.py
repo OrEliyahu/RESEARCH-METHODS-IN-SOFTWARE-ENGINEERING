@@ -4,7 +4,6 @@ import os
 import pandas as pd
 from collections import Counter
 import json
-from collections import Counter
 import random
 import re
 import numpy as np
@@ -39,7 +38,6 @@ def statistics2(file_name):
 def generate_random_answers(data, answers_number):
     selected = random.sample(range(1, len(data)), answers_number)    
     selected_data = [data[0]] + [data[i] for i in selected]
-    print(selected_data)
     return selected_data
 
 
@@ -49,7 +47,7 @@ def count_concepts(data):
         for i in range(1, len(lst)):
             if lst[i] != "":
                 counter += 1
-        return counter    
+        return counter
     return [count_not_empty(lst) for lst in data[1:]]
 
 
@@ -64,8 +62,8 @@ def statistics(file_name_old, file_name_new, question, random_state=False):
         if len(data_old) > len(data_new):
             data_old = generate_random_answers(data_old, len(data_new) - 1)
             print(len(data_old))
-        elif en(data_old) < len(data_new):
-            data_new = generate_random_answers(data_new, len(data_new) - 1)
+        elif len(data_old) < len(data_new):
+            data_new = generate_random_answers(data_new, len(data_old) - 1)
 
     concepts_old = data_old[0][1:]
     concepts_new = data_new[0][1:]

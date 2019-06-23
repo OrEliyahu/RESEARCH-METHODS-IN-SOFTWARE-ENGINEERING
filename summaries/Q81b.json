@@ -4,14 +4,14 @@
     "all_concepts": [
         "current",
         "game",
-        "wining",
         "state",
+        "wining",
         "board"
     ],
     "joint_concepts": [
         "state",
-        "board",
-        "game"
+        "game",
+        "board"
     ],
     "concepts_only_old": [
         "current"

@@ -2,12 +2,12 @@
     "number_of_answers_old": 51,
     "number_of_answers_new": 11,
     "all_concepts": [
-        "remain",
+        "elapsed",
         "current",
         "game",
+        "remain",
         "time",
-        "length",
-        "elapsed"
+        "length"
     ],
     "joint_concepts": [
         "elapsed",
@@ -15,9 +15,9 @@
         "time"
     ],
     "concepts_only_old": [
-        "remain",
         "current",
-        "length"
+        "length",
+        "remain"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

@@ -2,18 +2,18 @@
     "number_of_answers_old": 41,
     "number_of_answers_new": 4,
     "all_concepts": [
-        "move",
+        "current",
         "destination",
-        "difference",
+        "move",
         "floor",
-        "current"
+        "difference"
     ],
     "joint_concepts": [
-        "move",
+        "current",
         "destination",
-        "difference",
+        "move",
         "floor",
-        "current"
+        "difference"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],

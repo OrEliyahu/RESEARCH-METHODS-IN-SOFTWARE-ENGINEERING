@@ -8,8 +8,8 @@ def plot_bars(old_data, new_data, ylabel, title, fig_name):
     index = np.arange(len(old_data))
     bar_width = 0.35
     fig, ax = plt.subplots()
-    ax.bar(index, old_data, bar_width, label="last year", alpha=0.7, color='blue')
-    ax.bar(index, new_data, bar_width, label="this year", alpha=0.7, color='red')
+    ax.bar(index, old_data, bar_width, label="without model", alpha=0.7, color='blue')
+    ax.bar(index, new_data, bar_width, label="with model", alpha=0.7, color='red')
 
     ax.set_xlabel('qustions')
     ax.set_ylabel(ylabel)
@@ -18,7 +18,7 @@ def plot_bars(old_data, new_data, ylabel, title, fig_name):
     ax.set_xticklabels(questions, rotation='vertical')
     ax.legend()
 
-    plt.savefig(fig_name + "transpeant", transparent=True)
+    plt.savefig(fig_name + "_transpeant", transparent=True)
 
 
 def get_mean_var(file_name):

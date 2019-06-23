@@ -2,28 +2,28 @@
     "number_of_answers_old": 42,
     "number_of_answers_new": 6,
     "all_concepts": [
+        "hours",
+        "extra",
         "week",
         "rate",
-        "hours",
         "time",
         "work",
-        "payment",
         "full",
-        "extra",
-        "normal"
+        "normal",
+        "payment"
     ],
     "joint_concepts": [
-        "week",
         "hours",
+        "week",
         "time",
         "full",
         "normal"
     ],
     "concepts_only_old": [
-        "payment",
+        "extra",
         "work",
-        "rate",
-        "extra"
+        "payment",
+        "rate"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -104,5 +104,9 @@
     "concpets_mean_old": 2.55,
     "concpets_mean_new": 3.5,
     "concpets_var_old": 0.7975000000000001,
-    "concpets_var_new": 0.25
+    "concpets_var_new": 0.25,
+    "variables_lengths_mean_old": 16.095238095238095,
+    "variables_lengths_mean_new": 20.333333333333332,
+    "variables_lengths_var_old": 28.229024943310655,
+    "variables_lengths_var_new": 11.222222222222223
 }

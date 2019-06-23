@@ -2,22 +2,22 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 2,
     "all_concepts": [
-        "rooms",
-        "available",
-        "maze",
-        "cheese",
         "map",
-        "data"
+        "rooms",
+        "data",
+        "cheese",
+        "maze",
+        "available"
     ],
     "joint_concepts": [
         "maze"
     ],
     "concepts_only_old": [
-        "available",
-        "rooms",
-        "cheese",
         "map",
-        "data"
+        "rooms",
+        "data",
+        "available",
+        "cheese"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -68,5 +68,9 @@
     "concpets_mean_old": 1.25,
     "concpets_mean_new": 1.0,
     "concpets_var_old": 0.2784090909090909,
-    "concpets_var_new": 0.0
+    "concpets_var_new": 0.0,
+    "variables_lengths_mean_old": 11.772727272727273,
+    "variables_lengths_mean_new": 9.0,
+    "variables_lengths_var_old": 138.7665289256198,
+    "variables_lengths_var_new": 0.0
 }

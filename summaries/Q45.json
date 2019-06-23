@@ -2,16 +2,16 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 12,
     "all_concepts": [
-        "pay",
-        "rate",
-        "hour",
-        "extra"
-    ],
-    "joint_concepts": [
-        "pay",
         "extra",
         "rate",
-        "hour"
+        "hour",
+        "pay"
+    ],
+    "joint_concepts": [
+        "extra",
+        "hour",
+        "rate",
+        "pay"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -80,5 +80,9 @@
     "concpets_mean_old": 2.627906976744186,
     "concpets_mean_new": 2.5,
     "concpets_var_old": 0.46619794483504595,
-    "concpets_var_new": 0.5833333333333334
+    "concpets_var_new": 0.5833333333333334,
+    "variables_lengths_mean_old": 17.11627906976744,
+    "variables_lengths_mean_new": 17.333333333333332,
+    "variables_lengths_var_old": 29.637641968631694,
+    "variables_lengths_var_new": 21.222222222222218
 }

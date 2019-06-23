@@ -2,18 +2,18 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 10,
     "all_concepts": [
-        "file",
-        "field",
         "byte",
-        "size"
+        "size",
+        "field",
+        "file"
     ],
     "joint_concepts": [
-        "file",
-        "size"
+        "size",
+        "file"
     ],
     "concepts_only_old": [
-        "byte",
-        "field"
+        "field",
+        "byte"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -53,5 +53,9 @@
     "concpets_mean_old": 1.5227272727272727,
     "concpets_mean_new": 1.5,
     "concpets_var_old": 0.2949380165289256,
-    "concpets_var_new": 0.25
+    "concpets_var_new": 0.25,
+    "variables_lengths_mean_old": 6.9772727272727275,
+    "variables_lengths_mean_new": 6.5,
+    "variables_lengths_var_old": 9.204028925619836,
+    "variables_lengths_var_new": 6.25
 }

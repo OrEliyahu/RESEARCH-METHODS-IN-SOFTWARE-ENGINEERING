@@ -3,15 +3,15 @@
     "number_of_answers_new": 7,
     "all_concepts": [
         "current",
-        "game",
-        "state",
         "wining",
-        "board"
+        "game",
+        "board",
+        "state"
     ],
     "joint_concepts": [
-        "state",
         "game",
-        "board"
+        "board",
+        "state"
     ],
     "concepts_only_old": [
         "current"
@@ -68,5 +68,9 @@
     "concpets_mean_old": 1.8205128205128205,
     "concpets_mean_new": 1.5714285714285714,
     "concpets_var_old": 0.5062458908612754,
-    "concpets_var_new": 0.24489795918367346
+    "concpets_var_new": 0.24489795918367346,
+    "variables_lengths_mean_old": 10.125,
+    "variables_lengths_mean_new": 9.571428571428571,
+    "variables_lengths_var_old": 15.709375,
+    "variables_lengths_var_new": 21.102040816326532
 }

@@ -2,14 +2,14 @@
     "number_of_answers_old": 35,
     "number_of_answers_new": 9,
     "all_concepts": [
+        "map",
         "rooms",
-        "maze",
-        "map"
+        "maze"
     ],
     "joint_concepts": [
-        "maze",
         "map",
-        "rooms"
+        "rooms",
+        "maze"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -53,5 +53,9 @@
     "concpets_mean_old": 1.0857142857142856,
     "concpets_mean_new": 1.2222222222222223,
     "concpets_var_old": 0.0783673469387755,
-    "concpets_var_new": 0.1728395061728395
+    "concpets_var_new": 0.1728395061728395,
+    "variables_lengths_mean_old": 4.6571428571428575,
+    "variables_lengths_mean_new": 5.222222222222222,
+    "variables_lengths_var_old": 3.6538775510204076,
+    "variables_lengths_var_new": 4.395061728395062
 }

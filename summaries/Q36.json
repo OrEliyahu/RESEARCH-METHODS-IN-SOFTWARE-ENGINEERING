@@ -2,21 +2,21 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 13,
     "all_concepts": [
+        "data",
         "cell",
         "mines",
-        "game",
         "adjacent",
-        "board",
         "number",
-        "data"
+        "game",
+        "board"
     ],
     "joint_concepts": [
-        "game",
+        "data",
         "mines",
         "adjacent",
-        "board",
         "number",
-        "data"
+        "game",
+        "board"
     ],
     "concepts_only_old": [
         "cell"
@@ -109,5 +109,9 @@
     "concpets_mean_old": 1.7045454545454546,
     "concpets_mean_new": 2.076923076923077,
     "concpets_var_old": 0.4354338842975208,
-    "concpets_var_new": 0.5325443786982249
+    "concpets_var_new": 0.5325443786982249,
+    "variables_lengths_mean_old": 10.136363636363637,
+    "variables_lengths_mean_new": 12.615384615384615,
+    "variables_lengths_var_old": 21.435950413223143,
+    "variables_lengths_var_new": 46.85207100591717
 }

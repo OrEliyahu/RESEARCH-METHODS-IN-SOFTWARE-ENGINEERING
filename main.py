@@ -51,6 +51,13 @@ def count_concepts(data):
     return [count_not_empty(lst) for lst in data[1:]]
 
 
+def get_variables_lengths(data):
+    lengths = []
+    for i in range(1, len(data)):
+        lengths += [len(data[i][0])]
+    return lengths
+
+
 def statistics(file_name_old, file_name_new, question, random_state=False):
     concepts_table_summery = []
     concepts_file_old = open(file_name_old, encoding="utf-8")
@@ -67,6 +74,9 @@ def statistics(file_name_old, file_name_new, question, random_state=False):
 
     concepts_old = data_old[0][1:]
     concepts_new = data_new[0][1:]
+
+    old_lenghts = get_variables_lengths(data_old)
+    new_lenghts = get_variables_lengths(data_new)
 
     concepts_counters_old = {}
     concepts_distribution_old = {}
@@ -98,6 +108,8 @@ def statistics(file_name_old, file_name_new, question, random_state=False):
     old_concpets_values = [i for i in count_concepts(data_old) if i != 0]
     new_concpets_values = [i for i in count_concepts(data_new) if i != 0]
 
+    
+
     results = { "number_of_answers_old" : len(data_old) - 1,
     			"number_of_answers_new" : len(data_new) - 1,
     			"all_concepts" : all_concepts,
@@ -112,6 +124,10 @@ def statistics(file_name_old, file_name_new, question, random_state=False):
                 "concpets_mean_new" : np.mean(new_concpets_values),
                 "concpets_var_old" : np.var(old_concpets_values),
                 "concpets_var_new" : np.var(new_concpets_values),
+                "variables_lengths_mean_old" : np.mean(old_lenghts),
+                "variables_lengths_mean_new" : np.mean(new_lenghts),
+                "variables_lengths_var_old" : np.var(old_lenghts),
+                "variables_lengths_var_new" : np.var(new_lenghts)
     }
     
     

@@ -2,30 +2,30 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 12,
     "all_concepts": [
-        "week",
-        "overtime",
-        "rate",
         "hours",
+        "week",
+        "job",
+        "rate",
         "time",
-        "threshold",
-        "max",
-        "normal",
         "full",
-        "job"
+        "normal",
+        "max",
+        "threshold",
+        "overtime"
     ],
     "joint_concepts": [
-        "week",
-        "rate",
-        "job",
         "hours",
+        "week",
+        "job",
+        "rate",
         "time",
-        "max",
         "full",
-        "normal"
+        "normal",
+        "max"
     ],
     "concepts_only_old": [
-        "overtime",
-        "threshold"
+        "threshold",
+        "overtime"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -131,5 +131,9 @@
     "concpets_mean_old": 3.046511627906977,
     "concpets_mean_new": 3.1818181818181817,
     "concpets_var_old": 0.742022714981071,
-    "concpets_var_new": 0.6942148760330578
+    "concpets_var_new": 0.6942148760330578,
+    "variables_lengths_mean_old": 16.46511627906977,
+    "variables_lengths_mean_new": 15.583333333333334,
+    "variables_lengths_var_old": 20.295294753921034,
+    "variables_lengths_var_new": 28.07638888888889
 }

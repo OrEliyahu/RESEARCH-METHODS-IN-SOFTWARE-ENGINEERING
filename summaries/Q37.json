@@ -2,22 +2,22 @@
     "number_of_answers_old": 47,
     "number_of_answers_new": 13,
     "all_concepts": [
-        "elapsed",
         "current",
+        "counter",
+        "time",
         "game",
         "remain",
-        "counter",
-        "time"
+        "elapsed"
     ],
     "joint_concepts": [
-        "elapsed",
         "game",
+        "elapsed",
         "time"
     ],
     "concepts_only_old": [
         "current",
-        "counter",
-        "remain"
+        "remain",
+        "counter"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -78,5 +78,9 @@
     "concpets_mean_old": 1.8297872340425532,
     "concpets_mean_new": 1.8461538461538463,
     "concpets_var_old": 0.35400633770937084,
-    "concpets_var_new": 0.13017751479289938
+    "concpets_var_new": 0.13017751479289938,
+    "variables_lengths_mean_old": 9.680851063829786,
+    "variables_lengths_mean_new": 8.692307692307692,
+    "variables_lengths_var_old": 22.983250339520147,
+    "variables_lengths_var_new": 5.289940828402367
 }

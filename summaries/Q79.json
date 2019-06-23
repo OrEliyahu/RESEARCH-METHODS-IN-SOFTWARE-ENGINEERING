@@ -2,19 +2,19 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 2,
     "all_concepts": [
-        "location",
-        "target",
-        "find",
         "current",
-        "cheese"
+        "location",
+        "find",
+        "cheese",
+        "target"
     ],
     "joint_concepts": [
         "location",
         "cheese"
     ],
     "concepts_only_old": [
-        "target",
         "current",
+        "target",
         "find"
     ],
     "concepts_only_new": [],
@@ -64,5 +64,9 @@
     "concpets_mean_old": 2.1818181818181817,
     "concpets_mean_new": 1.5,
     "concpets_var_old": 0.23966942148760337,
-    "concpets_var_new": 0.25
+    "concpets_var_new": 0.25,
+    "variables_lengths_mean_old": 17.022727272727273,
+    "variables_lengths_mean_new": 11.0,
+    "variables_lengths_var_old": 173.5676652892562,
+    "variables_lengths_var_new": 25.0
 }

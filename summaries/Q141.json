@@ -2,18 +2,18 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 13,
     "all_concepts": [
-        "per",
         "benefit",
-        "max",
+        "per",
+        "month",
         "number",
-        "month"
+        "max"
     ],
     "joint_concepts": [
-        "per",
         "benefit",
-        "max",
+        "per",
+        "month",
         "number",
-        "month"
+        "max"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -86,5 +86,9 @@
     "concpets_mean_old": 2.6511627906976742,
     "concpets_mean_new": 3.25,
     "concpets_var_old": 0.831800973499189,
-    "concpets_var_new": 0.5208333333333334
+    "concpets_var_new": 0.5208333333333334,
+    "variables_lengths_mean_old": 14.022727272727273,
+    "variables_lengths_mean_new": 17.53846153846154,
+    "variables_lengths_var_old": 31.658574380165284,
+    "variables_lengths_var_new": 12.710059171597637
 }

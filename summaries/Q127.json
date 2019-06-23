@@ -2,20 +2,20 @@
     "number_of_answers_old": 40,
     "number_of_answers_new": 5,
     "all_concepts": [
-        "current",
         "open",
+        "current",
         "door",
-        "state",
         "close",
-        "elevator"
+        "elevator",
+        "state"
     ],
     "joint_concepts": [
-        "current",
         "open",
+        "current",
         "door",
-        "state",
         "close",
-        "elevator"
+        "elevator",
+        "state"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -75,5 +75,9 @@
     "concpets_mean_old": 1.875,
     "concpets_mean_new": 2.2,
     "concpets_var_old": 0.309375,
-    "concpets_var_new": 0.15999999999999998
+    "concpets_var_new": 0.15999999999999998,
+    "variables_lengths_mean_old": 13.175,
+    "variables_lengths_mean_new": 13.2,
+    "variables_lengths_var_old": 100.09437499999999,
+    "variables_lengths_var_new": 10.959999999999999
 }

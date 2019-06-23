@@ -2,20 +2,20 @@
     "number_of_answers_old": 49,
     "number_of_answers_new": 21,
     "all_concepts": [
-        "location",
         "current",
-        "elevator<br>",
+        "location",
+        "index",
+        "elevator",
         "destination",
         "floor",
-        "elevator",
-        "index"
+        "elevator<br>"
     ],
     "joint_concepts": [
         "current",
+        "location",
         "index",
         "destination",
-        "floor",
-        "location"
+        "floor"
     ],
     "concepts_only_old": [
         "elevator"
@@ -93,5 +93,9 @@
     "concpets_mean_old": 1.9148936170212767,
     "concpets_mean_new": 1.8,
     "concpets_var_old": 0.12041647804436398,
-    "concpets_var_new": 0.16000000000000003
+    "concpets_var_new": 0.16000000000000003,
+    "variables_lengths_mean_old": 11.46938775510204,
+    "variables_lengths_mean_new": 11.476190476190476,
+    "variables_lengths_var_old": 9.677634319033736,
+    "variables_lengths_var_new": 17.77324263038549
 }

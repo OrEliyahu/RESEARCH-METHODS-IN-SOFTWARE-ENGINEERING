@@ -2,20 +2,20 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 2,
     "all_concepts": [
-        "visit",
-        "history",
-        "map",
         "location",
+        "map",
+        "history",
+        "visit",
         "mouse"
     ],
     "joint_concepts": [
         "location",
-        "visit",
-        "history"
+        "history",
+        "visit"
     ],
     "concepts_only_old": [
-        "mouse",
-        "map"
+        "map",
+        "mouse"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -76,5 +76,9 @@
     "concpets_mean_old": 1.7209302325581395,
     "concpets_mean_new": 2.0,
     "concpets_var_old": 0.34072471606273663,
-    "concpets_var_new": 0.0
+    "concpets_var_new": 0.0,
+    "variables_lengths_mean_old": 14.255813953488373,
+    "variables_lengths_mean_new": 14.5,
+    "variables_lengths_var_old": 89.26014061654948,
+    "variables_lengths_var_new": 0.25
 }

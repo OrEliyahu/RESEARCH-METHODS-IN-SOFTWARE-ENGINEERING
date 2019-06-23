@@ -3,15 +3,15 @@
     "number_of_answers_new": 10,
     "all_concepts": [
         "current",
+        "grid",
         "game",
-        "state",
-        "grid"
+        "state"
     ],
     "joint_concepts": [
-        "grid",
-        "state",
+        "game",
         "current",
-        "game"
+        "grid",
+        "state"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -69,5 +69,9 @@
     "concpets_mean_old": 1.7307692307692308,
     "concpets_mean_new": 2.3333333333333335,
     "concpets_var_old": 0.3505917159763313,
-    "concpets_var_new": 0.4444444444444444
+    "concpets_var_new": 0.4444444444444444,
+    "variables_lengths_mean_old": 9.0,
+    "variables_lengths_mean_new": 12.4,
+    "variables_lengths_var_old": 19.076923076923077,
+    "variables_lengths_var_new": 33.24
 }

@@ -2,16 +2,16 @@
     "number_of_answers_old": 49,
     "number_of_answers_new": 21,
     "all_concepts": [
-        "destination",
-        "floor",
         "current",
-        "index"
+        "index",
+        "destination",
+        "floor"
     ],
     "joint_concepts": [
-        "destination",
-        "floor",
         "current",
-        "index"
+        "index",
+        "floor",
+        "destination"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -77,5 +77,9 @@
     "concpets_mean_old": 1.8043478260869565,
     "concpets_mean_new": 1.9,
     "concpets_var_old": 0.2008506616257089,
-    "concpets_var_new": 0.09
+    "concpets_var_new": 0.09,
+    "variables_lengths_mean_old": 11.755102040816327,
+    "variables_lengths_mean_new": 12.476190476190476,
+    "variables_lengths_var_old": 11.450229071220324,
+    "variables_lengths_var_new": 19.96371882086168
 }

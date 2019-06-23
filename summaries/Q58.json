@@ -3,23 +3,23 @@
     "number_of_answers_new": 9,
     "all_concepts": [
         "location",
+        "history",
+        "mouse",
+        "seen",
         "trace",
         "visit",
-        "seen",
-        "mouse",
-        "cheese",
-        "history"
+        "cheese"
     ],
     "joint_concepts": [
         "location",
-        "trace",
-        "visit",
+        "history",
         "mouse",
-        "history"
+        "trace",
+        "visit"
     ],
     "concepts_only_old": [
-        "cheese",
-        "seen"
+        "seen",
+        "cheese"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -103,5 +103,9 @@
     "concpets_mean_old": 1.9714285714285715,
     "concpets_mean_new": 1.8888888888888888,
     "concpets_var_old": 0.4277551020408164,
-    "concpets_var_new": 0.3209876543209877
+    "concpets_var_new": 0.3209876543209877,
+    "variables_lengths_mean_old": 13.028571428571428,
+    "variables_lengths_mean_new": 12.88888888888889,
+    "variables_lengths_var_old": 22.770612244897958,
+    "variables_lengths_var_new": 12.098765432098766
 }

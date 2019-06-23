@@ -4,14 +4,14 @@
     "all_concepts": [
         "current",
         "game",
-        "state",
-        "board"
+        "board",
+        "state"
     ],
     "joint_concepts": [
-        "state",
-        "board",
         "game",
-        "current"
+        "current",
+        "board",
+        "state"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -65,5 +65,9 @@
     "concpets_mean_old": 1.4137931034482758,
     "concpets_mean_new": 1.9090909090909092,
     "concpets_var_old": 0.38049940546967903,
-    "concpets_var_new": 0.6280991735537189
+    "concpets_var_new": 0.6280991735537189,
+    "variables_lengths_mean_old": 8.758620689655173,
+    "variables_lengths_mean_new": 11.545454545454545,
+    "variables_lengths_var_old": 24.941736028537463,
+    "variables_lengths_var_new": 31.52066115702479
 }

@@ -8,8 +8,11 @@ def plot_bars(old_data, new_data, ylabel, title, fig_name):
     index = np.arange(len(old_data))
     bar_width = 0.35
     fig, ax = plt.subplots()
-    ax.bar(index, old_data, bar_width, label="without model", alpha=0.7, color='blue')
-    ax.bar(index, new_data, bar_width, label="with model", alpha=0.7, color='red')
+
+    mins = [min(i, j) for i , j in zip(old_data, new_data)]
+    ax.bar(index, old_data, bar_width, label="without model", color="blue")
+    ax.bar(index, new_data, bar_width, label="with model", color="red")
+    ax.bar(index, mins, bar_width, color="purple")
 
     ax.set_xlabel('qustions')
     ax.set_ylabel(ylabel)

@@ -6,3 +6,5 @@ Requirements:
 Python3
 Flask
 pandas
+
+To run the interface run python main.py and then nevigate to http://127.0.0.1:5000/ in your browser

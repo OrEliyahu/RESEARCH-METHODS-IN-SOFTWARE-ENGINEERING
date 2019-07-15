@@ -1,4 +1,4 @@
-,cheese,coordinates,curr,location,place,pos,spot,today
+,cheese,coordinates,current,location,place,position,spot,today
 cheese,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 location,0.0,1.0,0.0,1.0,1.0,5.0,1.0,0.0
 current,0.0,0.0,1.0,0.0,0.0,0.0,0.0,2.0

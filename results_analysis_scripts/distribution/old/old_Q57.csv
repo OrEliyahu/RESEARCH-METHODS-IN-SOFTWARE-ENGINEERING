@@ -1,5 +1,5 @@
-,cheese,cheesy,cizz,cur,current,daily,dayley,last_room,loc,place,pos,position,room,target,today
-cheese,11.2,0.4,0.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-location,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.8,1.0,2.2,0.8,0.2,0.0,0.0
-current,0.0,0.0,0.0,4.6,0.4,1.0,0.6,0.6,0.0,0.0,0.0,0.0,0.0,0.0,0.2
-target,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.0
+,cheese,current,daily,last_room,location,place,position,room,target,today
+cheese,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+location,0.0,0.0,0.0,0.0,7.8,1.8,3.0,0.4,0.0,0.0
+current,0.0,4.6,1.2,0.8,0.0,0.0,0.0,0.0,0.0,0.4
+target,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4,0.0

@@ -1,4 +1,4 @@
-,coards,graph,lab,map,mase,mavoh,maze,room
-maze,0.0,0.0,0.6,0.0,0.6,0.4,11.8,0.0
-map,0.4,0.4,0.0,0.4,0.0,0.0,0.0,0.0
-rooms,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6
+,coordinates,graph,labyrinth,map,mase,mavoh,maze,room
+maze,0.0,0.0,0.8,0.0,0.8,0.4,11.2,0.0
+map,0.4,0.4,0.0,0.6,0.0,0.0,0.0,0.0
+room,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6

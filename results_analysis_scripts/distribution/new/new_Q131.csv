@@ -1,5 +1,5 @@
-,cur,curr,current,dest,destination,floor,next,num,origin
-destination,0.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0
-floor,0.0,0.0,0.0,0.0,0.0,18.0,0.0,0.0,0.0
-current,1.0,2.0,10.0,0.0,0.0,0.0,0.0,0.0,1.0
-index,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+,current,floor,my,number,origin,position
+floor,0.0,18.0,0.0,0.0,0.0,0.0
+current,13.0,0.0,1.0,0.0,1.0,0.0
+Number,0.0,0.0,0.0,1.0,0.0,0.0
+location,0.0,0.0,0.0,0.0,0.0,1.0

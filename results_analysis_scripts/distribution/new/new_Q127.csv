@@ -1,5 +1,4 @@
 ,door,elevator,position,state
-state,0.0,0.0,0.0,4.0
+state,0.0,0.0,1.0,4.0
 door,4.0,0.0,0.0,0.0
 elevator,0.0,2.0,0.0,0.0
-current,0.0,0.0,1.0,0.0

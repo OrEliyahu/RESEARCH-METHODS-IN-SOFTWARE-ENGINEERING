@@ -1,0 +1,59 @@
+{
+    "number_of_answers_old": 56,
+    "number_of_answers_new": 10,
+    "all_concepts": [
+        "byte",
+        "file",
+        "long",
+        "size"
+    ],
+    "joint_concepts": [
+        "file",
+        "size"
+    ],
+    "concepts_only_old": [
+        "byte",
+        "long"
+    ],
+    "concepts_only_new": [],
+    "concepts_counters_old": {
+        "size": 55,
+        "file": 29,
+        "byte": 2,
+        "long": 1
+    },
+    "concepts_counters_new": {
+        "size": 9,
+        "file": 9
+    },
+    "concepts_distribution_old": {
+        "size": {
+            "size": 55
+        },
+        "file": {
+            "file": 29
+        },
+        "byte": {
+            "byte": 2
+        },
+        "long": {
+            "long": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "size": {
+            "size": 9
+        },
+        "file": {
+            "file": 9
+        }
+    },
+    "concpets_mean_old": 1.5818181818181818,
+    "concpets_mean_new": 1.8,
+    "concpets_var_old": 0.31603305785123975,
+    "concpets_var_new": 0.16000000000000003,
+    "variables_lengths_mean_old": 7.0,
+    "variables_lengths_mean_new": 12.5,
+    "variables_lengths_var_old": 10.392857142857142,
+    "variables_lengths_var_new": 195.25
+}

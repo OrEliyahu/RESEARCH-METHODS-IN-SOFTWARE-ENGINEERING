@@ -1,1 +1,1 @@
-[['variable name', 'destination', 'floor', 'current', 'elevator'], ['my_floor', '', 'floor', '', ''], ['curr_floor_level', '', 'floor', 'curr', ''], ['next_up_position', 'next', '', '', ''], ['next_elevator_floor', 'next', 'floor', '', 'elevator']]
+[['variable name', 'destination', 'floor', 'elevator'], ['my_floor', '', 'floor', ''], ['curr_floor_level', '', 'floor_level', ''], ['next_up_position', 'next', 'position', ''], ['next_elevator_floor', 'next', 'floor', 'elevator']]

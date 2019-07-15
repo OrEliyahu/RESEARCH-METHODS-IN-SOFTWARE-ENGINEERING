@@ -1,1 +1,1 @@
-[['variable name', 'floor', 'difference', 'move', 'current', 'destination'], ['floors_to_move', 'floor', '', 'move', '', ''], ['difference_between_floors', 'floor', 'difference', '', '', ''], ['next_down_position', '', '', '', '', 'next'], ['number_of_stores', 'store', 'number', '', '', '']]
+[['variable name', 'floor', 'difference', 'move'], ['floors_to_move', 'floor', '', 'move'], ['difference_between_floors', 'floor', 'difference', ''], ['next_down_position', '', '', ''], ['number_of_stores', 'store', 'number', '']]

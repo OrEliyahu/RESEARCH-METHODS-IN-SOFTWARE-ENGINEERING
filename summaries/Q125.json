@@ -2,34 +2,30 @@
     "number_of_answers_old": 41,
     "number_of_answers_new": 4,
     "all_concepts": [
-        "move",
-        "current",
-        "destination",
         "floor",
-        "difference"
+        "difference",
+        "destination",
+        "move"
     ],
     "joint_concepts": [
-        "move",
-        "current",
-        "destination",
         "floor",
-        "difference"
+        "difference",
+        "move"
     ],
-    "concepts_only_old": [],
+    "concepts_only_old": [
+        "destination"
+    ],
     "concepts_only_new": [],
     "concepts_counters_old": {
         "floor": 33,
         "difference": 33,
         "move": 11,
-        "current": 0,
         "destination": 2
     },
     "concepts_counters_new": {
         "floor": 3,
         "difference": 2,
-        "move": 1,
-        "current": 0,
-        "destination": 1
+        "move": 1
     },
     "concepts_distribution_old": {
         "floor": {
@@ -49,7 +45,6 @@
             "climb": 2,
             "go": 1
         },
-        "current": {},
         "destination": {
             "dest": 2
         }
@@ -65,16 +60,12 @@
         },
         "move": {
             "move": 1
-        },
-        "current": {},
-        "destination": {
-            "next": 1
         }
     },
     "concpets_mean_old": 1.975,
-    "concpets_mean_new": 1.75,
+    "concpets_mean_new": 2.0,
     "concpets_var_old": 0.324375,
-    "concpets_var_new": 0.1875,
+    "concpets_var_new": 0.0,
     "variables_lengths_mean_old": 14.048780487804878,
     "variables_lengths_mean_new": 18.25,
     "variables_lengths_var_old": 33.851279000594886,

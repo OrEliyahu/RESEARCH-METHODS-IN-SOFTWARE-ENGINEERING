@@ -3,9 +3,9 @@
     "number_of_answers_new": 9,
     "all_concepts": [
         "location",
-        "current",
         "cheese",
-        "target"
+        "target",
+        "current"
     ],
     "joint_concepts": [
         "location",
@@ -29,23 +29,18 @@
     },
     "concepts_distribution_old": {
         "cheese": {
-            "cheese": 27,
-            "cizz": 1,
-            "cheesy": 1
+            "cheese": 29
         },
         "location": {
-            "loc": 22,
+            "location": 22,
             "place": 3,
-            "position": 2,
-            "pos": 4,
+            "position": 6,
             "room": 1
         },
         "current": {
-            "current": 1,
+            "current": 13,
             "last_room": 1,
-            "cur": 12,
-            "daily": 2,
-            "dayley": 1,
+            "daily": 3,
             "today": 1
         },
         "target": {
@@ -58,14 +53,14 @@
         },
         "location": {
             "coordinates": 1,
-            "pos": 5,
+            "position": 5,
             "spot": 1,
             "place": 1,
             "location": 1
         },
         "current": {
             "today": 2,
-            "curr": 1
+            "current": 1
         }
     },
     "concpets_mean_old": 2.3529411764705883,

@@ -2,20 +2,20 @@
     "number_of_answers_old": 42,
     "number_of_answers_new": 5,
     "all_concepts": [
-        "hours",
-        "extra",
-        "employee",
-        "week",
-        "rate",
         "wage",
-        "overtime"
+        "employee",
+        "overtime",
+        "week",
+        "extra",
+        "rate",
+        "hours"
     ],
     "joint_concepts": [
-        "hours",
+        "wage",
+        "overtime",
         "extra",
         "rate",
-        "wage",
-        "overtime"
+        "hours"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [
@@ -40,23 +40,19 @@
     },
     "concepts_distribution_old": {
         "overtime": {
-            "overtime": 30,
-            "over": 2
+            "overtime": 32
         },
         "wage": {
             "wage": 16,
-            "pay": 6,
+            "payment": 7,
             "money": 1,
-            "salary": 3,
-            "payment": 1
+            "salary": 3
         },
         "rate": {
             "rate": 14
         },
         "hours": {
-            "hourly": 9,
-            "hours": 1,
-            "hour": 2
+            "hours": 12
         },
         "extra": {
             "increase": 1,
@@ -80,8 +76,7 @@
             "employee": 1
         },
         "hours": {
-            "hours": 1,
-            "hourly": 1
+            "hours": 2
         },
         "rate": {
             "rate": 2

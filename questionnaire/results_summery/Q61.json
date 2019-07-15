@@ -1,0 +1,12 @@
+{
+    "model_wins": 40,
+    "no_model_wins": 8,
+    "time_judges_agree": 48,
+    "votes_for_first": 62,
+    "votes_for_second": 58,
+    "model_concepts_avg": 2.55,
+    "no_model_concepts_avg": 2.15,
+    "winner_concepts_avg": 2.625,
+    "times_more_concepts_win": 28,
+    "times_less_concepts_win": 0
+}

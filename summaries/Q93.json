@@ -3,15 +3,15 @@
     "number_of_answers_new": 10,
     "all_concepts": [
         "current",
+        "state",
         "grid",
-        "game",
-        "state"
+        "game"
     ],
     "joint_concepts": [
-        "game",
-        "current",
         "grid",
-        "state"
+        "game",
+        "state",
+        "current"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -24,7 +24,7 @@
     "concepts_counters_new": {
         "grid": 8,
         "game": 3,
-        "state": 7,
+        "state": 6,
         "current": 3
     },
     "concepts_distribution_old": {
@@ -43,8 +43,7 @@
             "status": 1
         },
         "current": {
-            "cur": 2,
-            "current": 2
+            "current": 4
         }
     },
     "concepts_distribution_new": {
@@ -53,23 +52,22 @@
             "board": 1
         },
         "game": {
-            "game": 3
+            "game": 2,
+            "tictactoe_game": 1
         },
         "state": {
             "status": 1,
             "state": 4,
-            "info": 1,
-            "tictactoe": 1
+            "info": 1
         },
         "current": {
-            "cur": 1,
-            "current": 2
+            "current": 3
         }
     },
     "concpets_mean_old": 1.7307692307692308,
-    "concpets_mean_new": 2.3333333333333335,
+    "concpets_mean_new": 2.2222222222222223,
     "concpets_var_old": 0.3505917159763313,
-    "concpets_var_new": 0.4444444444444444,
+    "concpets_var_new": 0.3950617283950617,
     "variables_lengths_mean_old": 9.0,
     "variables_lengths_mean_new": 12.4,
     "variables_lengths_var_old": 19.076923076923077,

@@ -2,40 +2,40 @@
     "number_of_answers_old": 35,
     "number_of_answers_new": 9,
     "all_concepts": [
-        "map",
-        "rooms",
-        "maze"
+        "room",
+        "maze",
+        "map"
     ],
     "joint_concepts": [
-        "map",
-        "rooms",
-        "maze"
+        "room",
+        "maze",
+        "map"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
     "concepts_counters_old": {
         "maze": 33,
         "map": 3,
-        "rooms": 2
+        "room": 2
     },
     "concepts_counters_new": {
         "maze": 8,
         "map": 1,
-        "rooms": 2
+        "room": 2
     },
     "concepts_distribution_old": {
         "maze": {
             "maze": 29,
             "mase": 1,
-            "lab": 2,
+            "labyrinth": 2,
             "mavoh": 1
         },
         "map": {
             "map": 1,
             "graph": 1,
-            "coards": 1
+            "coordinates": 1
         },
-        "rooms": {
+        "room": {
             "room": 2
         }
     },
@@ -46,8 +46,8 @@
         "map": {
             "map": 1
         },
-        "rooms": {
-            "rooms": 2
+        "room": {
+            "room": 2
         }
     },
     "concpets_mean_old": 1.0857142857142856,

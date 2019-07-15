@@ -3,14 +3,14 @@
     "number_of_answers_new": 7,
     "all_concepts": [
         "location",
-        "current",
+        "cheese",
         "target",
-        "cheese"
+        "current"
     ],
     "joint_concepts": [
         "location",
-        "target",
         "cheese",
+        "target",
         "current"
     ],
     "concepts_only_old": [],
@@ -29,8 +29,8 @@
     },
     "concepts_distribution_old": {
         "location": {
-            "loc": 21,
-            "pos": 2,
+            "location": 21,
+            "position": 2,
             "place": 1,
             "room": 1
         },
@@ -43,22 +43,21 @@
         },
         "current": {
             "today": 1,
-            "cur": 8,
+            "current": 8,
             "daily": 1
         }
     },
     "concepts_distribution_new": {
         "cheese": {
-            "cheese": 5,
-            "chees": 1
+            "cheese": 6
         },
         "location": {
             "location": 6
         },
         "current": {
-            "cur": 2,
+            "current": 2,
             "temp": 1,
-            "dayly": 1
+            "daily": 1
         },
         "target": {
             "target": 1

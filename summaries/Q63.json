@@ -1,0 +1,49 @@
+{
+    "number_of_answers_old": 27,
+    "number_of_answers_new": 7,
+    "all_concepts": [
+        "mouse",
+        "maze"
+    ],
+    "joint_concepts": [
+        "maze"
+    ],
+    "concepts_only_old": [],
+    "concepts_only_new": [
+        "mouse"
+    ],
+    "concepts_counters_old": {
+        "maze": 24
+    },
+    "concepts_counters_new": {
+        "maze": 7,
+        "mouse": 1
+    },
+    "concepts_distribution_old": {
+        "maze": {
+            "maze": 18,
+            "maze_map": 1,
+            "matrix": 1,
+            "maze_descriptor": 2,
+            "maze_info": 1,
+            "array": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "maze": {
+            "grid": 1,
+            "maze": 6
+        },
+        "mouse": {
+            "columbus": 1
+        }
+    },
+    "concpets_mean_old": 1.0,
+    "concpets_mean_new": 1.1428571428571428,
+    "concpets_var_old": 0.0,
+    "concpets_var_new": 0.12244897959183676,
+    "variables_lengths_mean_old": 12.481481481481481,
+    "variables_lengths_mean_new": 5.285714285714286,
+    "variables_lengths_var_old": 1065.9533607681758,
+    "variables_lengths_var_new": 9.918367346938775
+}

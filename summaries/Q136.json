@@ -2,43 +2,43 @@
     "number_of_answers_old": 56,
     "number_of_answers_new": 8,
     "all_concepts": [
-        "benefit",
-        "per",
-        "allowed",
-        "month",
-        "number",
-        "accumulation",
         "used",
+        "per",
+        "accumulation",
+        "number",
+        "allowed",
+        "benefit",
         "max",
+        "month",
         "customer"
     ],
     "joint_concepts": [
-        "benefit",
         "per",
-        "month",
         "number",
+        "benefit",
         "max",
+        "month",
         "customer"
     ],
     "concepts_only_old": [
-        "allowed",
         "used",
-        "accumulation"
+        "accumulation",
+        "allowed"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
         "max": 48,
-        "benefit": 53,
+        "benefit": 51,
         "per": 15,
         "month": 21,
-        "number": 12,
-        "used": 1,
+        "number": 11,
+        "used": 0,
         "allowed": 2,
         "customer": 1,
         "accumulation": 4
     },
     "concepts_counters_new": {
-        "max": 8,
+        "max": 7,
         "benefit": 7,
         "per": 1,
         "month": 2,
@@ -51,8 +51,7 @@
             "limit": 4
         },
         "benefit": {
-            "benefit": 51,
-            "limit": 1,
+            "benefit": 50,
             "gift": 1
         },
         "per": {
@@ -62,14 +61,10 @@
             "month": 21
         },
         "number": {
-            "num": 7,
-            "count": 1,
-            "number": 3,
+            "number": 10,
             "amount": 1
         },
-        "used": {
-            "used": 1
-        },
+        "used": {},
         "allowed": {
             "allowed": 1,
             "possible": 1
@@ -78,16 +73,12 @@
             "user": 1
         },
         "accumulation": {
-            "accumulation": 1,
-            "acc": 1,
-            "accumulated": 1,
-            "accu": 1
+            "accumulation": 4
         }
     },
     "concepts_distribution_new": {
         "max": {
-            "max": 7,
-            "expiring": 1
+            "max": 7
         },
         "benefit": {
             "benefit": 7
@@ -99,18 +90,17 @@
             "month": 2
         },
         "number": {
-            "val": 1,
-            "value": 1,
-            "num": 2
+            "value": 2,
+            "number": 2
         },
         "customer": {
             "customer": 1
         }
     },
-    "concpets_mean_old": 2.8545454545454545,
-    "concpets_mean_new": 2.875,
-    "concpets_var_old": 0.7424793388429752,
-    "concpets_var_new": 0.359375,
+    "concpets_mean_old": 2.8333333333333335,
+    "concpets_mean_new": 2.75,
+    "concpets_var_old": 0.7314814814814816,
+    "concpets_var_new": 0.4375,
     "variables_lengths_mean_old": 17.625,
     "variables_lengths_mean_new": 17.625,
     "variables_lengths_var_old": 37.984375,

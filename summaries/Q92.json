@@ -2,16 +2,16 @@
     "number_of_answers_old": 29,
     "number_of_answers_new": 11,
     "all_concepts": [
-        "current",
-        "game",
         "board",
-        "state"
+        "current",
+        "state",
+        "game"
     ],
     "joint_concepts": [
+        "state",
         "game",
-        "current",
         "board",
-        "state"
+        "current"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
@@ -38,8 +38,7 @@
             "status": 2
         },
         "current": {
-            "curr": 2,
-            "current": 4
+            "current": 6
         },
         "game": {
             "xo": 1

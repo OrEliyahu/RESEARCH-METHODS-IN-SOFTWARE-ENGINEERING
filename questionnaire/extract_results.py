@@ -41,8 +41,10 @@ def show_answers_from_file(file_results1, file_results2):
         vote_counter1, vote_counter2 = 0, 0
         concepts_new_avg, concepts_old_avg, winner_concepts_avg, judges_agree = 0, 0, 0, 0
         less_concepts_choosed, more_concepts_choosed = 0, 0
+        number_of_lines = 0
 
         for line1, line2 in zip(judge_results1.readlines(), judge_results2.readlines()):
+            number_of_lines += 1
             new_name_line, old_name_line, winner1, vote1, concepts_num_new, concepts_num_old = line1.replace(" ", "").split(",")
             _, _, winner2, vote2, _, _ = line2.replace(" ", "").split(",")
 
@@ -56,16 +58,18 @@ def show_answers_from_file(file_results1, file_results2):
             if winner1 == winner2:
                 judges_agree += 1
                 if winner1 == "1":
-                    winner_counter_new += 1
+                    winner_counter_new += 1                
                     winner_concepts_avg += concepts_num_new_fixed
+                    
                     if concepts_num_new_fixed > concepts_num_old_fixed:
                         more_concepts_choosed += 1
                     elif concepts_num_new_fixed < concepts_num_old_fixed:
                         less_concepts_choosed += 1
 
                 else:
-                    winner_counter_old += 2
+                    winner_counter_old += 1                  
                     winner_concepts_avg += concepts_num_old_fixed
+                                        
                     if concepts_num_new_fixed < concepts_num_old_fixed:
                         more_concepts_choosed += 1
                     elif concepts_num_new_fixed > concepts_num_old_fixed:
@@ -80,16 +84,13 @@ def show_answers_from_file(file_results1, file_results2):
                 vote_counter1 += 1
             else:
                 vote_counter2 += 1
-
-            
-            if concepts_num_new_fixed > 0:
-                concepts_new_avg += concepts_num_new_fixed
-            if concepts_num_old_fixed > 0:
-                concepts_old_avg += concepts_num_old_fixed
+                        
+            concepts_new_avg += concepts_num_new_fixed            
+            concepts_old_avg += concepts_num_old_fixed
 
 
-        concepts_new_avg /= 60
-        concepts_old_avg /= 60
+        concepts_new_avg /= number_of_lines
+        concepts_old_avg /= number_of_lines
         winner_concepts_avg /= judges_agree
 
         return {"model_wins" : winner_counter_new,
@@ -116,8 +117,6 @@ judge_name1 = "Dana"
 judge_name2 = "Shimon"
 
 for question_number in range(0, 22):
-
-
     file_name1 = "judges_results\\" + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
     file_name2 = "judges_results\\" + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
 
@@ -134,7 +133,8 @@ votes_for_second = 0
 
 
 for file_summey in os.listdir("results_summery"):
-    summery = json.loads(file_summey)[0]
+    json_file = open("results_summery\\" + file_summey)
+    summery = json.loads(json_file.read())    
     model_win += summery["model_wins"]
     no_model_win += summery["no_model_wins"]
     more_concepts_win += summery["times_more_concepts_win"]

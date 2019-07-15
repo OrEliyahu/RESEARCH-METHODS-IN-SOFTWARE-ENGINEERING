@@ -2,12 +2,12 @@
     "number_of_answers_old": 51,
     "number_of_answers_new": 11,
     "all_concepts": [
-        "current",
         "time",
+        "remain",
+        "elapsed",
         "game",
         "length",
-        "remain",
-        "elapsed"
+        "current"
     ],
     "joint_concepts": [
         "game",
@@ -15,9 +15,9 @@
         "time"
     ],
     "concepts_only_old": [
-        "current",
+        "remain",
         "length",
-        "remain"
+        "current"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -37,11 +37,10 @@
         "time": {
             "time": 29,
             "timer": 8,
-            "dur": 1,
+            "duration": 5,
             "seconds": 2,
             "clock": 1,
             "time_in_sec": 1,
-            "duration": 4,
             "timestamp": 2
         },
         "game": {
@@ -64,7 +63,7 @@
             "current": 4
         },
         "remain": {
-            "remaining": 1
+            "remain": 1
         }
     },
     "concepts_distribution_new": {
@@ -74,7 +73,7 @@
         },
         "time": {
             "time": 8,
-            "time_stamp": 1,
+            "timestamp": 1,
             "duration": 2
         },
         "elapsed": {

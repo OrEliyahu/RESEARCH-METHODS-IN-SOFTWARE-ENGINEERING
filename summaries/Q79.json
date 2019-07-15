@@ -2,20 +2,20 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 2,
     "all_concepts": [
-        "current",
         "location",
         "find",
         "cheese",
-        "target"
+        "target",
+        "current"
     ],
     "joint_concepts": [
         "location",
         "cheese"
     ],
     "concepts_only_old": [
-        "current",
+        "find",
         "target",
-        "find"
+        "current"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -35,16 +35,15 @@
         },
         "current": {
             "today": 2,
-            "cur": 13
+            "current": 13
         },
         "location": {
-            "loation": 1,
-            "loc": 31,
-            "pos": 3,
-            "coord": 3,
+            "location": 32,
+            "position": 3,
+            "coordinates": 3,
             "where": 1,
             "room": 2,
-            "plase": 1
+            "place": 1
         },
         "target": {
             "target": 1
@@ -58,7 +57,7 @@
             "cheese": 2
         },
         "location": {
-            "loc": 1
+            "location": 1
         }
     },
     "concpets_mean_old": 2.1818181818181817,

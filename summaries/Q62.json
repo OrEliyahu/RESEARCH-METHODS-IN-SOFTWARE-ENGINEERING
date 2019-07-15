@@ -1,0 +1,76 @@
+{
+    "number_of_answers_old": 27,
+    "number_of_answers_new": 7,
+    "all_concepts": [
+        "location",
+        "history",
+        "mouse",
+        "current",
+        "visit"
+    ],
+    "joint_concepts": [
+        "location",
+        "mouse",
+        "visit"
+    ],
+    "concepts_only_old": [
+        "history"
+    ],
+    "concepts_only_new": [
+        "current"
+    ],
+    "concepts_counters_old": {
+        "visit": 25,
+        "location": 18,
+        "mouse": 1,
+        "history": 2
+    },
+    "concepts_counters_new": {
+        "visit": 7,
+        "location": 6,
+        "mouse": 1,
+        "current": 1
+    },
+    "concepts_distribution_old": {
+        "visit": {
+            "visit": 24,
+            "traversed": 1
+        },
+        "location": {
+            "location": 10,
+            "position": 1,
+            "room": 6,
+            "trail": 1
+        },
+        "mouse": {
+            "mouse": 1
+        },
+        "history": {
+            "history": 2
+        }
+    },
+    "concepts_distribution_new": {
+        "visit": {
+            "visit": 7
+        },
+        "location": {
+            "location": 3,
+            "track": 1,
+            "room": 2
+        },
+        "mouse": {
+            "columbus": 1
+        },
+        "current": {
+            "current": 1
+        }
+    },
+    "concpets_mean_old": 1.7037037037037037,
+    "concpets_mean_new": 2.142857142857143,
+    "concpets_var_old": 0.28257887517146774,
+    "concpets_var_new": 0.4081632653061224,
+    "variables_lengths_mean_old": 15.407407407407407,
+    "variables_lengths_mean_new": 16.142857142857142,
+    "variables_lengths_var_old": 257.20438957475994,
+    "variables_lengths_var_new": 32.12244897959184
+}

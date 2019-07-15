@@ -1,1 +1,1 @@
-[['variable name', 'maze'], ['lanyrinth', 'lanyrinth'], ['labyrinth', 'labyrinth']]
+[['variable name', 'maze'], ['lanyrinth', 'labyrinth'], ['labyrinth', 'labyrinth']]

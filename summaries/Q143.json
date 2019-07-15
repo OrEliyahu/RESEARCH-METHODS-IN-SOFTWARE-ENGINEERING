@@ -1,0 +1,123 @@
+{
+    "number_of_answers_old": 44,
+    "number_of_answers_new": 13,
+    "all_concepts": [
+        "Number",
+        "Customer",
+        "Customer&lt;br&gt;",
+        "Benefit",
+        "Month",
+        "Available",
+        "Current"
+    ],
+    "joint_concepts": [
+        "Number",
+        "Benefit",
+        "Month",
+        "Available",
+        "Current"
+    ],
+    "concepts_only_old": [
+        "Customer"
+    ],
+    "concepts_only_new": [
+        "Customer&lt;br&gt;"
+    ],
+    "concepts_counters_old": {
+        "Benefit": 43,
+        "Current": 15,
+        "Month": 11,
+        "Available": 10,
+        "Number": 17,
+        "Customer": 5
+    },
+    "concepts_counters_new": {
+        "Benefit": 12,
+        "Current": 2,
+        "Month": 4,
+        "Available": 6,
+        "Number": 7,
+        "Customer&lt;br&gt;": 1
+    },
+    "concepts_distribution_old": {
+        "Benefit": {
+            "pinuk": 12,
+            "treat": 9,
+            "perk": 2,
+            "bonus": 3,
+            "gift": 7,
+            "benefit": 4,
+            "point": 1,
+            "reward": 1,
+            "pampers": 1,
+            "prize": 1,
+            "entitleness": 1,
+            "credit": 1
+        },
+        "Current": {
+            "current": 15
+        },
+        "Month": {
+            "month": 10,
+            "period": 1
+        },
+        "Available": {
+            "deserved": 1,
+            "allowed": 1,
+            "available": 5,
+            "eligible": 1,
+            "acquired": 1,
+            "left": 1
+        },
+        "Number": {
+            "number": 12,
+            "total": 1,
+            "counter": 1,
+            "gained": 1,
+            "balance": 1,
+            "amount": 1
+        },
+        "Customer": {
+            "customer": 2,
+            "user": 1,
+            "personal": 1,
+            "client": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "Benefit": {
+            "benefit": 3,
+            "treat": 1,
+            "pinuk": 7,
+            "perk": 1
+        },
+        "Current": {
+            "current": 2
+        },
+        "Month": {
+            "month": 4
+        },
+        "Available": {
+            "available": 3,
+            "earned": 1,
+            "deserved": 1,
+            "eligible": 1
+        },
+        "Number": {
+            "number": 4,
+            "amount": 2,
+            "counter": 1
+        },
+        "Customer&lt;br&gt;": {
+            "client": 1
+        }
+    },
+    "concpets_mean_old": 2.3488372093023258,
+    "concpets_mean_new": 2.6666666666666665,
+    "concpets_var_old": 0.413196322336398,
+    "concpets_var_new": 0.7222222222222222,
+    "variables_lengths_mean_old": 15.568181818181818,
+    "variables_lengths_mean_new": 19.153846153846153,
+    "variables_lengths_var_old": 30.83626033057851,
+    "variables_lengths_var_new": 27.976331360946748
+}

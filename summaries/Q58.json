@@ -3,23 +3,23 @@
     "number_of_answers_new": 9,
     "all_concepts": [
         "location",
+        "cheese",
+        "trace",
         "history",
         "mouse",
         "seen",
-        "trace",
-        "visit",
-        "cheese"
+        "visit"
     ],
     "joint_concepts": [
         "location",
+        "trace",
         "history",
         "mouse",
-        "trace",
         "visit"
     ],
     "concepts_only_old": [
-        "seen",
-        "cheese"
+        "cheese",
+        "seen"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -40,20 +40,20 @@
     },
     "concepts_distribution_old": {
         "location": {
-            "loc": 10,
+            "location": 10,
             "map": 2,
-            "pos": 2,
-            "cells": 1,
-            "rooms": 4,
+            "position": 2,
+            "cell": 1,
+            "room": 4,
             "there": 1,
-            "places": 2,
+            "place": 2,
             "where": 1
         },
         "history": {
             "former": 1,
             "history": 6,
             "past": 1,
-            "prev": 1,
+            "previous": 1,
             "already": 2,
             "passed": 1,
             "track": 1
@@ -68,16 +68,14 @@
             "seen": 1
         },
         "cheese": {
-            "cheese": 4,
-            "chy": 1
+            "cheese": 5
         },
         "trace": {
             "trace": 1,
             "path": 1
         },
         "mouse": {
-            "mouse": 2,
-            "mice": 1
+            "mouse": 3
         }
     },
     "concepts_distribution_new": {
@@ -85,9 +83,9 @@
             "mouse": 1
         },
         "location": {
-            "rooms": 4,
-            "spots": 1,
-            "places": 1
+            "room": 4,
+            "spot": 1,
+            "place": 1
         },
         "visit": {
             "visit": 7

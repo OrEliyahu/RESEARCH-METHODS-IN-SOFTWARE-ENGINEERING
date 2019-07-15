@@ -1,0 +1,111 @@
+{
+    "number_of_answers_old": 56,
+    "number_of_answers_new": 8,
+    "all_concepts": [
+        "Number",
+        "Per",
+        "Costumer<br>",
+        "Potential",
+        "Benefit",
+        "Month",
+        "Costumer",
+        "Available",
+        "Current"
+    ],
+    "joint_concepts": [
+        "Number",
+        "Benefit",
+        "Current",
+        "Month"
+    ],
+    "concepts_only_old": [
+        "Costumer",
+        "Per",
+        "Available",
+        "Potential"
+    ],
+    "concepts_only_new": [
+        "Costumer<br>"
+    ],
+    "concepts_counters_old": {
+        "Benefit": 51,
+        "Costumer": 4,
+        "Number": 27,
+        "Current": 23,
+        "Potential": 1,
+        "Month": 17,
+        "Available": 17,
+        "Per": 3
+    },
+    "concepts_counters_new": {
+        "Benefit": 8,
+        "Number": 5,
+        "Current": 7,
+        "Month": 4,
+        "Costumer<br>": 2
+    },
+    "concepts_distribution_old": {
+        "Benefit": {
+            "benefit": 50,
+            "gift": 1
+        },
+        "Costumer": {
+            "client": 3,
+            "costumer": 1
+        },
+        "Number": {
+            "number": 20,
+            "counter": 6,
+            "amount": 1
+        },
+        "Current": {
+            "current": 23
+        },
+        "Potential": {
+            "potential": 1
+        },
+        "Month": {
+            "month": 17
+        },
+        "Available": {
+            "entitlement": 10,
+            "gained": 1,
+            "grant": 1,
+            "balance": 2,
+            "allowed": 1,
+            "accumulated": 1,
+            "available": 1
+        },
+        "Per": {
+            "per": 2,
+            "for": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "Benefit": {
+            "benefit": 8
+        },
+        "Number": {
+            "number": 2,
+            "amount": 2,
+            "counter": 1
+        },
+        "Current": {
+            "current": 7
+        },
+        "Month": {
+            "month": 4
+        },
+        "Costumer<br>": {
+            "client": 2
+        }
+    },
+    "concpets_mean_old": 2.6,
+    "concpets_mean_new": 3.25,
+    "concpets_var_old": 0.64,
+    "concpets_var_new": 0.6875,
+    "variables_lengths_mean_old": 18.625,
+    "variables_lengths_mean_new": 22.125,
+    "variables_lengths_var_old": 46.734375,
+    "variables_lengths_var_new": 32.359375
+}

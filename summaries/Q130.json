@@ -2,40 +2,34 @@
     "number_of_answers_old": 49,
     "number_of_answers_new": 21,
     "all_concepts": [
-        "current",
-        "index",
         "destination",
-        "floor"
+        "floor",
+        "Number"
     ],
     "joint_concepts": [
-        "current",
-        "index",
+        "destination",
         "floor",
-        "destination"
+        "Number"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],
     "concepts_counters_old": {
         "destination": 33,
         "floor": 41,
-        "current": 8,
-        "index": 1
+        "Number": 1
     },
     "concepts_counters_new": {
         "destination": 15,
         "floor": 18,
-        "current": 4,
-        "index": 1
+        "Number": 1
     },
     "concepts_distribution_old": {
         "destination": {
-            "destination": 7,
+            "destination": 14,
             "target": 9,
-            "dest": 6,
             "desired": 3,
-            "dst": 1,
             "request": 4,
-            "choosen": 1,
+            "chosen": 1,
             "pressed": 1,
             "wanted": 1
         },
@@ -43,41 +37,28 @@
             "floor": 38,
             "level": 3
         },
-        "current": {
-            "cur": 3,
-            "curr": 2,
-            "original": 1,
-            "enterd": 1,
-            "current": 1
-        },
-        "index": {
+        "Number": {
             "index": 1
         }
     },
     "concepts_distribution_new": {
         "destination": {
-            "destination": 8,
-            "desire": 1,
-            "dest": 3,
+            "destination": 11,
+            "desired": 1,
             "target": 2,
             "wanted": 1
         },
         "floor": {
             "floor": 18
         },
-        "current": {
-            "current": 2,
-            "src": 1,
-            "source": 1
-        },
-        "index": {
-            "num": 1
+        "Number": {
+            "number": 1
         }
     },
-    "concpets_mean_old": 1.8043478260869565,
-    "concpets_mean_new": 1.9,
-    "concpets_var_old": 0.2008506616257089,
-    "concpets_var_new": 0.09,
+    "concpets_mean_old": 1.6666666666666667,
+    "concpets_mean_new": 1.7,
+    "concpets_var_old": 0.2222222222222222,
+    "concpets_var_new": 0.20999999999999996,
     "variables_lengths_mean_old": 11.755102040816327,
     "variables_lengths_mean_new": 12.476190476190476,
     "variables_lengths_var_old": 11.450229071220324,

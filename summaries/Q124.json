@@ -2,70 +2,57 @@
     "number_of_answers_old": 41,
     "number_of_answers_new": 4,
     "all_concepts": [
-        "current",
+        "floor",
         "elevator",
-        "destination",
-        "floor"
+        "current"
     ],
     "joint_concepts": [
-        "current",
-        "elevator",
         "floor",
-        "destination"
+        "current"
     ],
     "concepts_only_old": [],
-    "concepts_only_new": [],
+    "concepts_only_new": [
+        "elevator"
+    ],
     "concepts_counters_old": {
-        "destination": 3,
         "floor": 37,
-        "current": 34,
-        "elevator": 0
+        "current": 34
     },
     "concepts_counters_new": {
-        "destination": 1,
         "floor": 4,
         "current": 3,
         "elevator": 2
     },
     "concepts_distribution_old": {
-        "destination": {
-            "destination": 2,
-            "dest": 1
-        },
         "floor": {
             "floor": 33,
             "level": 2,
-            "pos": 1,
+            "position": 1,
             "place": 1
         },
         "current": {
-            "src": 2,
-            "curr": 8,
-            "current": 23,
-            "org": 1
-        },
-        "elevator": {}
+            "source": 2,
+            "current": 31,
+            "origin": 1
+        }
     },
     "concepts_distribution_new": {
-        "destination": {
-            "next": 1
-        },
         "floor": {
-            "floor": 3,
+            "floor": 2,
+            "floor_level": 1,
             "position": 1
         },
         "current": {
-            "cur": 2,
-            "current": 1
+            "current": 3
         },
         "elevator": {
             "elevator": 2
         }
     },
-    "concpets_mean_old": 1.8974358974358974,
-    "concpets_mean_new": 2.5,
-    "concpets_var_old": 0.09204470742932284,
-    "concpets_var_new": 0.25,
+    "concpets_mean_old": 1.868421052631579,
+    "concpets_mean_new": 2.25,
+    "concpets_var_old": 0.11426592797783934,
+    "concpets_var_new": 0.6875,
     "variables_lengths_mean_old": 12.0,
     "variables_lengths_mean_new": 17.25,
     "variables_lengths_var_old": 7.804878048780488,

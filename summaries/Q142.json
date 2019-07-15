@@ -1,0 +1,139 @@
+{
+    "number_of_answers_old": 44,
+    "number_of_answers_new": 13,
+    "all_concepts": [
+        "Eligibility",
+        "Price",
+        "Trigger",
+        "Min",
+        "Benefit",
+        "Required",
+        "Month",
+        "Per",
+        "Increment"
+    ],
+    "joint_concepts": [
+        "Price",
+        "Benefit",
+        "Required",
+        "Month",
+        "Per"
+    ],
+    "concepts_only_old": [
+        "Min",
+        "Increment",
+        "Trigger"
+    ],
+    "concepts_only_new": [
+        "Eligibility"
+    ],
+    "concepts_counters_old": {
+        "Benefit": 38,
+        "Per": 16,
+        "Month": 1,
+        "Price": 38,
+        "Increment": 1,
+        "Trigger": 1,
+        "Min": 4,
+        "Required": 2
+    },
+    "concepts_counters_new": {
+        "Benefit": 12,
+        "Per": 6,
+        "Month": 1,
+        "Price": 8,
+        "Required": 2,
+        "Eligibility": 1
+    },
+    "concepts_distribution_old": {
+        "Benefit": {
+            "pinuk": 12,
+            "treat": 9,
+            "perk": 1,
+            "bonus": 2,
+            "gift": 5,
+            "point": 1,
+            "benefit": 2,
+            "reward": 1,
+            "pamper": 1,
+            "prize": 1,
+            "credit": 2,
+            "matana": 1
+        },
+        "Per": {
+            "per": 6,
+            "for": 6,
+            "to": 4
+        },
+        "Month": {
+            "last_month": 1
+        },
+        "Price": {
+            "nis": 2,
+            "price": 5,
+            "cost": 4,
+            "payment": 2,
+            "spending": 2,
+            "expenses": 2,
+            "money": 7,
+            "spending_limit": 1,
+            "amount": 4,
+            "credit": 1,
+            "worth": 1,
+            "charge": 1,
+            "cash": 1,
+            "threshold": 4,
+            "capacity": 1
+        },
+        "Increment": {
+            "increment": 1
+        },
+        "Trigger": {
+            "trigger": 1
+        },
+        "Min": {
+            "min": 4
+        },
+        "Required": {
+            "required": 1,
+            "needed": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "Benefit": {
+            "benefit": 3,
+            "treat": 1,
+            "pinuk": 7,
+            "perk": 1
+        },
+        "Per": {
+            "per": 3,
+            "for": 3
+        },
+        "Month": {
+            "month": 1
+        },
+        "Price": {
+            "amount": 2,
+            "money": 2,
+            "amount_money": 1,
+            "nis": 1,
+            "cost": 1,
+            "price": 1
+        },
+        "Required": {
+            "required": 2
+        },
+        "Eligibility": {
+            "eligibility": 1
+        }
+    },
+    "concpets_mean_old": 2.4047619047619047,
+    "concpets_mean_new": 2.5,
+    "concpets_var_old": 0.7647392290249433,
+    "concpets_var_new": 1.0833333333333333,
+    "variables_lengths_mean_old": 14.977272727272727,
+    "variables_lengths_mean_new": 15.923076923076923,
+    "variables_lengths_var_old": 25.20402892561983,
+    "variables_lengths_var_new": 32.840236686390526
+}

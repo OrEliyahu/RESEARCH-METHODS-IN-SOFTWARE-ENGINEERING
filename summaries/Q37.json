@@ -2,12 +2,12 @@
     "number_of_answers_old": 47,
     "number_of_answers_new": 13,
     "all_concepts": [
-        "current",
-        "counter",
+        "remain",
+        "elapsed",
         "time",
         "game",
-        "remain",
-        "elapsed"
+        "counter",
+        "current"
     ],
     "joint_concepts": [
         "game",
@@ -15,13 +15,13 @@
         "time"
     ],
     "concepts_only_old": [
-        "current",
         "remain",
-        "counter"
+        "counter",
+        "current"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
-        "game": 24,
+        "game": 23,
         "time": 47,
         "remain": 2,
         "elapsed": 8,
@@ -35,15 +35,14 @@
     },
     "concepts_distribution_old": {
         "game": {
-            "game": 21,
-            "play": 1,
-            "g": 2
+            "game": 22,
+            "play": 1
         },
         "time": {
-            "time": 34,
+            "time": 35,
             "timer": 6,
             "duration": 3,
-            "t": 2,
+            "t": 1,
             "clock": 2
         },
         "remain": {
@@ -75,9 +74,9 @@
             "passed": 1
         }
     },
-    "concpets_mean_old": 1.8297872340425532,
+    "concpets_mean_old": 1.8085106382978724,
     "concpets_mean_new": 1.8461538461538463,
-    "concpets_var_old": 0.35400633770937084,
+    "concpets_var_old": 0.3250339520144862,
     "concpets_var_new": 0.13017751479289938,
     "variables_lengths_mean_old": 9.680851063829786,
     "variables_lengths_mean_new": 8.692307692307692,

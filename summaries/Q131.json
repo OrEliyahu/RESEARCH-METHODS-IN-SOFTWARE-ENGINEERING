@@ -2,64 +2,53 @@
     "number_of_answers_old": 49,
     "number_of_answers_new": 21,
     "all_concepts": [
-        "current",
-        "location",
-        "index",
-        "elevator",
         "destination",
+        "location",
         "floor",
-        "elevator<br>"
+        "Number",
+        "elevator",
+        "current"
     ],
     "joint_concepts": [
-        "current",
+        "floor",
         "location",
-        "index",
-        "destination",
-        "floor"
+        "Number",
+        "elevator",
+        "current"
     ],
     "concepts_only_old": [
-        "elevator"
+        "destination"
     ],
-    "concepts_only_new": [
-        "elevator<br>"
-    ],
+    "concepts_only_new": [],
     "concepts_counters_old": {
-        "destination": 6,
+        "destination": 0,
         "floor": 41,
-        "current": 39,
-        "index": 1,
+        "current": 40,
+        "Number": 1,
         "location": 2,
         "elevator": 1
     },
     "concepts_counters_new": {
-        "destination": 3,
         "floor": 18,
-        "current": 14,
-        "index": 1,
-        "location": 0,
-        "elevator<br>": 0
+        "current": 15,
+        "Number": 1,
+        "location": 1,
+        "elevator": 0
     },
     "concepts_distribution_old": {
-        "destination": {
-            "goal": 1,
-            "dest": 2,
-            "destination": 1,
-            "designated": 1,
-            "next": 1
-        },
+        "destination": {},
         "floor": {
             "floor": 38,
             "level": 3
         },
         "current": {
-            "current": 26,
+            "current": 35,
             "from": 2,
-            "curr": 5,
-            "src": 1,
-            "cur": 4,
+            "initial": 1,
+            "source": 1,
             "input": 1
         },
-        "index": {
+        "Number": {
             "index": 1
         },
         "location": {
@@ -70,30 +59,26 @@
         }
     },
     "concepts_distribution_new": {
-        "destination": {
-            "next": 1,
-            "dest": 1,
-            "destination": 1
-        },
         "floor": {
             "floor": 18
         },
         "current": {
-            "current": 10,
-            "curr": 2,
-            "cur": 1,
+            "current": 13,
+            "my": 1,
             "origin": 1
         },
-        "index": {
-            "num": 1
+        "Number": {
+            "number": 1
         },
-        "location": {},
-        "elevator<br>": {}
+        "location": {
+            "position": 1
+        },
+        "elevator": {}
     },
-    "concpets_mean_old": 1.9148936170212767,
-    "concpets_mean_new": 1.8,
-    "concpets_var_old": 0.12041647804436398,
-    "concpets_var_new": 0.16000000000000003,
+    "concpets_mean_old": 1.8085106382978724,
+    "concpets_mean_new": 1.75,
+    "concpets_var_old": 0.1548211860570394,
+    "concpets_var_new": 0.2875,
     "variables_lengths_mean_old": 11.46938775510204,
     "variables_lengths_mean_new": 11.476190476190476,
     "variables_lengths_var_old": 9.677634319033736,

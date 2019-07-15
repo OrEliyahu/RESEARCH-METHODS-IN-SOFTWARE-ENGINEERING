@@ -2,26 +2,26 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 12,
     "all_concepts": [
-        "hours",
+        "normal",
+        "full",
+        "threshold",
+        "overtime",
         "week",
         "job",
-        "rate",
-        "time",
-        "full",
-        "normal",
         "max",
-        "threshold",
-        "overtime"
+        "time",
+        "rate",
+        "hours"
     ],
     "joint_concepts": [
-        "hours",
+        "normal",
+        "full",
         "week",
         "job",
-        "rate",
+        "max",
         "time",
-        "full",
-        "normal",
-        "max"
+        "rate",
+        "hours"
     ],
     "concepts_only_old": [
         "threshold",
@@ -35,7 +35,7 @@
         "rate": 12,
         "time": 15,
         "week": 13,
-        "overtime": 6,
+        "overtime": 5,
         "normal": 8,
         "max": 4,
         "threshold": 4
@@ -55,8 +55,7 @@
             "full": 22
         },
         "hours": {
-            "hours": 30,
-            "hourly": 1,
+            "hours": 31,
             "time": 2
         },
         "job": {
@@ -66,21 +65,18 @@
         "rate": {
             "rate": 5,
             "per": 6,
-            "qouta": 1
+            "quota": 1
         },
         "time": {
             "time": 14,
             "monthly": 1
         },
         "week": {
-            "week": 9,
-            "weekly": 3,
-            "weak": 1
+            "week": 13
         },
         "overtime": {
             "overtime": 3,
             "additional": 1,
-            "threshold": 1,
             "extra": 1
         },
         "normal": {
@@ -101,11 +97,10 @@
             "full": 5
         },
         "hours": {
-            "hours": 7,
-            "hour": 2
+            "hours": 9
         },
         "job": {
-            "working": 1,
+            "work": 1,
             "job": 2
         },
         "rate": {
@@ -117,8 +112,7 @@
             "time": 3
         },
         "week": {
-            "weekly": 1,
-            "week": 3
+            "week": 4
         },
         "normal": {
             "regular": 1,
@@ -128,9 +122,9 @@
             "max": 2
         }
     },
-    "concpets_mean_old": 3.046511627906977,
+    "concpets_mean_old": 3.0232558139534884,
     "concpets_mean_new": 3.1818181818181817,
-    "concpets_var_old": 0.742022714981071,
+    "concpets_var_old": 0.7203893996755002,
     "concpets_var_new": 0.6942148760330578,
     "variables_lengths_mean_old": 16.46511627906977,
     "variables_lengths_mean_new": 15.583333333333334,

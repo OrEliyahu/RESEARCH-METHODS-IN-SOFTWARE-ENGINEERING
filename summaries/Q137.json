@@ -1,0 +1,106 @@
+{
+    "number_of_answers_old": 56,
+    "number_of_answers_new": 8,
+    "all_concepts": [
+        "per",
+        "Min",
+        "Benefit",
+        "Amount",
+        "Earn",
+        "Required",
+        "Per"
+    ],
+    "joint_concepts": [
+        "Benefit",
+        "Amount",
+        "Min"
+    ],
+    "concepts_only_old": [
+        "Required",
+        "Earn",
+        "per"
+    ],
+    "concepts_only_new": [
+        "Per"
+    ],
+    "concepts_counters_old": {
+        "Benefit": 42,
+        "per": 23,
+        "Amount": 49,
+        "Required": 1,
+        "Min": 6,
+        "Earn": 4
+    },
+    "concepts_counters_new": {
+        "Benefit": 8,
+        "Per": 5,
+        "Amount": 8,
+        "Min": 1
+    },
+    "concepts_distribution_old": {
+        "Benefit": {
+            "benefit": 42
+        },
+        "per": {
+            "per": 9,
+            "for": 7,
+            "to": 7
+        },
+        "Amount": {
+            "threshold": 4,
+            "ils": 12,
+            "bill": 3,
+            "billing_sum": 1,
+            "shekels": 2,
+            "amount": 5,
+            "billed_amount": 1,
+            "price": 2,
+            "value": 5,
+            "rate": 3,
+            "amount_ils": 1,
+            "sum": 3,
+            "expense": 2,
+            "money": 3,
+            "cost": 1,
+            "2000": 1
+        },
+        "Required": {
+            "needed": 1
+        },
+        "Min": {
+            "min": 6
+        },
+        "Earn": {
+            "entitlement": 3,
+            "earn": 1
+        }
+    },
+    "concepts_distribution_new": {
+        "Benefit": {
+            "benefit": 8
+        },
+        "Per": {
+            "to": 2,
+            "per": 2,
+            "for": 1
+        },
+        "Amount": {
+            "value": 2,
+            "threshold": 1,
+            "ils": 2,
+            "amount": 2,
+            "expenditure": 1
+        },
+        "Min": {
+            "min": 1
+        }
+    },
+    "concpets_mean_old": 2.314814814814815,
+    "concpets_mean_new": 2.75,
+    "concpets_var_old": 0.6601508916323731,
+    "concpets_var_new": 0.4375,
+    "variables_lengths_mean_old": 16.017857142857142,
+    "variables_lengths_mean_new": 18.375,
+    "variables_lengths_var_old": 36.731823979591844,
+    "variables_lengths_var_new": 11.234375
+}

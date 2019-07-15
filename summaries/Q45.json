@@ -2,23 +2,27 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 12,
     "all_concepts": [
-        "extra",
-        "rate",
+        "payment",
         "hour",
-        "pay"
+        "extra",
+        "pay",
+        "rate"
     ],
     "joint_concepts": [
-        "extra",
-        "hour",
         "rate",
+        "hour",
+        "extra"
+    ],
+    "concepts_only_old": [
+        "payment"
+    ],
+    "concepts_only_new": [
         "pay"
     ],
-    "concepts_only_old": [],
-    "concepts_only_new": [],
     "concepts_counters_old": {
-        "pay": 11,
+        "payment": 11,
         "rate": 28,
-        "extra": 38,
+        "extra": 39,
         "hour": 36
     },
     "concepts_counters_new": {
@@ -28,10 +32,8 @@
         "hour": 7
     },
     "concepts_distribution_old": {
-        "pay": {
-            "payout": 1,
-            "pay": 5,
-            "payment": 3,
+        "payment": {
+            "payment": 9,
             "wage": 1,
             "salary": 1
         },
@@ -41,26 +43,22 @@
             "for": 1
         },
         "extra": {
-            "add": 1,
-            "addition": 6,
+            "addition": 13,
             "overtime": 7,
             "increased": 1,
             "overtime_bonus": 2,
             "extra": 15,
-            "special": 1,
-            "additional": 5
+            "special": 1
         },
         "hour": {
-            "hour": 10,
-            "hours": 10,
+            "hours": 20,
             "time": 16
         }
     },
     "concepts_distribution_new": {
         "pay": {
             "salary": 2,
-            "pay": 1,
-            "payment": 1
+            "payment": 2
         },
         "rate": {
             "rate": 7,
@@ -73,13 +71,12 @@
         },
         "hour": {
             "time": 1,
-            "hours": 3,
-            "hour": 3
+            "hours": 6
         }
     },
-    "concpets_mean_old": 2.627906976744186,
+    "concpets_mean_old": 2.6511627906976742,
     "concpets_mean_new": 2.5,
-    "concpets_var_old": 0.46619794483504595,
+    "concpets_var_old": 0.4597079502433748,
     "concpets_var_new": 0.5833333333333334,
     "variables_lengths_mean_old": 17.11627906976744,
     "variables_lengths_mean_new": 17.333333333333332,

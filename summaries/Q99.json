@@ -3,17 +3,17 @@
     "number_of_answers_new": 10,
     "all_concepts": [
         "byte",
-        "size",
         "field",
-        "file"
+        "file",
+        "size"
     ],
     "joint_concepts": [
-        "size",
-        "file"
+        "file",
+        "size"
     ],
     "concepts_only_old": [
-        "field",
-        "byte"
+        "byte",
+        "field"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {
@@ -32,8 +32,7 @@
             "length": 1
         },
         "file": {
-            "file": 18,
-            "f": 2
+            "file": 20
         },
         "byte": {
             "byte": 2

@@ -66,11 +66,11 @@ judge_name1 = "Dana"
 judge_name2 = "Shimon"
 
 for question_number in range(0, 22):
-    file_name1 = "judges_results\\" + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
-    file_name2 = "judges_results\\" + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
+    file_name1 = "judges_results_original\\" + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
+    file_name2 = "judges_results_original\\" + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
 
-    fixed_file_name1 = "judges_results_fixed\\" + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
-    fixed_file_name2 = "judges_results_fixed\\" + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
+    fixed_file_name1 = "judges_results\\" + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
+    fixed_file_name2 = "judges_results\\" + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
 
     fix_results(file_name1, file_name2, fixed_file_name1, fixed_file_name2)
         

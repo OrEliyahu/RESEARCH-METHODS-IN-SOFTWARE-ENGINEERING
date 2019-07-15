@@ -2,9 +2,8 @@
     "number_of_answers_old": 49,
     "number_of_answers_new": 21,
     "all_concepts": [
-        "destination",
-        "location",
         "floor",
+        "location",
         "Number",
         "elevator",
         "current"
@@ -16,12 +15,9 @@
         "elevator",
         "current"
     ],
-    "concepts_only_old": [
-        "destination"
-    ],
+    "concepts_only_old": [],
     "concepts_only_new": [],
     "concepts_counters_old": {
-        "destination": 0,
         "floor": 41,
         "current": 40,
         "Number": 1,
@@ -36,7 +32,6 @@
         "elevator": 0
     },
     "concepts_distribution_old": {
-        "destination": {},
         "floor": {
             "floor": 38,
             "level": 3

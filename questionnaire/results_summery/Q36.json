@@ -8,5 +8,8 @@
     "no_model_concepts_avg": 1.7166666666666666,
     "winner_concepts_avg": 2.261904761904762,
     "times_more_concepts_win": 24,
-    "times_less_concepts_win": 2
+    "times_less_concepts_win": 2,
+    "times_longer_win": 31,
+    "times_shorter_win": 6,
+    "comparisions_number": 60
 }

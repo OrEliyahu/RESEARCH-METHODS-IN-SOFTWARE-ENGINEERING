@@ -41,7 +41,8 @@ def show_answers_from_file(file_results1, file_results2):
         vote_counter1, vote_counter2 = 0, 0
         concepts_new_avg, concepts_old_avg, winner_concepts_avg, judges_agree = 0, 0, 0, 0
         less_concepts_choosed, more_concepts_choosed = 0, 0
-        number_of_lines = 0
+        longer_choosed, shorter_choosed = 0, 0
+        number_of_lines = 0        
 
         for line1, line2 in zip(judge_results1.readlines(), judge_results2.readlines()):
             number_of_lines += 1
@@ -66,6 +67,11 @@ def show_answers_from_file(file_results1, file_results2):
                     elif concepts_num_new_fixed < concepts_num_old_fixed:
                         less_concepts_choosed += 1
 
+                    if len(new_name) > len(old_name):
+                        longer_choosed += 1
+                    elif len(new_name) < len(old_name):
+                        shorter_choosed += 1
+
                 else:
                     winner_counter_old += 1                  
                     winner_concepts_avg += concepts_num_old_fixed
@@ -74,6 +80,11 @@ def show_answers_from_file(file_results1, file_results2):
                         more_concepts_choosed += 1
                     elif concepts_num_new_fixed > concepts_num_old_fixed:
                         less_concepts_choosed += 1
+
+                    if len(new_name) < len(old_name):
+                        longer_choosed += 1
+                    elif len(new_name) > len(old_name):
+                        shorter_choosed += 1
 
             if vote1 == "1":
                 vote_counter1 += 1
@@ -103,6 +114,9 @@ def show_answers_from_file(file_results1, file_results2):
                    "winner_concepts_avg" : winner_concepts_avg,
                    "times_more_concepts_win" : more_concepts_choosed,
                    "times_less_concepts_win" : less_concepts_choosed,
+                   "times_longer_win" : longer_choosed,
+                   "times_shorter_win" : shorter_choosed,
+                   "comparisions_number" : number_of_lines,
             }                            
             
 
@@ -128,9 +142,11 @@ model_win = 0
 no_model_win = 0
 more_concepts_win = 0
 less_concepts_win = 0
+longer_win = 0
+shorter_win = 0
 votes_for_first = 0
 votes_for_second = 0
-
+comparisions_number = 0
 
 for file_summey in os.listdir("results_summery"):
     json_file = open("results_summery\\" + file_summey)
@@ -139,8 +155,11 @@ for file_summey in os.listdir("results_summery"):
     no_model_win += summery["no_model_wins"]
     more_concepts_win += summery["times_more_concepts_win"]
     less_concepts_win += summery["times_less_concepts_win"]
+    longer_win += summery["times_longer_win"]
+    shorter_win += summery["times_shorter_win"]
     votes_for_first += summery["votes_for_first"]
     votes_for_second += summery["votes_for_second"]
+    comparisions_number += summery["comparisions_number"]
 
 
 with open("summery_results.json", "w") as results_file:
@@ -150,6 +169,9 @@ with open("summery_results.json", "w") as results_file:
                      "total_less_concepts_wins" : less_concepts_win,
                      "total_votes_for_first" : votes_for_first,
                      "total_votes_for_second" : votes_for_second,
+                     "total_votes_for_longer" : longer_win,
+                     "total_votes_for_shorter" : shorter_win,
+                     "total_comparisions" : comparisions_number,
         }
 
     json.dump(final_results, results_file, indent=4)

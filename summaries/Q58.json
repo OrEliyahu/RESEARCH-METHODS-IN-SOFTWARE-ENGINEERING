@@ -2,24 +2,24 @@
     "number_of_answers_old": 35,
     "number_of_answers_new": 9,
     "all_concepts": [
-        "location",
-        "cheese",
-        "trace",
-        "history",
-        "mouse",
         "seen",
-        "visit"
+        "cheese",
+        "visit",
+        "history",
+        "location",
+        "mouse",
+        "trace"
     ],
     "joint_concepts": [
+        "visit",
         "location",
-        "trace",
         "history",
         "mouse",
-        "visit"
+        "trace"
     ],
     "concepts_only_old": [
-        "cheese",
-        "seen"
+        "seen",
+        "cheese"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

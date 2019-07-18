@@ -2,20 +2,20 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 13,
     "all_concepts": [
-        "Number",
-        "Customer",
-        "Customer&lt;br&gt;",
-        "Benefit",
-        "Month",
         "Available",
-        "Current"
+        "Month",
+        "Benefit",
+        "Current",
+        "Customer&lt;br&gt;",
+        "Customer",
+        "Number"
     ],
     "joint_concepts": [
-        "Number",
-        "Benefit",
-        "Month",
         "Available",
-        "Current"
+        "Month",
+        "Benefit",
+        "Current",
+        "Number"
     ],
     "concepts_only_old": [
         "Customer"

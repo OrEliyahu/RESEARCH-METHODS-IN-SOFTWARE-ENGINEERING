@@ -2,27 +2,27 @@
     "number_of_answers_old": 56,
     "number_of_answers_new": 8,
     "all_concepts": [
-        "Number",
-        "Per",
         "Costumer<br>",
-        "Potential",
-        "Benefit",
-        "Month",
-        "Costumer",
         "Available",
-        "Current"
-    ],
-    "joint_concepts": [
-        "Number",
+        "Month",
         "Benefit",
         "Current",
+        "Per",
+        "Potential",
+        "Number",
+        "Costumer"
+    ],
+    "joint_concepts": [
+        "Benefit",
+        "Current",
+        "Number",
         "Month"
     ],
     "concepts_only_old": [
-        "Costumer",
+        "Potential",
         "Per",
         "Available",
-        "Potential"
+        "Costumer"
     ],
     "concepts_only_new": [
         "Costumer<br>"

@@ -2,19 +2,19 @@
     "number_of_answers_old": 49,
     "number_of_answers_new": 21,
     "all_concepts": [
-        "close",
-        "elevator",
-        "door",
-        "current",
         "state",
-        "open"
+        "elevator",
+        "close",
+        "open",
+        "current",
+        "door"
     ],
     "joint_concepts": [
-        "close",
-        "elevator",
-        "door",
         "state",
-        "open"
+        "elevator",
+        "close",
+        "open",
+        "door"
     ],
     "concepts_only_old": [
         "current"

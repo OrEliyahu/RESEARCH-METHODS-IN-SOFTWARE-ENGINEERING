@@ -2,16 +2,16 @@
     "number_of_answers_old": 27,
     "number_of_answers_new": 7,
     "all_concepts": [
+        "current",
+        "visit",
         "location",
         "history",
-        "mouse",
-        "current",
-        "visit"
+        "mouse"
     ],
     "joint_concepts": [
-        "location",
         "mouse",
-        "visit"
+        "visit",
+        "location"
     ],
     "concepts_only_old": [
         "history"

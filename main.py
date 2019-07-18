@@ -54,8 +54,12 @@ def count_concepts(data):
 def get_variables_lengths(data):
     lengths = []
     for i in range(1, len(data)):
-        lengths += [len(data[i][0])]
+        lengths += [len(only_ascii(data[i][0]))]
     return lengths
+
+
+def only_ascii(word):
+    return ''.join([c if ord(c) < 256 else ' ' for c in word])
 
 
 def statistics(file_name_old, file_name_new, question, random_state=False):

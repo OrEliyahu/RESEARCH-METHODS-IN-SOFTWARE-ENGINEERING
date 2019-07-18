@@ -2,21 +2,21 @@
     "number_of_answers_old": 52,
     "number_of_answers_new": 11,
     "all_concepts": [
-        "board",
-        "number",
-        "danger",
         "state",
+        "cell",
+        "number",
         "adjacent",
+        "board",
+        "danger",
         "mines",
-        "game",
-        "cell"
+        "game"
     ],
     "joint_concepts": [
-        "board",
         "state",
+        "cell",
+        "board",
         "mines",
-        "game",
-        "cell"
+        "game"
     ],
     "concepts_only_old": [
         "danger",

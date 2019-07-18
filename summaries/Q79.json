@@ -2,20 +2,20 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 2,
     "all_concepts": [
-        "location",
+        "current",
         "find",
-        "cheese",
+        "location",
         "target",
-        "current"
+        "cheese"
     ],
     "joint_concepts": [
-        "location",
-        "cheese"
+        "cheese",
+        "location"
     ],
     "concepts_only_old": [
         "find",
-        "target",
-        "current"
+        "current",
+        "target"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

@@ -2,15 +2,15 @@
     "number_of_answers_old": 40,
     "number_of_answers_new": 7,
     "all_concepts": [
+        "current",
         "state",
         "board",
-        "game",
-        "current"
+        "game"
     ],
     "joint_concepts": [
+        "board",
         "state",
-        "game",
-        "board"
+        "game"
     ],
     "concepts_only_old": [
         "current"

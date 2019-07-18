@@ -4,12 +4,12 @@
     "all_concepts": [
         "byte",
         "field",
-        "file",
-        "size"
+        "size",
+        "file"
     ],
     "joint_concepts": [
-        "file",
-        "size"
+        "size",
+        "file"
     ],
     "concepts_only_old": [
         "byte",

@@ -2,18 +2,18 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 13,
     "all_concepts": [
-        "per",
-        "number",
         "benefit",
+        "month",
+        "number",
         "max",
-        "month"
+        "per"
     ],
     "joint_concepts": [
-        "per",
-        "number",
         "benefit",
+        "month",
+        "number",
         "max",
-        "month"
+        "per"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],

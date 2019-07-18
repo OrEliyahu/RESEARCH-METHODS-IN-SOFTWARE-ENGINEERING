@@ -2,16 +2,16 @@
     "number_of_answers_old": 26,
     "number_of_answers_new": 10,
     "all_concepts": [
-        "current",
         "state",
+        "current",
         "grid",
         "game"
     ],
     "joint_concepts": [
-        "grid",
-        "game",
         "state",
-        "current"
+        "current",
+        "grid",
+        "game"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],

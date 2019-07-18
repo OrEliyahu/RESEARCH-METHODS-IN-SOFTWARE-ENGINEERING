@@ -4,5 +4,8 @@
     "total_more_concepts_wins": 492,
     "total_less_concepts_wins": 98,
     "total_votes_for_first": 1361,
-    "total_votes_for_second": 1231
+    "total_votes_for_second": 1231,
+    "total_votes_for_longer": 632,
+    "total_votes_for_shorter": 222,
+    "total_comparisions": 1296
 }

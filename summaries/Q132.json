@@ -2,15 +2,15 @@
     "number_of_answers_old": 49,
     "number_of_answers_new": 21,
     "all_concepts": [
-        "floor",
         "difference",
+        "floor",
         "destination",
         "move"
     ],
     "joint_concepts": [
         "floor",
-        "difference",
-        "move"
+        "move",
+        "difference"
     ],
     "concepts_only_old": [
         "destination"

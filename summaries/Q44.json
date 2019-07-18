@@ -2,26 +2,26 @@
     "number_of_answers_old": 43,
     "number_of_answers_new": 12,
     "all_concepts": [
-        "normal",
-        "full",
         "threshold",
-        "overtime",
-        "week",
+        "hours",
+        "rate",
+        "full",
         "job",
         "max",
         "time",
-        "rate",
-        "hours"
+        "overtime",
+        "normal",
+        "week"
     ],
     "joint_concepts": [
-        "normal",
-        "full",
-        "week",
+        "hours",
+        "rate",
         "job",
+        "full",
         "max",
         "time",
-        "rate",
-        "hours"
+        "normal",
+        "week"
     ],
     "concepts_only_old": [
         "threshold",

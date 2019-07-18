@@ -2,27 +2,27 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 13,
     "all_concepts": [
-        "Eligibility",
-        "Price",
-        "Trigger",
-        "Min",
-        "Benefit",
-        "Required",
         "Month",
+        "Eligibility",
+        "Benefit",
+        "Increment",
         "Per",
-        "Increment"
+        "Min",
+        "Required",
+        "Price",
+        "Trigger"
     ],
     "joint_concepts": [
-        "Price",
-        "Benefit",
-        "Required",
         "Month",
-        "Per"
+        "Benefit",
+        "Per",
+        "Required",
+        "Price"
     ],
     "concepts_only_old": [
-        "Min",
+        "Trigger",
         "Increment",
-        "Trigger"
+        "Min"
     ],
     "concepts_only_new": [
         "Eligibility"

@@ -2,23 +2,23 @@
     "number_of_answers_old": 56,
     "number_of_answers_new": 8,
     "all_concepts": [
-        "per",
+        "Amount",
+        "Benefit",
+        "Per",
         "Min",
-        "Benefit",
-        "Amount",
-        "Earn",
-        "Required",
-        "Per"
-    ],
-    "joint_concepts": [
-        "Benefit",
-        "Amount",
-        "Min"
-    ],
-    "concepts_only_old": [
         "Required",
         "Earn",
         "per"
+    ],
+    "joint_concepts": [
+        "Benefit",
+        "Min",
+        "Amount"
+    ],
+    "concepts_only_old": [
+        "per",
+        "Required",
+        "Earn"
     ],
     "concepts_only_new": [
         "Per"

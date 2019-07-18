@@ -2,22 +2,22 @@
     "number_of_answers_old": 44,
     "number_of_answers_new": 2,
     "all_concepts": [
-        "cheese",
         "data",
+        "map",
         "maze",
         "rooms",
-        "available",
-        "map"
+        "cheese",
+        "available"
     ],
     "joint_concepts": [
         "maze"
     ],
     "concepts_only_old": [
+        "map",
+        "rooms",
         "cheese",
         "data",
-        "rooms",
-        "available",
-        "map"
+        "available"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

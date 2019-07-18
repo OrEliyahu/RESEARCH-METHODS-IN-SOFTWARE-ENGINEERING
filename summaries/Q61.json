@@ -2,16 +2,16 @@
     "number_of_answers_old": 27,
     "number_of_answers_new": 7,
     "all_concepts": [
-        "location",
-        "cheese",
         "target",
-        "current"
+        "cheese",
+        "current",
+        "location"
     ],
     "joint_concepts": [
-        "location",
+        "current",
         "cheese",
         "target",
-        "current"
+        "location"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [],

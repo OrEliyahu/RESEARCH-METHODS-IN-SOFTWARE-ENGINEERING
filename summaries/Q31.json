@@ -3,21 +3,21 @@
     "number_of_answers_new": 11,
     "all_concepts": [
         "time",
-        "remain",
         "elapsed",
-        "game",
+        "current",
         "length",
-        "current"
+        "remain",
+        "game"
     ],
     "joint_concepts": [
-        "game",
+        "time",
         "elapsed",
-        "time"
+        "game"
     ],
     "concepts_only_old": [
         "remain",
-        "length",
-        "current"
+        "current",
+        "length"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

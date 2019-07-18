@@ -2,14 +2,14 @@
     "number_of_answers_old": 56,
     "number_of_answers_new": 10,
     "all_concepts": [
-        "byte",
-        "file",
         "long",
-        "size"
+        "byte",
+        "size",
+        "file"
     ],
     "joint_concepts": [
-        "file",
-        "size"
+        "size",
+        "file"
     ],
     "concepts_only_old": [
         "byte",

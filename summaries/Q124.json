@@ -2,9 +2,9 @@
     "number_of_answers_old": 41,
     "number_of_answers_new": 4,
     "all_concepts": [
-        "floor",
+        "current",
         "elevator",
-        "current"
+        "floor"
     ],
     "joint_concepts": [
         "floor",

@@ -3,27 +3,27 @@
     "number_of_answers_new": 6,
     "all_concepts": [
         "payment",
-        "normal",
-        "full",
-        "week",
-        "extra",
-        "work",
-        "time",
+        "hours",
         "rate",
-        "hours"
+        "full",
+        "time",
+        "work",
+        "extra",
+        "normal",
+        "week"
     ],
     "joint_concepts": [
-        "normal",
+        "hours",
         "full",
-        "week",
         "time",
-        "hours"
+        "normal",
+        "week"
     ],
     "concepts_only_old": [
-        "payment",
-        "rate",
         "extra",
-        "work"
+        "rate",
+        "work",
+        "payment"
     ],
     "concepts_only_new": [],
     "concepts_counters_old": {

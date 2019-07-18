@@ -3,15 +3,15 @@
     "number_of_answers_new": 12,
     "all_concepts": [
         "payment",
+        "rate",
         "hour",
-        "extra",
         "pay",
-        "rate"
+        "extra"
     ],
     "joint_concepts": [
         "rate",
-        "hour",
-        "extra"
+        "extra",
+        "hour"
     ],
     "concepts_only_old": [
         "payment"

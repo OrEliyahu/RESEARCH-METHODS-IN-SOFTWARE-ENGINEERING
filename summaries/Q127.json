@@ -3,10 +3,10 @@
     "number_of_answers_new": 5,
     "all_concepts": [
         "state",
-        "open",
-        "close",
         "elevator",
         "current",
+        "close",
+        "open",
         "door"
     ],
     "joint_concepts": [
@@ -15,8 +15,8 @@
         "door"
     ],
     "concepts_only_old": [
-        "open",
         "close",
+        "open",
         "current"
     ],
     "concepts_only_new": [],

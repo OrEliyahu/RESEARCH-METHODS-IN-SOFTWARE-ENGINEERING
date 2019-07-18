@@ -2,13 +2,13 @@
     "number_of_answers_old": 41,
     "number_of_answers_new": 4,
     "all_concepts": [
-        "destination",
+        "elevator",
         "floor",
-        "elevator"
+        "destination"
     ],
     "joint_concepts": [
-        "destination",
-        "floor"
+        "floor",
+        "destination"
     ],
     "concepts_only_old": [],
     "concepts_only_new": [

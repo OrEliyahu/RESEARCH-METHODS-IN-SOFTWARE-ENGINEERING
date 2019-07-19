@@ -65,7 +65,7 @@ quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 judge_name1 = "Dana"
 judge_name2 = "Shimon"
 
-for question_number in range(0, 22):
+for question_number in range(0, 23):
     file_name1 = "judges_results_original\\" + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
     file_name2 = "judges_results_original\\" + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
 

@@ -1,11 +1,17 @@
 {
-    "total_model_wins": 608,
-    "total_no_model_wins": 312,
-    "total_more_concepts_wins": 492,
-    "total_less_concepts_wins": 98,
-    "total_votes_for_first": 1361,
-    "total_votes_for_second": 1231,
-    "total_votes_for_longer": 632,
-    "total_votes_for_shorter": 222,
-    "total_comparisions": 1296
+    "total_model_wins_agree": 635,
+    "total_no_model_wins_agree": 315,
+    "total_model_wins": 1676,
+    "total_no_model_wins": 1036,
+    "total_more_concepts_wins_agree": 510,
+    "total_less_concepts_wins_agree": 101,
+    "total_more_concepts_wins": 1251,
+    "total_less_concepts_wins": 433,
+    "total_votes_for_first": 1419,
+    "total_votes_for_second": 1293,
+    "total_votes_for_longer_agree": 656,
+    "total_votes_for_shorter_agree": 228,
+    "total_votes_for_longer": 1694,
+    "total_votes_for_shorter": 838,
+    "total_comparisions": 1356
 }

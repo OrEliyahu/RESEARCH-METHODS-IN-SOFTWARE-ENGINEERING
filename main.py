@@ -135,7 +135,7 @@ def statistics(file_name_old, file_name_new, question, random_state=False):
     }
     
     
-    results_file = open("summaries\\" + question + ".json", "w")
+    results_file = open("summaries" + os.sep + question + ".json", "w")
     results_file.write(json.dumps(results, indent=4))
     
     return results
@@ -179,7 +179,7 @@ def main():
     if old == "1":
         old_var = True
 
-    if not os.path.isfile("tables\\" + question + "_" + old + ".txt"):
+    if not os.path.isfile("tables" + os.sep + question + "_" + old + ".txt"):
         answers = get_answers(question, old = old_var)
         idx = [0] * len(answers)
         answers = list([[i, name]] for i, name in zip(idx, answers))
@@ -188,7 +188,7 @@ def main():
                                              selected = question, 
                                              old = old)
     
-    with open("tables\\" + question + "_" + old +  ".txt", "r", encoding="utf-8") as concepts_file:
+    with open("tables" + os.sep + question + "_" + old +  ".txt", "r", encoding="utf-8") as concepts_file:
         data = ast.literal_eval(concepts_file.read())
     
     return render_template("index.html", data = [list(enumerate(row)) for row in data], 
@@ -199,7 +199,7 @@ def main():
 @app.route('/save', methods=['POST'])
 def save():	
     try:
-        with open("tables\\" + str(request.args.get('q')) + "_" + str(request.args.get('old')) + ".txt", "w", encoding="utf-8") as concepts_file:			
+        with open("tables" + os.sep + str(request.args.get('q')) + "_" + str(request.args.get('old')) + ".txt", "w", encoding="utf-8") as concepts_file:			
             concepts_file.write(str(request.get_json()))            	
         return "saved"
     except:
@@ -208,8 +208,8 @@ def save():
 @app.route('/compare2', methods=['GET'])
 def compare2():
     question = str(request.args.get('q'))
-    old_exist = os.path.isfile("tables\\" + str(request.args.get('q')) + "_1" + ".txt")
-    new_exist = os.path.isfile("tables\\" + str(request.args.get('q')) + "_0" + ".txt")
+    old_exist = os.path.isfile("tables" + os.sep + str(request.args.get('q')) + "_1" + ".txt")
+    new_exist = os.path.isfile("tables" + os.sep + str(request.args.get('q')) + "_0" + ".txt")
     old_concepts_counter, new_concepts_counter = [], []
     words_for_histogram = {}
     words_for_histogram['old_words'] = []
@@ -219,11 +219,11 @@ def compare2():
         return "<h1>no data for comparing</h1><br><a href='/?question=" + question + "&old=0'>back</a>"
     
     if old_exist:        
-        old_concepts_counter = statistics2("tables\\" + question + "_1.txt")
-        words_for_histogram['old_words'] = get_all_words("tables\\" + question + "_1.txt")
+        old_concepts_counter = statistics2("tables" + os.sep + question + "_1.txt")
+        words_for_histogram['old_words'] = get_all_words("tables" + os.sep + question + "_1.txt")
     if new_exist:                
-        new_concepts_counter = statistics2("tables\\" + question + "_0.txt")        
-        words_for_histogram['new_words'] = get_all_words("tables\\" + question + "_0.txt")        
+        new_concepts_counter = statistics2("tables" + os.sep + question + "_0.txt")        
+        words_for_histogram['new_words'] = get_all_words("tables" + os.sep + question + "_0.txt")        
 
     return render_template("compare2.html", datas = [new_concepts_counter, old_concepts_counter], words = words_for_histogram, q = question)
 
@@ -231,13 +231,13 @@ def compare2():
 @app.route('/compare', methods=['GET'])
 def compare():
     question = str(request.args.get('q'))
-    old_exist = os.path.isfile("tables\\" + str(request.args.get('q')) + "_1" + ".txt")
-    new_exist = os.path.isfile("tables\\" + str(request.args.get('q')) + "_0" + ".txt")
+    old_exist = os.path.isfile("tables" + os.sep + str(request.args.get('q')) + "_1" + ".txt")
+    new_exist = os.path.isfile("tables" + os.sep + str(request.args.get('q')) + "_0" + ".txt")
 
     if not old_exist or not new_exist:
         return "<h1>no data for comparing</h1><br><a href='/?question=" + question + "&old=0'>back</a>"
      
-    results = statistics("tables\\" + question + "_1.txt", "tables\\" + question + "_0.txt", question)
+    results = statistics("tables" + os.sep + question + "_1.txt", "tables" + os.sep + question + "_0.txt", question)
     return render_template("compare.html", r=results, q=question)
 
 

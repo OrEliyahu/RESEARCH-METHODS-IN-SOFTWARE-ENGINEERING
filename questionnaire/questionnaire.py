@@ -4,6 +4,7 @@ import pandas as pd
 import ast
 import re
 import pickle
+import json
 
 
 def fix_answer(answer):
@@ -96,21 +97,53 @@ def start_questionnaire(old_names, new_names, answer_header, judge_name):
             print("-------------------------")        
 
 
-def show_answers_from_file(results_file):
-    with open(results_file, "r") as judge_results:
-        for line in judge_results.readlines():
-            if "number of time answers were equals is: " in line:
-                continue
-            new_name_line, old_name_line, winner, vote, old_concepts_number, new_concepts_number  = line.split(",")
-            
-            print(results_old[quetsions_header[question_number]][int(old_name_line)])
-            print(results[quetsions_header[question_number]][int(new_name_line)])
-            if int(winner) == 1:
-                print(results[quetsions_header[question_number]][int(new_name_line)])
-                print("new")
-            elif int(winner) == 2:
-                print(results_old[quetsions_header[question_number]][int(old_name_line)])
-                print("old")                                        
+def show_answers_from_file(file_results1, file_results2):
+    with open(file_results1, "r") as judge_results1, open(file_results2, "r") as judge_results2:
+        winner_counter_old, winner_counter_new = 0, 0
+        vote_counter1, vote_counter2 = 0, 0
+        concepts_new_avg, concepts_old_avg = 0, 0
+
+        for line1, line2 in zip(judge_results1.readlines(), judge_results2.readlines()):
+            new_name_line, old_name_line, winner1, vote1, concepts_num_new, concepts_num_old = line1.replace(" ", "").split(",")
+            _, _, winner2, vote2, _, _ = line2.replace(" ", "").split(",")
+
+            if winner1 == winner2:
+                if winner1 == "1":
+                    winner_counter_new += 1
+                else:
+                    winner_counter_old += 2
+            if vote1 == "1":
+                vote_counter1 += 1
+            else:
+                vote_counter2 += 1
+
+            if vote2 == "1":
+                vote_counter1 += 1
+            else:
+                vote_counter2 += 1
+
+            new_name = results[quetsions_header[question_number]][int(new_name_line)]
+            old_name = results_old[quetsions_header[question_number]][int(old_name_line)]
+
+            concepts_num_new_fixed = get_answer_concpets_number(new_name, 0, quetsions_header[question_number])
+            concepts_num_old_fixed = get_answer_concpets_number(old_name, 1, quetsions_header[question_number])
+
+            if concepts_num_new_fixed > 0:
+                concepts_new_avg += concepts_num_new_fixed
+            if concepts_num_old_fixed > 0:
+                concepts_old_avg += concepts_num_old_fixed
+
+
+        concepts_new_avg /= 60
+        concepts_old_avg /= 60
+
+        return {"model_wins" : winner_counter_new,
+                   "no_model_wins" : winner_counter_old,
+                   "votes_for_first" : vote_counter1,
+                   "votes_for_second" : vote_counter2,
+                   "model_concepts_avg" : concepts_new_avg,
+                   "no_model_concepts_avg" : concepts_old_avg,
+            }                            
             
 
 if not os.path.exists("judges_results"):
@@ -122,11 +155,8 @@ quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
 judge_name = input("enter your name: ")
 
-question_number = 0 # 0 - 22
 
-old_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
-new_names = [(ind, ans) for ind, ans in enumerate(results[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
-
-    
-start_questionnaire(old_names, new_names, quetsions_header[question_number], judge_name)    
-# show_answers_from_file("judges_results\\" + judge_name + "_results_" + quetsions_header[question_number])
+for question_number in range(0, 22):
+    old_names = [(ind, ans) for ind, ans in enumerate(results_old[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
+    new_names = [(ind, ans) for ind, ans in enumerate(results[quetsions_header[question_number]]) if str(ans) != "nan"][2:-1]
+    start_questionnaire(old_names, new_names, quetsions_header[question_number], judge_name)

@@ -25,7 +25,7 @@ def plot_bars(old_data, new_data, ylabel, title, fig_name):
 
 
 def get_mean_var(file_name):
-    with open("..\\summaries\\" + file_name) as json_file:
+    with open(".." + os.sep + "summaries" + os.sep + file_name) as json_file:
         data = json.load(json_file)
         return data["variables_lengths_mean_old"], data["variables_lengths_mean_new"], data["variables_lengths_var_old"], data["variables_lengths_var_new"]
 
@@ -37,7 +37,7 @@ vars_new = []
 questions = []
 
 
-for file_name in listdir("..\\summaries"):
+for file_name in listdir(".." + os.sep + "summaries"):
     questions += [file_name.split(".")[0]]
     mean_old, mean_new, var_old, var_new = get_mean_var(file_name)
     means_old += [mean_old]

@@ -16,7 +16,7 @@ def ans_to_str(ans):
 
 
 def get_answer_concpets_number(answer, old, question):
-    file_name = "..\\tables\\" + question + "_" + str(old) + ".txt"
+    file_name = ".." + os.sep + "tables" + os.sep + question + "_" + str(old) + ".txt"
 
     if not os.path.isfile(file_name):
         return -2
@@ -175,18 +175,18 @@ def show_answers_from_file(file_results1, file_results2):
 if not os.path.exists("judges_results"):
     os.makedirs("judges_results")
 
-results_old = pd.read_csv("..\\results\\results_old.csv")
-results = pd.read_csv("..\\results\\results.csv")
+results_old = pd.read_csv(".." + os.sep + "results" + os.sep + "results_old.csv")
+results = pd.read_csv(".." + os.sep + "results" + os.sep + "results.csv")
 quetsions_header = open("quetions for judges.txt", "r").read().split("\n")
 
 judge_name1 = "Dana"
 judge_name2 = "Shimon"
 
 for question_number in range(0, 23):
-    file_name1 = "judges_results\\" + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
-    file_name2 = "judges_results\\" + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
+    file_name1 = "judges_results" + os.sep + judge_name1 + "_results_" + quetsions_header[question_number] + ".txt"
+    file_name2 = "judges_results" + os.sep + judge_name2 + "_results_" + quetsions_header[question_number] + ".txt"
 
-    with open("results_summery\\" + quetsions_header[question_number] + ".json", "w") as results_file:
+    with open("results_summery" + os.sep + quetsions_header[question_number] + ".json", "w") as results_file:
         json.dump(show_answers_from_file(file_name1, file_name2), results_file, indent=4)
 
 
@@ -209,7 +209,7 @@ comparisions_number = 0
 
 
 for file_summey in os.listdir("results_summery"):
-    json_file = open("results_summery\\" + file_summey)
+    json_file = open("results_summery" + os.sep + file_summey)
     summery = json.loads(json_file.read())    
     model_win_agree += summery["model_wins_agree"]
     no_model_win_agree += summery["no_model_wins_agree"]

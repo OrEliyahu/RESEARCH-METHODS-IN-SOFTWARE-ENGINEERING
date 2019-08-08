@@ -4,6 +4,7 @@ from collections import Counter
 import pandas as pd
 import matplotlib.pyplot as plt
 from os import listdir
+import os
 
 
 RANDOM_FACTOR = 5
@@ -88,16 +89,15 @@ def calc_diversity(file_name_old, file_name_new):
         return concepts_distribution_old, concepts_distribution_new
     
 
-for question_file in listdir("..\\summaries"):
-    print(question_file)
+for question_file in listdir(".." + os.sep + "summaries"):
     qustion = question_file.split(".")[0]
-    old_file = "..\\tables\\" + qustion + "_1.txt"
-    new_file = "..\\tables\\" + qustion + "_0.txt"
+    old_file = ".." + os.sep + "tables" + os.sep + qustion + "_1.txt"
+    new_file = ".." + os.sep + "tables" + os.sep + qustion + "_0.txt"
 
     concepts_distribution_old, concepts_distribution_new = calc_diversity(old_file, new_file)
 
     concepts_distribution_old = pd.DataFrame(concepts_distribution_old).T.fillna(0)
     concepts_distribution_new = pd.DataFrame(concepts_distribution_new).T.fillna(0)
-    concepts_distribution_old.to_csv('distribution\\old\\old_' + qustion + '.csv', index=True, header=True)
-    concepts_distribution_new.to_csv('distribution\\new\\new_' + qustion + '.csv', index=True, header=True)
+    concepts_distribution_old.to_csv("distribution" + os.sep + "old" + os.sep + "old_" + qustion + ".csv", index=True, header=True)
+    concepts_distribution_new.to_csv("distribution" + os.sep + "new" + os.sep + "new_" + qustion + ".csv", index=True, header=True)
 

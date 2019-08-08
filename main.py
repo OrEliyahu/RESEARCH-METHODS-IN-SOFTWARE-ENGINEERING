@@ -154,7 +154,7 @@ def get_answers(questions_id, remove_dups=False, old = False):
     def fix_word(word):        
         return re.sub( '(?<!^)(?=[A-Z][a-z])', '_', word).lower().replace("__", "_")
 
-    filePath =  r"results\results.csv" if not old else r"results\results_old.csv"
+    filePath =  "results" + os.sep + "results.csv" if not old else "results" + os.sep + "results_old.csv"
     data = pd.read_csv(filePath) 
     questions_ids = get_questions_ids()
     answers = data[questions_id][2:]

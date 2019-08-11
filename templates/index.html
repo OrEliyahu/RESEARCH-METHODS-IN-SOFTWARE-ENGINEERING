@@ -59,7 +59,7 @@
                 for (var i = 0, row; row = table.rows[i]; i++) {
                     var x = [];
                     for (var j = 2, col; col = row.cells[j]; j++) {
-                        x.push(col.innerHTML);
+                        x.push(col.textContent);
                     }
                     result.push(x);
                 }
